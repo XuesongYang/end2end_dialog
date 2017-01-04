@@ -1,0 +1,350 @@
+class_name: Model
+config:
+  input_layers:
+  - [SAP_input, 0, 0]
+  layers:
+  - class_name: InputLayer
+    config:
+      batch_input_shape: !!python/tuple [null, 5, 67]
+      input_dtype: int32
+      name: SAP_input
+    inbound_nodes: []
+    name: SAP_input
+  - class_name: TimeDistributed
+    config:
+      layer:
+        class_name: Model
+        config:
+          input_layers:
+          - [LU_input, 0, 0]
+          layers:
+          - class_name: InputLayer
+            config:
+              batch_input_shape: &id001 !!python/tuple [null, 67]
+              input_dtype: int32
+              name: LU_input
+            inbound_nodes: []
+            name: LU_input
+          - class_name: Embedding
+            config:
+              W_constraint: null
+              W_regularizer: null
+              activity_regularizer: null
+              batch_input_shape: &id002 !!python/tuple [null, 67]
+              dropout: 0.0
+              init: uniform
+              input_dim: 2254
+              input_dtype: int32
+              input_length: 67
+              mask_zero: true
+              name: embedding_1
+              output_dim: 512
+              trainable: true
+            inbound_nodes:
+            - - [LU_input, 0, 0]
+            name: embedding_1
+          - class_name: Dropout
+            config: {name: dropout_1, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [embedding_1, 0, 0]
+            name: dropout_1
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: false, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_forward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_forward
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: true, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_backward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_backward
+          - class_name: Dropout
+            config: {name: dropout_2, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_forward, 0, 0]
+            name: dropout_2
+          - class_name: Dropout
+            config: {name: dropout_3, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_backward, 0, 0]
+            name: dropout_3
+          - class_name: Merge
+            config: {concat_axis: -1, dot_axes: -1, mode: concat, mode_type: raw,
+              name: LU_merge_bidirection, output_shape: null, output_shape_type: raw}
+            inbound_nodes:
+            - - [dropout_2, 0, 0]
+              - [dropout_3, 0, 0]
+            name: LU_merge_bidirection
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: false, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: joint_LSTM,
+              output_dim: 157, return_sequences: false, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [LU_merge_bidirection, 0, 0]
+            name: joint_LSTM
+          name: LU_Model
+          output_layers:
+          - [joint_LSTM, 0, 0]
+      name: timedistributed_1
+      trainable: true
+    inbound_nodes:
+    - - [SAP_input, 0, 0]
+    name: timedistributed_1
+  - class_name: LSTM
+    config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+      consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one, go_backwards: false,
+      init: glorot_uniform, inner_activation: hard_sigmoid, inner_init: orthogonal,
+      input_dim: 157, input_length: null, name: SAP_LSTM_forward, output_dim: 256,
+      return_sequences: false, stateful: false, trainable: true, unroll: false}
+    inbound_nodes:
+    - - [timedistributed_1, 0, 0]
+    name: SAP_LSTM_forward
+  - class_name: LSTM
+    config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+      consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one, go_backwards: true,
+      init: glorot_uniform, inner_activation: hard_sigmoid, inner_init: orthogonal,
+      input_dim: 157, input_length: null, name: SAP_LSTM_backward, output_dim: 256,
+      return_sequences: false, stateful: false, trainable: true, unroll: false}
+    inbound_nodes:
+    - - [timedistributed_1, 0, 0]
+    name: SAP_LSTM_backward
+  - class_name: Dropout
+    config: {name: dropout_4, p: 0.5, trainable: true}
+    inbound_nodes:
+    - - [SAP_LSTM_forward, 0, 0]
+    name: dropout_4
+  - class_name: Dropout
+    config: {name: dropout_5, p: 0.5, trainable: true}
+    inbound_nodes:
+    - - [SAP_LSTM_backward, 0, 0]
+    name: dropout_5
+  - class_name: Merge
+    config: {concat_axis: -1, dot_axes: -1, mode: concat, mode_type: raw, name: SAP_merge_bidirection,
+      output_shape: null, output_shape_type: raw}
+    inbound_nodes:
+    - - [dropout_4, 0, 0]
+      - [dropout_5, 0, 0]
+    name: SAP_merge_bidirection
+  - class_name: TimeDistributed
+    config:
+      layer:
+        class_name: Model
+        config:
+          input_layers:
+          - [LU_input, 0, 0]
+          layers:
+          - class_name: InputLayer
+            config:
+              batch_input_shape: *id001
+              input_dtype: int32
+              name: LU_input
+            inbound_nodes: []
+            name: LU_input
+          - class_name: Embedding
+            config:
+              W_constraint: null
+              W_regularizer: null
+              activity_regularizer: null
+              batch_input_shape: *id002
+              dropout: 0.0
+              init: uniform
+              input_dim: 2254
+              input_dtype: int32
+              input_length: 67
+              mask_zero: true
+              name: embedding_1
+              output_dim: 512
+              trainable: true
+            inbound_nodes:
+            - - [LU_input, 0, 0]
+            name: embedding_1
+          - class_name: Dropout
+            config: {name: dropout_1, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [embedding_1, 0, 0]
+            name: dropout_1
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: false, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_forward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_forward
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: true, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_backward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_backward
+          - class_name: Dropout
+            config: {name: dropout_2, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_forward, 0, 0]
+            name: dropout_2
+          - class_name: Dropout
+            config: {name: dropout_3, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_backward, 0, 0]
+            name: dropout_3
+          - class_name: Merge
+            config: {concat_axis: -1, dot_axes: -1, mode: concat, mode_type: raw,
+              name: LU_merge_bidirection, output_shape: null, output_shape_type: raw}
+            inbound_nodes:
+            - - [dropout_2, 0, 0]
+              - [dropout_3, 0, 0]
+            name: LU_merge_bidirection
+          - class_name: TimeDistributed
+            config:
+              layer:
+                class_name: Dense
+                config: {W_constraint: null, W_regularizer: null, activation: softmax,
+                  activity_regularizer: null, b_constraint: null, b_regularizer: null,
+                  bias: true, init: glorot_uniform, input_dim: null, name: dense_1,
+                  output_dim: 88, trainable: true}
+              name: slotTagging_task
+              trainable: true
+            inbound_nodes:
+            - - [LU_merge_bidirection, 0, 0]
+            name: slotTagging_task
+          name: model_1
+          output_layers:
+          - [slotTagging_task, 0, 0]
+      name: slot_output
+      trainable: true
+    inbound_nodes:
+    - - [SAP_input, 0, 0]
+    name: slot_output
+  - class_name: TimeDistributed
+    config:
+      layer:
+        class_name: Model
+        config:
+          input_layers:
+          - [LU_input, 0, 0]
+          layers:
+          - class_name: InputLayer
+            config:
+              batch_input_shape: *id001
+              input_dtype: int32
+              name: LU_input
+            inbound_nodes: []
+            name: LU_input
+          - class_name: Embedding
+            config:
+              W_constraint: null
+              W_regularizer: null
+              activity_regularizer: null
+              batch_input_shape: *id002
+              dropout: 0.0
+              init: uniform
+              input_dim: 2254
+              input_dtype: int32
+              input_length: 67
+              mask_zero: true
+              name: embedding_1
+              output_dim: 512
+              trainable: true
+            inbound_nodes:
+            - - [LU_input, 0, 0]
+            name: embedding_1
+          - class_name: Dropout
+            config: {name: dropout_1, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [embedding_1, 0, 0]
+            name: dropout_1
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: false, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_forward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_forward
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: true, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: LU_LSTM_backward,
+              output_dim: 256, return_sequences: true, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [dropout_1, 0, 0]
+            name: LU_LSTM_backward
+          - class_name: Dropout
+            config: {name: dropout_2, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_forward, 0, 0]
+            name: dropout_2
+          - class_name: Dropout
+            config: {name: dropout_3, p: 0.5, trainable: true}
+            inbound_nodes:
+            - - [LU_LSTM_backward, 0, 0]
+            name: dropout_3
+          - class_name: Merge
+            config: {concat_axis: -1, dot_axes: -1, mode: concat, mode_type: raw,
+              name: LU_merge_bidirection, output_shape: null, output_shape_type: raw}
+            inbound_nodes:
+            - - [dropout_2, 0, 0]
+              - [dropout_3, 0, 0]
+            name: LU_merge_bidirection
+          - class_name: LSTM
+            config: {U_regularizer: null, W_regularizer: null, activation: tanh, b_regularizer: null,
+              consume_less: cpu, dropout_U: 0.0, dropout_W: 0.0, forget_bias_init: one,
+              go_backwards: false, init: glorot_uniform, inner_activation: hard_sigmoid,
+              inner_init: orthogonal, input_dim: 512, input_length: null, name: intent_LSTM,
+              output_dim: 256, return_sequences: false, stateful: false, trainable: true,
+              unroll: false}
+            inbound_nodes:
+            - - [LU_merge_bidirection, 0, 0]
+            name: intent_LSTM
+          - class_name: Dense
+            config: {W_constraint: null, W_regularizer: null, activation: sigmoid,
+              activity_regularizer: null, b_constraint: null, b_regularizer: null,
+              bias: true, init: glorot_uniform, input_dim: null, name: intent_output,
+              output_dim: 69, trainable: true}
+            inbound_nodes:
+            - - [intent_LSTM, 0, 0]
+            name: intent_output
+          name: model_2
+          output_layers:
+          - [intent_output, 0, 0]
+      name: intent_output
+      trainable: true
+    inbound_nodes:
+    - - [SAP_input, 0, 0]
+    name: intent_output
+  - class_name: Dense
+    config: {W_constraint: null, W_regularizer: null, activation: sigmoid, activity_regularizer: null,
+      b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+      name: act_output, output_dim: 66, trainable: true}
+    inbound_nodes:
+    - - [SAP_merge_bidirection, 0, 0]
+    name: act_output
+  name: model_3
+  output_layers:
+  - [slot_output, 0, 0]
+  - [intent_output, 0, 0]
+  - [act_output, 0, 0]
+keras_version: 1.0.8

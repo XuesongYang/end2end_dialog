@@ -1,0 +1,1225 @@
+nohup: ignoring input
+Using Theano backend.
+Using gpu device 0: Tesla K40c (CNMeM is disabled, cuDNN 4007)
+Training model ...
+	agentAct_vocab_size = 66
+	batch_size = 32
+	data_npz = ./data/npz/dstc4.all.w-intent.agentActPred.npz
+	dev_data = <DataSetCSVagentActPred.DataSetCSVagentActPred object at 0x7f3137497cd0>
+	dropout_ratio = 0.5
+	epoch_nb = 200
+	hidden_size = 64
+	loss = categorical_crossentropy
+	model_folder = None
+	optimizer = adam
+	patience = 10
+	pid = 4769
+	test_data = None
+	test_only = False
+	threshold = None
+	train_data = <DataSetCSVagentActPred.DataSetCSVagentActPred object at 0x7f313749e950>
+	train_only = True
+	userTagIntent_vocab_size = 157
+	weights_fname = None
+	window_size = 5
+Building Graph ...
+<Epoch 0>
+Epoch 1/1
+2s - loss: 0.1600
+ep=0, precision=0.290, recall=0.251, fscore=0.269, accuracy_frame=0.077, threshold=0.173
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=0.pred
+Saving Model: ./model/agentAct_4769/weights/ep=0_f1=0.269_frameAcc=0.077_th=0.173.h5
+<Epoch 1>
+Epoch 1/1
+2s - loss: 0.0660
+ep=1, precision=0.290, recall=0.252, fscore=0.270, accuracy_frame=0.076, threshold=0.197
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=1.pred
+Saving Model: ./model/agentAct_4769/weights/ep=1_f1=0.270_frameAcc=0.076_th=0.197.h5
+<Epoch 2>
+Epoch 1/1
+2s - loss: 0.0649
+ep=2, precision=0.289, recall=0.255, fscore=0.271, accuracy_frame=0.071, threshold=0.195
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=2.pred
+Saving Model: ./model/agentAct_4769/weights/ep=2_f1=0.271_frameAcc=0.071_th=0.195.h5
+<Epoch 3>
+Epoch 1/1
+2s - loss: 0.0635
+ep=3, precision=0.289, recall=0.255, fscore=0.271, accuracy_frame=0.073, threshold=0.174
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=3.pred
+Saving Model: ./model/agentAct_4769/weights/ep=3_f1=0.271_frameAcc=0.073_th=0.174.h5
+<Epoch 4>
+Epoch 1/1
+2s - loss: 0.0623
+ep=4, precision=0.235, recall=0.330, fscore=0.274, accuracy_frame=0.043, threshold=0.153
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=4.pred
+Saving Model: ./model/agentAct_4769/weights/ep=4_f1=0.274_frameAcc=0.043_th=0.153.h5
+<Epoch 5>
+Epoch 1/1
+2s - loss: 0.0606
+ep=5, precision=0.239, recall=0.392, fscore=0.297, accuracy_frame=0.048, threshold=0.126
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=5.pred
+Saving Model: ./model/agentAct_4769/weights/ep=5_f1=0.297_frameAcc=0.048_th=0.126.h5
+<Epoch 6>
+Epoch 1/1
+2s - loss: 0.0593
+ep=6, precision=0.243, recall=0.393, fscore=0.300, accuracy_frame=0.048, threshold=0.152
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=6.pred
+Saving Model: ./model/agentAct_4769/weights/ep=6_f1=0.300_frameAcc=0.048_th=0.152.h5
+<Epoch 7>
+Epoch 1/1
+2s - loss: 0.0584
+ep=7, precision=0.242, recall=0.373, fscore=0.294, accuracy_frame=0.051, threshold=0.141
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=7.pred
+Saving Model: ./model/agentAct_4769/weights/ep=7_f1=0.294_frameAcc=0.051_th=0.141.h5
+<Epoch 8>
+Epoch 1/1
+2s - loss: 0.0579
+ep=8, precision=0.252, recall=0.398, fscore=0.309, accuracy_frame=0.058, threshold=0.142
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=8.pred
+Saving Model: ./model/agentAct_4769/weights/ep=8_f1=0.309_frameAcc=0.058_th=0.142.h5
+<Epoch 9>
+Epoch 1/1
+2s - loss: 0.0572
+ep=9, precision=0.246, recall=0.419, fscore=0.310, accuracy_frame=0.050, threshold=0.138
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=9.pred
+Saving Model: ./model/agentAct_4769/weights/ep=9_f1=0.310_frameAcc=0.050_th=0.138.h5
+<Epoch 10>
+Epoch 1/1
+8s - loss: 0.0567
+ep=10, precision=0.250, recall=0.389, fscore=0.305, accuracy_frame=0.057, threshold=0.152
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=10.pred
+Saving Model: ./model/agentAct_4769/weights/ep=10_f1=0.305_frameAcc=0.057_th=0.152.h5
+<Epoch 11>
+Epoch 1/1
+8s - loss: 0.0564
+ep=11, precision=0.259, recall=0.395, fscore=0.313, accuracy_frame=0.062, threshold=0.150
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=11.pred
+Saving Model: ./model/agentAct_4769/weights/ep=11_f1=0.313_frameAcc=0.062_th=0.150.h5
+<Epoch 12>
+Epoch 1/1
+8s - loss: 0.0560
+ep=12, precision=0.244, recall=0.424, fscore=0.310, accuracy_frame=0.047, threshold=0.142
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=12.pred
+Saving Model: ./model/agentAct_4769/weights/ep=12_f1=0.310_frameAcc=0.047_th=0.142.h5
+<Epoch 13>
+Epoch 1/1
+8s - loss: 0.0553
+ep=13, precision=0.256, recall=0.419, fscore=0.318, accuracy_frame=0.055, threshold=0.149
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=13.pred
+Saving Model: ./model/agentAct_4769/weights/ep=13_f1=0.318_frameAcc=0.055_th=0.149.h5
+<Epoch 14>
+Epoch 1/1
+8s - loss: 0.0556
+ep=14, precision=0.242, recall=0.421, fscore=0.307, accuracy_frame=0.070, threshold=0.135
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=14.pred
+Saving Model: ./model/agentAct_4769/weights/ep=14_f1=0.307_frameAcc=0.070_th=0.135.h5
+<Epoch 15>
+Epoch 1/1
+8s - loss: 0.0552
+ep=15, precision=0.254, recall=0.405, fscore=0.312, accuracy_frame=0.062, threshold=0.145
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=15.pred
+Saving Model: ./model/agentAct_4769/weights/ep=15_f1=0.312_frameAcc=0.062_th=0.145.h5
+<Epoch 16>
+Epoch 1/1
+9s - loss: 0.0546
+ep=16, precision=0.251, recall=0.410, fscore=0.311, accuracy_frame=0.062, threshold=0.139
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=16.pred
+Saving Model: ./model/agentAct_4769/weights/ep=16_f1=0.311_frameAcc=0.062_th=0.139.h5
+<Epoch 17>
+Epoch 1/1
+17s - loss: 0.0545
+ep=17, precision=0.263, recall=0.394, fscore=0.315, accuracy_frame=0.069, threshold=0.147
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=17.pred
+Saving Model: ./model/agentAct_4769/weights/ep=17_f1=0.315_frameAcc=0.069_th=0.147.h5
+<Epoch 18>
+Epoch 1/1
+17s - loss: 0.0541
+ep=18, precision=0.258, recall=0.405, fscore=0.315, accuracy_frame=0.066, threshold=0.146
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=18.pred
+Saving Model: ./model/agentAct_4769/weights/ep=18_f1=0.315_frameAcc=0.066_th=0.146.h5
+<Epoch 19>
+Epoch 1/1
+14s - loss: 0.0539
+ep=19, precision=0.256, recall=0.410, fscore=0.315, accuracy_frame=0.071, threshold=0.146
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=19.pred
+Saving Model: ./model/agentAct_4769/weights/ep=19_f1=0.315_frameAcc=0.071_th=0.146.h5
+<Epoch 20>
+Epoch 1/1
+18s - loss: 0.0538
+ep=20, precision=0.251, recall=0.407, fscore=0.311, accuracy_frame=0.074, threshold=0.131
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=20.pred
+Saving Model: ./model/agentAct_4769/weights/ep=20_f1=0.311_frameAcc=0.074_th=0.131.h5
+<Epoch 21>
+Epoch 1/1
+19s - loss: 0.0533
+ep=21, precision=0.253, recall=0.379, fscore=0.303, accuracy_frame=0.093, threshold=0.145
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=21.pred
+Saving Model: ./model/agentAct_4769/weights/ep=21_f1=0.303_frameAcc=0.093_th=0.145.h5
+<Epoch 22>
+Epoch 1/1
+19s - loss: 0.0533
+ep=22, precision=0.239, recall=0.442, fscore=0.310, accuracy_frame=0.050, threshold=0.151
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=22.pred
+Saving Model: ./model/agentAct_4769/weights/ep=22_f1=0.310_frameAcc=0.050_th=0.151.h5
+<Epoch 23>
+Epoch 1/1
+19s - loss: 0.0531
+ep=23, precision=0.257, recall=0.402, fscore=0.313, accuracy_frame=0.077, threshold=0.131
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=23.pred
+Saving Model: ./model/agentAct_4769/weights/ep=23_f1=0.313_frameAcc=0.077_th=0.131.h5
+<Epoch 24>
+Epoch 1/1
+19s - loss: 0.0528
+ep=24, precision=0.240, recall=0.441, fscore=0.311, accuracy_frame=0.057, threshold=0.129
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=24.pred
+Saving Model: ./model/agentAct_4769/weights/ep=24_f1=0.311_frameAcc=0.057_th=0.129.h5
+<Epoch 25>
+Epoch 1/1
+19s - loss: 0.0524
+ep=25, precision=0.243, recall=0.412, fscore=0.306, accuracy_frame=0.063, threshold=0.142
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=25.pred
+Saving Model: ./model/agentAct_4769/weights/ep=25_f1=0.306_frameAcc=0.063_th=0.142.h5
+<Epoch 26>
+Epoch 1/1
+19s - loss: 0.0523
+ep=26, precision=0.234, recall=0.442, fscore=0.306, accuracy_frame=0.051, threshold=0.112
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=26.pred
+Saving Model: ./model/agentAct_4769/weights/ep=26_f1=0.306_frameAcc=0.051_th=0.112.h5
+<Epoch 27>
+Epoch 1/1
+18s - loss: 0.0521
+ep=27, precision=0.257, recall=0.393, fscore=0.311, accuracy_frame=0.077, threshold=0.168
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=27.pred
+Saving Model: ./model/agentAct_4769/weights/ep=27_f1=0.311_frameAcc=0.077_th=0.168.h5
+<Epoch 28>
+Epoch 1/1
+17s - loss: 0.0518
+ep=28, precision=0.284, recall=0.348, fscore=0.313, accuracy_frame=0.118, threshold=0.195
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=28.pred
+Saving Model: ./model/agentAct_4769/weights/ep=28_f1=0.313_frameAcc=0.118_th=0.195.h5
+<Epoch 29>
+Epoch 1/1
+13s - loss: 0.0517
+ep=29, precision=0.243, recall=0.407, fscore=0.305, accuracy_frame=0.075, threshold=0.159
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=29.pred
+Saving Model: ./model/agentAct_4769/weights/ep=29_f1=0.305_frameAcc=0.075_th=0.159.h5
+<Epoch 30>
+Epoch 1/1
+18s - loss: 0.0513
+ep=30, precision=0.254, recall=0.387, fscore=0.307, accuracy_frame=0.104, threshold=0.134
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=30.pred
+Saving Model: ./model/agentAct_4769/weights/ep=30_f1=0.307_frameAcc=0.104_th=0.134.h5
+<Epoch 31>
+Epoch 1/1
+18s - loss: 0.0508
+ep=31, precision=0.239, recall=0.416, fscore=0.304, accuracy_frame=0.072, threshold=0.136
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=31.pred
+Saving Model: ./model/agentAct_4769/weights/ep=31_f1=0.304_frameAcc=0.072_th=0.136.h5
+<Epoch 32>
+Epoch 1/1
+19s - loss: 0.0507
+ep=32, precision=0.247, recall=0.411, fscore=0.309, accuracy_frame=0.067, threshold=0.134
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=32.pred
+Saving Model: ./model/agentAct_4769/weights/ep=32_f1=0.309_frameAcc=0.067_th=0.134.h5
+<Epoch 33>
+Epoch 1/1
+19s - loss: 0.0504
+ep=33, precision=0.246, recall=0.402, fscore=0.305, accuracy_frame=0.073, threshold=0.147
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=33.pred
+Saving Model: ./model/agentAct_4769/weights/ep=33_f1=0.305_frameAcc=0.073_th=0.147.h5
+<Epoch 34>
+Epoch 1/1
+19s - loss: 0.0504
+ep=34, precision=0.244, recall=0.401, fscore=0.303, accuracy_frame=0.076, threshold=0.128
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=34.pred
+Saving Model: ./model/agentAct_4769/weights/ep=34_f1=0.303_frameAcc=0.076_th=0.128.h5
+<Epoch 35>
+Epoch 1/1
+19s - loss: 0.0501
+ep=35, precision=0.266, recall=0.378, fscore=0.312, accuracy_frame=0.094, threshold=0.161
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=35.pred
+Saving Model: ./model/agentAct_4769/weights/ep=35_f1=0.312_frameAcc=0.094_th=0.161.h5
+<Epoch 36>
+Epoch 1/1
+14s - loss: 0.0498
+ep=36, precision=0.257, recall=0.377, fscore=0.305, accuracy_frame=0.101, threshold=0.143
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=36.pred
+Saving Model: ./model/agentAct_4769/weights/ep=36_f1=0.305_frameAcc=0.101_th=0.143.h5
+<Epoch 37>
+Epoch 1/1
+9s - loss: 0.0493
+ep=37, precision=0.227, recall=0.430, fscore=0.297, accuracy_frame=0.072, threshold=0.145
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=37.pred
+Saving Model: ./model/agentAct_4769/weights/ep=37_f1=0.297_frameAcc=0.072_th=0.145.h5
+<Epoch 38>
+Epoch 1/1
+12s - loss: 0.0492
+ep=38, precision=0.263, recall=0.342, fscore=0.298, accuracy_frame=0.138, threshold=0.171
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=38.pred
+Saving Model: ./model/agentAct_4769/weights/ep=38_f1=0.298_frameAcc=0.138_th=0.171.h5
+<Epoch 39>
+Epoch 1/1
+15s - loss: 0.0491
+ep=39, precision=0.258, recall=0.365, fscore=0.303, accuracy_frame=0.122, threshold=0.151
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=39.pred
+Saving Model: ./model/agentAct_4769/weights/ep=39_f1=0.303_frameAcc=0.122_th=0.151.h5
+<Epoch 40>
+Epoch 1/1
+9s - loss: 0.0486
+ep=40, precision=0.257, recall=0.357, fscore=0.298, accuracy_frame=0.126, threshold=0.181
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=40.pred
+Saving Model: ./model/agentAct_4769/weights/ep=40_f1=0.298_frameAcc=0.126_th=0.181.h5
+<Epoch 41>
+Epoch 1/1
+17s - loss: 0.0486
+ep=41, precision=0.229, recall=0.423, fscore=0.297, accuracy_frame=0.072, threshold=0.147
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=41.pred
+Saving Model: ./model/agentAct_4769/weights/ep=41_f1=0.297_frameAcc=0.072_th=0.147.h5
+<Epoch 42>
+Epoch 1/1
+12s - loss: 0.0480
+ep=42, precision=0.239, recall=0.386, fscore=0.295, accuracy_frame=0.088, threshold=0.155
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=42.pred
+Saving Model: ./model/agentAct_4769/weights/ep=42_f1=0.295_frameAcc=0.088_th=0.155.h5
+<Epoch 43>
+Epoch 1/1
+18s - loss: 0.0478
+ep=43, precision=0.219, recall=0.399, fscore=0.283, accuracy_frame=0.083, threshold=0.143
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=43.pred
+Saving Model: ./model/agentAct_4769/weights/ep=43_f1=0.283_frameAcc=0.083_th=0.143.h5
+<Epoch 44>
+Epoch 1/1
+18s - loss: 0.0476
+ep=44, precision=0.226, recall=0.405, fscore=0.290, accuracy_frame=0.083, threshold=0.128
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=44.pred
+Saving Model: ./model/agentAct_4769/weights/ep=44_f1=0.290_frameAcc=0.083_th=0.128.h5
+<Epoch 45>
+Epoch 1/1
+19s - loss: 0.0474
+ep=45, precision=0.253, recall=0.364, fscore=0.298, accuracy_frame=0.110, threshold=0.141
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=45.pred
+Saving Model: ./model/agentAct_4769/weights/ep=45_f1=0.298_frameAcc=0.110_th=0.141.h5
+<Epoch 46>
+Epoch 1/1
+18s - loss: 0.0471
+ep=46, precision=0.223, recall=0.392, fscore=0.284, accuracy_frame=0.095, threshold=0.135
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=46.pred
+Saving Model: ./model/agentAct_4769/weights/ep=46_f1=0.284_frameAcc=0.095_th=0.135.h5
+<Epoch 47>
+Epoch 1/1
+18s - loss: 0.0470
+ep=47, precision=0.216, recall=0.448, fscore=0.292, accuracy_frame=0.063, threshold=0.111
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=47.pred
+Saving Model: ./model/agentAct_4769/weights/ep=47_f1=0.292_frameAcc=0.063_th=0.111.h5
+<Epoch 48>
+Epoch 1/1
+18s - loss: 0.0469
+ep=48, precision=0.243, recall=0.371, fscore=0.293, accuracy_frame=0.112, threshold=0.148
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=48.pred
+Saving Model: ./model/agentAct_4769/weights/ep=48_f1=0.293_frameAcc=0.112_th=0.148.h5
+<Epoch 49>
+Epoch 1/1
+18s - loss: 0.0464
+ep=49, precision=0.233, recall=0.368, fscore=0.285, accuracy_frame=0.111, threshold=0.158
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=49.pred
+Saving Model: ./model/agentAct_4769/weights/ep=49_f1=0.285_frameAcc=0.111_th=0.158.h5
+<Epoch 50>
+Epoch 1/1
+18s - loss: 0.0454
+ep=50, precision=0.217, recall=0.374, fscore=0.275, accuracy_frame=0.121, threshold=0.143
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=50.pred
+Saving Model: ./model/agentAct_4769/weights/ep=50_f1=0.275_frameAcc=0.121_th=0.143.h5
+<Epoch 51>
+Epoch 1/1
+17s - loss: 0.0457
+ep=51, precision=0.239, recall=0.362, fscore=0.288, accuracy_frame=0.124, threshold=0.136
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=51.pred
+Saving Model: ./model/agentAct_4769/weights/ep=51_f1=0.288_frameAcc=0.124_th=0.136.h5
+<Epoch 52>
+Epoch 1/1
+12s - loss: 0.0454
+ep=52, precision=0.225, recall=0.363, fscore=0.278, accuracy_frame=0.118, threshold=0.141
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=52.pred
+Saving Model: ./model/agentAct_4769/weights/ep=52_f1=0.278_frameAcc=0.118_th=0.141.h5
+<Epoch 53>
+Epoch 1/1
+18s - loss: 0.0452
+ep=53, precision=0.233, recall=0.397, fscore=0.294, accuracy_frame=0.097, threshold=0.127
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=53.pred
+Saving Model: ./model/agentAct_4769/weights/ep=53_f1=0.294_frameAcc=0.097_th=0.127.h5
+<Epoch 54>
+Epoch 1/1
+19s - loss: 0.0450
+ep=54, precision=0.225, recall=0.379, fscore=0.282, accuracy_frame=0.100, threshold=0.131
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=54.pred
+Saving Model: ./model/agentAct_4769/weights/ep=54_f1=0.282_frameAcc=0.100_th=0.131.h5
+<Epoch 55>
+Epoch 1/1
+19s - loss: 0.0444
+ep=55, precision=0.232, recall=0.349, fscore=0.279, accuracy_frame=0.121, threshold=0.161
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=55.pred
+Saving Model: ./model/agentAct_4769/weights/ep=55_f1=0.279_frameAcc=0.121_th=0.161.h5
+<Epoch 56>
+Epoch 1/1
+18s - loss: 0.0441
+ep=56, precision=0.219, recall=0.414, fscore=0.286, accuracy_frame=0.095, threshold=0.110
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=56.pred
+Saving Model: ./model/agentAct_4769/weights/ep=56_f1=0.286_frameAcc=0.095_th=0.110.h5
+<Epoch 57>
+Epoch 1/1
+19s - loss: 0.0441
+ep=57, precision=0.223, recall=0.384, fscore=0.282, accuracy_frame=0.089, threshold=0.125
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=57.pred
+Saving Model: ./model/agentAct_4769/weights/ep=57_f1=0.282_frameAcc=0.089_th=0.125.h5
+<Epoch 58>
+Epoch 1/1
+19s - loss: 0.0439
+ep=58, precision=0.216, recall=0.363, fscore=0.271, accuracy_frame=0.108, threshold=0.161
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=58.pred
+Saving Model: ./model/agentAct_4769/weights/ep=58_f1=0.271_frameAcc=0.108_th=0.161.h5
+<Epoch 59>
+Epoch 1/1
+19s - loss: 0.0433
+ep=59, precision=0.231, recall=0.367, fscore=0.284, accuracy_frame=0.110, threshold=0.136
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=59.pred
+Saving Model: ./model/agentAct_4769/weights/ep=59_f1=0.284_frameAcc=0.110_th=0.136.h5
+<Epoch 60>
+Epoch 1/1
+18s - loss: 0.0435
+ep=60, precision=0.220, recall=0.360, fscore=0.273, accuracy_frame=0.110, threshold=0.119
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=60.pred
+Saving Model: ./model/agentAct_4769/weights/ep=60_f1=0.273_frameAcc=0.110_th=0.119.h5
+<Epoch 61>
+Epoch 1/1
+13s - loss: 0.0429
+ep=61, precision=0.223, recall=0.352, fscore=0.273, accuracy_frame=0.121, threshold=0.155
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=61.pred
+Saving Model: ./model/agentAct_4769/weights/ep=61_f1=0.273_frameAcc=0.121_th=0.155.h5
+<Epoch 62>
+Epoch 1/1
+15s - loss: 0.0423
+ep=62, precision=0.207, recall=0.392, fscore=0.271, accuracy_frame=0.101, threshold=0.105
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=62.pred
+Saving Model: ./model/agentAct_4769/weights/ep=62_f1=0.271_frameAcc=0.101_th=0.105.h5
+<Epoch 63>
+Epoch 1/1
+13s - loss: 0.0423
+ep=63, precision=0.193, recall=0.406, fscore=0.261, accuracy_frame=0.083, threshold=0.094
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=63.pred
+Saving Model: ./model/agentAct_4769/weights/ep=63_f1=0.261_frameAcc=0.083_th=0.094.h5
+<Epoch 64>
+Epoch 1/1
+12s - loss: 0.0421
+ep=64, precision=0.205, recall=0.397, fscore=0.270, accuracy_frame=0.091, threshold=0.104
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=64.pred
+Saving Model: ./model/agentAct_4769/weights/ep=64_f1=0.270_frameAcc=0.091_th=0.104.h5
+<Epoch 65>
+Epoch 1/1
+19s - loss: 0.0419
+ep=65, precision=0.234, recall=0.338, fscore=0.276, accuracy_frame=0.140, threshold=0.139
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=65.pred
+Saving Model: ./model/agentAct_4769/weights/ep=65_f1=0.276_frameAcc=0.140_th=0.139.h5
+<Epoch 66>
+Epoch 1/1
+19s - loss: 0.0413
+ep=66, precision=0.205, recall=0.391, fscore=0.269, accuracy_frame=0.098, threshold=0.111
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=66.pred
+Saving Model: ./model/agentAct_4769/weights/ep=66_f1=0.269_frameAcc=0.098_th=0.111.h5
+<Epoch 67>
+Epoch 1/1
+19s - loss: 0.0413
+ep=67, precision=0.220, recall=0.342, fscore=0.267, accuracy_frame=0.131, threshold=0.141
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=67.pred
+Saving Model: ./model/agentAct_4769/weights/ep=67_f1=0.267_frameAcc=0.131_th=0.141.h5
+<Epoch 68>
+Epoch 1/1
+19s - loss: 0.0414
+ep=68, precision=0.210, recall=0.342, fscore=0.261, accuracy_frame=0.121, threshold=0.140
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=68.pred
+Saving Model: ./model/agentAct_4769/weights/ep=68_f1=0.261_frameAcc=0.121_th=0.140.h5
+<Epoch 69>
+Epoch 1/1
+19s - loss: 0.0409
+ep=69, precision=0.210, recall=0.341, fscore=0.260, accuracy_frame=0.109, threshold=0.148
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=69.pred
+Saving Model: ./model/agentAct_4769/weights/ep=69_f1=0.260_frameAcc=0.109_th=0.148.h5
+<Epoch 70>
+Epoch 1/1
+19s - loss: 0.0407
+ep=70, precision=0.206, recall=0.368, fscore=0.264, accuracy_frame=0.120, threshold=0.119
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=70.pred
+Saving Model: ./model/agentAct_4769/weights/ep=70_f1=0.264_frameAcc=0.120_th=0.119.h5
+<Epoch 71>
+Epoch 1/1
+19s - loss: 0.0401
+ep=71, precision=0.182, recall=0.419, fscore=0.254, accuracy_frame=0.077, threshold=0.099
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=71.pred
+Saving Model: ./model/agentAct_4769/weights/ep=71_f1=0.254_frameAcc=0.077_th=0.099.h5
+<Epoch 72>
+Epoch 1/1
+18s - loss: 0.0397
+ep=72, precision=0.205, recall=0.359, fscore=0.261, accuracy_frame=0.113, threshold=0.120
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=72.pred
+Saving Model: ./model/agentAct_4769/weights/ep=72_f1=0.261_frameAcc=0.113_th=0.120.h5
+<Epoch 73>
+Epoch 1/1
+16s - loss: 0.0397
+ep=73, precision=0.215, recall=0.340, fscore=0.263, accuracy_frame=0.131, threshold=0.141
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=73.pred
+Saving Model: ./model/agentAct_4769/weights/ep=73_f1=0.263_frameAcc=0.131_th=0.141.h5
+<Epoch 74>
+Epoch 1/1
+14s - loss: 0.0393
+ep=74, precision=0.204, recall=0.359, fscore=0.260, accuracy_frame=0.123, threshold=0.119
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=74.pred
+Saving Model: ./model/agentAct_4769/weights/ep=74_f1=0.260_frameAcc=0.123_th=0.119.h5
+<Epoch 75>
+Epoch 1/1
+19s - loss: 0.0392
+ep=75, precision=0.205, recall=0.348, fscore=0.258, accuracy_frame=0.120, threshold=0.110
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=75.pred
+Saving Model: ./model/agentAct_4769/weights/ep=75_f1=0.258_frameAcc=0.120_th=0.110.h5
+<Epoch 76>
+Epoch 1/1
+19s - loss: 0.0387
+ep=76, precision=0.203, recall=0.375, fscore=0.264, accuracy_frame=0.112, threshold=0.090
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=76.pred
+Saving Model: ./model/agentAct_4769/weights/ep=76_f1=0.264_frameAcc=0.112_th=0.090.h5
+<Epoch 77>
+Epoch 1/1
+19s - loss: 0.0385
+ep=77, precision=0.183, recall=0.416, fscore=0.254, accuracy_frame=0.085, threshold=0.076
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=77.pred
+Saving Model: ./model/agentAct_4769/weights/ep=77_f1=0.254_frameAcc=0.085_th=0.076.h5
+<Epoch 78>
+Epoch 1/1
+18s - loss: 0.0384
+ep=78, precision=0.202, recall=0.374, fscore=0.262, accuracy_frame=0.111, threshold=0.105
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=78.pred
+Saving Model: ./model/agentAct_4769/weights/ep=78_f1=0.262_frameAcc=0.111_th=0.105.h5
+<Epoch 79>
+Epoch 1/1
+18s - loss: 0.0383
+ep=79, precision=0.178, recall=0.398, fscore=0.246, accuracy_frame=0.095, threshold=0.069
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=79.pred
+Saving Model: ./model/agentAct_4769/weights/ep=79_f1=0.246_frameAcc=0.095_th=0.069.h5
+<Epoch 80>
+Epoch 1/1
+18s - loss: 0.0378
+ep=80, precision=0.185, recall=0.375, fscore=0.248, accuracy_frame=0.101, threshold=0.087
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=80.pred
+Saving Model: ./model/agentAct_4769/weights/ep=80_f1=0.248_frameAcc=0.101_th=0.087.h5
+<Epoch 81>
+Epoch 1/1
+18s - loss: 0.0375
+ep=81, precision=0.200, recall=0.337, fscore=0.251, accuracy_frame=0.126, threshold=0.132
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=81.pred
+Saving Model: ./model/agentAct_4769/weights/ep=81_f1=0.251_frameAcc=0.126_th=0.132.h5
+<Epoch 82>
+Epoch 1/1
+17s - loss: 0.0374
+ep=82, precision=0.206, recall=0.358, fscore=0.261, accuracy_frame=0.123, threshold=0.133
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=82.pred
+Saving Model: ./model/agentAct_4769/weights/ep=82_f1=0.261_frameAcc=0.123_th=0.133.h5
+<Epoch 83>
+Epoch 1/1
+15s - loss: 0.0372
+ep=83, precision=0.189, recall=0.350, fscore=0.246, accuracy_frame=0.117, threshold=0.115
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=83.pred
+Saving Model: ./model/agentAct_4769/weights/ep=83_f1=0.246_frameAcc=0.117_th=0.115.h5
+<Epoch 84>
+Epoch 1/1
+14s - loss: 0.0368
+ep=84, precision=0.215, recall=0.324, fscore=0.259, accuracy_frame=0.151, threshold=0.114
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=84.pred
+Saving Model: ./model/agentAct_4769/weights/ep=84_f1=0.259_frameAcc=0.151_th=0.114.h5
+<Epoch 85>
+Epoch 1/1
+14s - loss: 0.0366
+ep=85, precision=0.212, recall=0.326, fscore=0.257, accuracy_frame=0.147, threshold=0.155
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=85.pred
+Saving Model: ./model/agentAct_4769/weights/ep=85_f1=0.257_frameAcc=0.147_th=0.155.h5
+<Epoch 86>
+Epoch 1/1
+14s - loss: 0.0365
+ep=86, precision=0.191, recall=0.357, fscore=0.249, accuracy_frame=0.110, threshold=0.123
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=86.pred
+Saving Model: ./model/agentAct_4769/weights/ep=86_f1=0.249_frameAcc=0.110_th=0.123.h5
+<Epoch 87>
+Epoch 1/1
+8s - loss: 0.0365
+ep=87, precision=0.190, recall=0.355, fscore=0.248, accuracy_frame=0.126, threshold=0.096
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=87.pred
+Saving Model: ./model/agentAct_4769/weights/ep=87_f1=0.248_frameAcc=0.126_th=0.096.h5
+<Epoch 88>
+Epoch 1/1
+14s - loss: 0.0356
+ep=88, precision=0.179, recall=0.355, fscore=0.238, accuracy_frame=0.108, threshold=0.098
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=88.pred
+Saving Model: ./model/agentAct_4769/weights/ep=88_f1=0.238_frameAcc=0.108_th=0.098.h5
+<Epoch 89>
+Epoch 1/1
+18s - loss: 0.0357
+ep=89, precision=0.186, recall=0.345, fscore=0.242, accuracy_frame=0.123, threshold=0.098
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=89.pred
+Saving Model: ./model/agentAct_4769/weights/ep=89_f1=0.242_frameAcc=0.123_th=0.098.h5
+<Epoch 90>
+Epoch 1/1
+18s - loss: 0.0351
+ep=90, precision=0.181, recall=0.383, fscore=0.245, accuracy_frame=0.108, threshold=0.098
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=90.pred
+Saving Model: ./model/agentAct_4769/weights/ep=90_f1=0.245_frameAcc=0.108_th=0.098.h5
+<Epoch 91>
+Epoch 1/1
+18s - loss: 0.0355
+ep=91, precision=0.187, recall=0.367, fscore=0.248, accuracy_frame=0.104, threshold=0.093
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=91.pred
+Saving Model: ./model/agentAct_4769/weights/ep=91_f1=0.248_frameAcc=0.104_th=0.093.h5
+<Epoch 92>
+Epoch 1/1
+18s - loss: 0.0349
+ep=92, precision=0.203, recall=0.298, fscore=0.241, accuracy_frame=0.151, threshold=0.137
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=92.pred
+Saving Model: ./model/agentAct_4769/weights/ep=92_f1=0.241_frameAcc=0.151_th=0.137.h5
+<Epoch 93>
+Epoch 1/1
+18s - loss: 0.0347
+ep=93, precision=0.184, recall=0.354, fscore=0.242, accuracy_frame=0.111, threshold=0.083
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=93.pred
+Saving Model: ./model/agentAct_4769/weights/ep=93_f1=0.242_frameAcc=0.111_th=0.083.h5
+<Epoch 94>
+Epoch 1/1
+18s - loss: 0.0343
+ep=94, precision=0.180, recall=0.347, fscore=0.237, accuracy_frame=0.117, threshold=0.099
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=94.pred
+Saving Model: ./model/agentAct_4769/weights/ep=94_f1=0.237_frameAcc=0.117_th=0.099.h5
+<Epoch 95>
+Epoch 1/1
+18s - loss: 0.0342
+ep=95, precision=0.169, recall=0.403, fscore=0.238, accuracy_frame=0.085, threshold=0.060
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=95.pred
+Saving Model: ./model/agentAct_4769/weights/ep=95_f1=0.238_frameAcc=0.085_th=0.060.h5
+<Epoch 96>
+Epoch 1/1
+17s - loss: 0.0340
+ep=96, precision=0.181, recall=0.352, fscore=0.239, accuracy_frame=0.116, threshold=0.089
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=96.pred
+Saving Model: ./model/agentAct_4769/weights/ep=96_f1=0.239_frameAcc=0.116_th=0.089.h5
+<Epoch 97>
+Epoch 1/1
+16s - loss: 0.0338
+ep=97, precision=0.183, recall=0.350, fscore=0.241, accuracy_frame=0.110, threshold=0.099
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=97.pred
+Saving Model: ./model/agentAct_4769/weights/ep=97_f1=0.241_frameAcc=0.110_th=0.099.h5
+<Epoch 98>
+Epoch 1/1
+18s - loss: 0.0336
+ep=98, precision=0.198, recall=0.322, fscore=0.245, accuracy_frame=0.138, threshold=0.117
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=98.pred
+Saving Model: ./model/agentAct_4769/weights/ep=98_f1=0.245_frameAcc=0.138_th=0.117.h5
+<Epoch 99>
+Epoch 1/1
+18s - loss: 0.0334
+ep=99, precision=0.191, recall=0.350, fscore=0.247, accuracy_frame=0.128, threshold=0.094
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=99.pred
+Saving Model: ./model/agentAct_4769/weights/ep=99_f1=0.247_frameAcc=0.128_th=0.094.h5
+<Epoch 100>
+Epoch 1/1
+18s - loss: 0.0333
+ep=100, precision=0.193, recall=0.345, fscore=0.247, accuracy_frame=0.131, threshold=0.096
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=100.pred
+Saving Model: ./model/agentAct_4769/weights/ep=100_f1=0.247_frameAcc=0.131_th=0.096.h5
+<Epoch 101>
+Epoch 1/1
+18s - loss: 0.0331
+ep=101, precision=0.176, recall=0.346, fscore=0.234, accuracy_frame=0.120, threshold=0.102
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=101.pred
+Saving Model: ./model/agentAct_4769/weights/ep=101_f1=0.234_frameAcc=0.120_th=0.102.h5
+<Epoch 102>
+Epoch 1/1
+18s - loss: 0.0329
+ep=102, precision=0.186, recall=0.353, fscore=0.244, accuracy_frame=0.119, threshold=0.111
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=102.pred
+Saving Model: ./model/agentAct_4769/weights/ep=102_f1=0.244_frameAcc=0.119_th=0.111.h5
+<Epoch 103>
+Epoch 1/1
+18s - loss: 0.0323
+ep=103, precision=0.182, recall=0.319, fscore=0.232, accuracy_frame=0.144, threshold=0.088
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=103.pred
+Saving Model: ./model/agentAct_4769/weights/ep=103_f1=0.232_frameAcc=0.144_th=0.088.h5
+<Epoch 104>
+Epoch 1/1
+18s - loss: 0.0323
+ep=104, precision=0.191, recall=0.348, fscore=0.247, accuracy_frame=0.127, threshold=0.109
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=104.pred
+Saving Model: ./model/agentAct_4769/weights/ep=104_f1=0.247_frameAcc=0.127_th=0.109.h5
+<Epoch 105>
+Epoch 1/1
+18s - loss: 0.0320
+ep=105, precision=0.166, recall=0.390, fscore=0.233, accuracy_frame=0.108, threshold=0.069
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=105.pred
+Saving Model: ./model/agentAct_4769/weights/ep=105_f1=0.233_frameAcc=0.108_th=0.069.h5
+<Epoch 106>
+Epoch 1/1
+17s - loss: 0.0321
+ep=106, precision=0.176, recall=0.355, fscore=0.235, accuracy_frame=0.117, threshold=0.076
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=106.pred
+Saving Model: ./model/agentAct_4769/weights/ep=106_f1=0.235_frameAcc=0.117_th=0.076.h5
+<Epoch 107>
+Epoch 1/1
+12s - loss: 0.0317
+ep=107, precision=0.195, recall=0.318, fscore=0.242, accuracy_frame=0.139, threshold=0.101
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=107.pred
+Saving Model: ./model/agentAct_4769/weights/ep=107_f1=0.242_frameAcc=0.139_th=0.101.h5
+<Epoch 108>
+Epoch 1/1
+14s - loss: 0.0314
+ep=108, precision=0.193, recall=0.306, fscore=0.237, accuracy_frame=0.146, threshold=0.093
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=108.pred
+Saving Model: ./model/agentAct_4769/weights/ep=108_f1=0.237_frameAcc=0.146_th=0.093.h5
+<Epoch 109>
+Epoch 1/1
+14s - loss: 0.0312
+ep=109, precision=0.175, recall=0.349, fscore=0.233, accuracy_frame=0.111, threshold=0.079
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=109.pred
+Saving Model: ./model/agentAct_4769/weights/ep=109_f1=0.233_frameAcc=0.111_th=0.079.h5
+<Epoch 110>
+Epoch 1/1
+14s - loss: 0.0309
+ep=110, precision=0.184, recall=0.350, fscore=0.242, accuracy_frame=0.125, threshold=0.071
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=110.pred
+Saving Model: ./model/agentAct_4769/weights/ep=110_f1=0.242_frameAcc=0.125_th=0.071.h5
+<Epoch 111>
+Epoch 1/1
+11s - loss: 0.0308
+ep=111, precision=0.178, recall=0.346, fscore=0.235, accuracy_frame=0.124, threshold=0.081
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=111.pred
+Saving Model: ./model/agentAct_4769/weights/ep=111_f1=0.235_frameAcc=0.124_th=0.081.h5
+<Epoch 112>
+Epoch 1/1
+14s - loss: 0.0306
+ep=112, precision=0.191, recall=0.306, fscore=0.235, accuracy_frame=0.145, threshold=0.098
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=112.pred
+Saving Model: ./model/agentAct_4769/weights/ep=112_f1=0.235_frameAcc=0.145_th=0.098.h5
+<Epoch 113>
+Epoch 1/1
+18s - loss: 0.0305
+ep=113, precision=0.164, recall=0.366, fscore=0.227, accuracy_frame=0.102, threshold=0.061
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=113.pred
+Saving Model: ./model/agentAct_4769/weights/ep=113_f1=0.227_frameAcc=0.102_th=0.061.h5
+<Epoch 114>
+Epoch 1/1
+18s - loss: 0.0305
+ep=114, precision=0.185, recall=0.312, fscore=0.232, accuracy_frame=0.150, threshold=0.105
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=114.pred
+Saving Model: ./model/agentAct_4769/weights/ep=114_f1=0.232_frameAcc=0.150_th=0.105.h5
+<Epoch 115>
+Epoch 1/1
+18s - loss: 0.0298
+ep=115, precision=0.169, recall=0.342, fscore=0.226, accuracy_frame=0.118, threshold=0.104
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=115.pred
+Saving Model: ./model/agentAct_4769/weights/ep=115_f1=0.226_frameAcc=0.118_th=0.104.h5
+<Epoch 116>
+Epoch 1/1
+18s - loss: 0.0297
+ep=116, precision=0.161, recall=0.358, fscore=0.222, accuracy_frame=0.109, threshold=0.044
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=116.pred
+Saving Model: ./model/agentAct_4769/weights/ep=116_f1=0.222_frameAcc=0.109_th=0.044.h5
+<Epoch 117>
+Epoch 1/1
+18s - loss: 0.0300
+ep=117, precision=0.189, recall=0.302, fscore=0.233, accuracy_frame=0.151, threshold=0.095
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=117.pred
+Saving Model: ./model/agentAct_4769/weights/ep=117_f1=0.233_frameAcc=0.151_th=0.095.h5
+<Epoch 118>
+Epoch 1/1
+18s - loss: 0.0296
+ep=118, precision=0.174, recall=0.353, fscore=0.233, accuracy_frame=0.119, threshold=0.080
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=118.pred
+Saving Model: ./model/agentAct_4769/weights/ep=118_f1=0.233_frameAcc=0.119_th=0.080.h5
+<Epoch 119>
+Epoch 1/1
+18s - loss: 0.0291
+ep=119, precision=0.163, recall=0.362, fscore=0.224, accuracy_frame=0.113, threshold=0.052
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=119.pred
+Saving Model: ./model/agentAct_4769/weights/ep=119_f1=0.224_frameAcc=0.113_th=0.052.h5
+<Epoch 120>
+Epoch 1/1
+17s - loss: 0.0291
+ep=120, precision=0.192, recall=0.316, fscore=0.239, accuracy_frame=0.133, threshold=0.134
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=120.pred
+Saving Model: ./model/agentAct_4769/weights/ep=120_f1=0.239_frameAcc=0.133_th=0.134.h5
+<Epoch 121>
+Epoch 1/1
+16s - loss: 0.0290
+ep=121, precision=0.190, recall=0.297, fscore=0.232, accuracy_frame=0.157, threshold=0.106
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=121.pred
+Saving Model: ./model/agentAct_4769/weights/ep=121_f1=0.232_frameAcc=0.157_th=0.106.h5
+<Epoch 122>
+Epoch 1/1
+18s - loss: 0.0291
+ep=122, precision=0.162, recall=0.357, fscore=0.223, accuracy_frame=0.108, threshold=0.069
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=122.pred
+Saving Model: ./model/agentAct_4769/weights/ep=122_f1=0.223_frameAcc=0.108_th=0.069.h5
+<Epoch 123>
+Epoch 1/1
+18s - loss: 0.0288
+ep=123, precision=0.166, recall=0.371, fscore=0.229, accuracy_frame=0.119, threshold=0.046
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=123.pred
+Saving Model: ./model/agentAct_4769/weights/ep=123_f1=0.229_frameAcc=0.119_th=0.046.h5
+<Epoch 124>
+Epoch 1/1
+18s - loss: 0.0282
+ep=124, precision=0.181, recall=0.314, fscore=0.230, accuracy_frame=0.136, threshold=0.087
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=124.pred
+Saving Model: ./model/agentAct_4769/weights/ep=124_f1=0.230_frameAcc=0.136_th=0.087.h5
+<Epoch 125>
+Epoch 1/1
+18s - loss: 0.0281
+ep=125, precision=0.161, recall=0.372, fscore=0.225, accuracy_frame=0.108, threshold=0.049
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=125.pred
+Saving Model: ./model/agentAct_4769/weights/ep=125_f1=0.225_frameAcc=0.108_th=0.049.h5
+<Epoch 126>
+Epoch 1/1
+18s - loss: 0.0283
+ep=126, precision=0.176, recall=0.286, fscore=0.218, accuracy_frame=0.163, threshold=0.086
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=126.pred
+Saving Model: ./model/agentAct_4769/weights/ep=126_f1=0.218_frameAcc=0.163_th=0.086.h5
+<Epoch 127>
+Epoch 1/1
+18s - loss: 0.0280
+ep=127, precision=0.177, recall=0.328, fscore=0.230, accuracy_frame=0.146, threshold=0.060
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=127.pred
+Saving Model: ./model/agentAct_4769/weights/ep=127_f1=0.230_frameAcc=0.146_th=0.060.h5
+<Epoch 128>
+Epoch 1/1
+18s - loss: 0.0274
+ep=128, precision=0.187, recall=0.284, fscore=0.226, accuracy_frame=0.161, threshold=0.118
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=128.pred
+Saving Model: ./model/agentAct_4769/weights/ep=128_f1=0.226_frameAcc=0.161_th=0.118.h5
+<Epoch 129>
+Epoch 1/1
+18s - loss: 0.0275
+ep=129, precision=0.173, recall=0.312, fscore=0.223, accuracy_frame=0.150, threshold=0.071
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=129.pred
+Saving Model: ./model/agentAct_4769/weights/ep=129_f1=0.223_frameAcc=0.150_th=0.071.h5
+<Epoch 130>
+Epoch 1/1
+17s - loss: 0.0274
+ep=130, precision=0.193, recall=0.302, fscore=0.235, accuracy_frame=0.151, threshold=0.095
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=130.pred
+Saving Model: ./model/agentAct_4769/weights/ep=130_f1=0.235_frameAcc=0.151_th=0.095.h5
+<Epoch 131>
+Epoch 1/1
+11s - loss: 0.0271
+ep=131, precision=0.178, recall=0.326, fscore=0.230, accuracy_frame=0.143, threshold=0.076
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=131.pred
+Saving Model: ./model/agentAct_4769/weights/ep=131_f1=0.230_frameAcc=0.143_th=0.076.h5
+<Epoch 132>
+Epoch 1/1
+14s - loss: 0.0271
+ep=132, precision=0.195, recall=0.294, fscore=0.234, accuracy_frame=0.165, threshold=0.104
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=132.pred
+Saving Model: ./model/agentAct_4769/weights/ep=132_f1=0.234_frameAcc=0.165_th=0.104.h5
+<Epoch 133>
+Epoch 1/1
+14s - loss: 0.0269
+ep=133, precision=0.167, recall=0.343, fscore=0.225, accuracy_frame=0.128, threshold=0.060
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=133.pred
+Saving Model: ./model/agentAct_4769/weights/ep=133_f1=0.225_frameAcc=0.128_th=0.060.h5
+<Epoch 134>
+Epoch 1/1
+14s - loss: 0.0267
+ep=134, precision=0.185, recall=0.276, fscore=0.222, accuracy_frame=0.172, threshold=0.095
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=134.pred
+Saving Model: ./model/agentAct_4769/weights/ep=134_f1=0.222_frameAcc=0.172_th=0.095.h5
+<Epoch 135>
+Epoch 1/1
+11s - loss: 0.0264
+ep=135, precision=0.176, recall=0.323, fscore=0.228, accuracy_frame=0.147, threshold=0.063
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=135.pred
+Saving Model: ./model/agentAct_4769/weights/ep=135_f1=0.228_frameAcc=0.147_th=0.063.h5
+<Epoch 136>
+Epoch 1/1
+14s - loss: 0.0263
+ep=136, precision=0.169, recall=0.344, fscore=0.227, accuracy_frame=0.122, threshold=0.069
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=136.pred
+Saving Model: ./model/agentAct_4769/weights/ep=136_f1=0.227_frameAcc=0.122_th=0.069.h5
+<Epoch 137>
+Epoch 1/1
+18s - loss: 0.0267
+ep=137, precision=0.170, recall=0.315, fscore=0.221, accuracy_frame=0.135, threshold=0.070
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=137.pred
+Saving Model: ./model/agentAct_4769/weights/ep=137_f1=0.221_frameAcc=0.135_th=0.070.h5
+<Epoch 138>
+Epoch 1/1
+18s - loss: 0.0264
+ep=138, precision=0.191, recall=0.271, fscore=0.224, accuracy_frame=0.173, threshold=0.104
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=138.pred
+Saving Model: ./model/agentAct_4769/weights/ep=138_f1=0.224_frameAcc=0.173_th=0.104.h5
+<Epoch 139>
+Epoch 1/1
+18s - loss: 0.0263
+ep=139, precision=0.218, recall=0.239, fscore=0.228, accuracy_frame=0.202, threshold=0.154
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=139.pred
+Saving Model: ./model/agentAct_4769/weights/ep=139_f1=0.228_frameAcc=0.202_th=0.154.h5
+<Epoch 140>
+Epoch 1/1
+18s - loss: 0.0258
+ep=140, precision=0.169, recall=0.336, fscore=0.225, accuracy_frame=0.126, threshold=0.081
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=140.pred
+Saving Model: ./model/agentAct_4769/weights/ep=140_f1=0.225_frameAcc=0.126_th=0.081.h5
+<Epoch 141>
+Epoch 1/1
+18s - loss: 0.0258
+ep=141, precision=0.174, recall=0.326, fscore=0.226, accuracy_frame=0.135, threshold=0.059
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=141.pred
+Saving Model: ./model/agentAct_4769/weights/ep=141_f1=0.226_frameAcc=0.135_th=0.059.h5
+<Epoch 142>
+Epoch 1/1
+18s - loss: 0.0257
+ep=142, precision=0.165, recall=0.335, fscore=0.221, accuracy_frame=0.135, threshold=0.046
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=142.pred
+Saving Model: ./model/agentAct_4769/weights/ep=142_f1=0.221_frameAcc=0.135_th=0.046.h5
+<Epoch 143>
+Epoch 1/1
+18s - loss: 0.0254
+ep=143, precision=0.177, recall=0.280, fscore=0.217, accuracy_frame=0.163, threshold=0.083
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=143.pred
+Saving Model: ./model/agentAct_4769/weights/ep=143_f1=0.217_frameAcc=0.163_th=0.083.h5
+<Epoch 144>
+Epoch 1/1
+17s - loss: 0.0250
+ep=144, precision=0.149, recall=0.356, fscore=0.210, accuracy_frame=0.122, threshold=0.031
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=144.pred
+Saving Model: ./model/agentAct_4769/weights/ep=144_f1=0.210_frameAcc=0.122_th=0.031.h5
+<Epoch 145>
+Epoch 1/1
+16s - loss: 0.0249
+ep=145, precision=0.180, recall=0.290, fscore=0.222, accuracy_frame=0.151, threshold=0.073
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=145.pred
+Saving Model: ./model/agentAct_4769/weights/ep=145_f1=0.222_frameAcc=0.151_th=0.073.h5
+<Epoch 146>
+Epoch 1/1
+18s - loss: 0.0249
+ep=146, precision=0.201, recall=0.268, fscore=0.230, accuracy_frame=0.176, threshold=0.131
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=146.pred
+Saving Model: ./model/agentAct_4769/weights/ep=146_f1=0.230_frameAcc=0.176_th=0.131.h5
+<Epoch 147>
+Epoch 1/1
+18s - loss: 0.0245
+ep=147, precision=0.169, recall=0.304, fscore=0.218, accuracy_frame=0.141, threshold=0.073
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=147.pred
+Saving Model: ./model/agentAct_4769/weights/ep=147_f1=0.218_frameAcc=0.141_th=0.073.h5
+<Epoch 148>
+Epoch 1/1
+18s - loss: 0.0248
+ep=148, precision=0.183, recall=0.296, fscore=0.227, accuracy_frame=0.146, threshold=0.090
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=148.pred
+Saving Model: ./model/agentAct_4769/weights/ep=148_f1=0.227_frameAcc=0.146_th=0.090.h5
+<Epoch 149>
+Epoch 1/1
+18s - loss: 0.0242
+ep=149, precision=0.173, recall=0.315, fscore=0.223, accuracy_frame=0.141, threshold=0.070
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=149.pred
+Saving Model: ./model/agentAct_4769/weights/ep=149_f1=0.223_frameAcc=0.141_th=0.070.h5
+<Epoch 150>
+Epoch 1/1
+18s - loss: 0.0243
+ep=150, precision=0.159, recall=0.336, fscore=0.216, accuracy_frame=0.138, threshold=0.046
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=150.pred
+Saving Model: ./model/agentAct_4769/weights/ep=150_f1=0.216_frameAcc=0.138_th=0.046.h5
+<Epoch 151>
+Epoch 1/1
+18s - loss: 0.0245
+ep=151, precision=0.180, recall=0.284, fscore=0.221, accuracy_frame=0.156, threshold=0.090
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=151.pred
+Saving Model: ./model/agentAct_4769/weights/ep=151_f1=0.221_frameAcc=0.156_th=0.090.h5
+<Epoch 152>
+Epoch 1/1
+18s - loss: 0.0243
+ep=152, precision=0.181, recall=0.313, fscore=0.230, accuracy_frame=0.145, threshold=0.078
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=152.pred
+Saving Model: ./model/agentAct_4769/weights/ep=152_f1=0.230_frameAcc=0.145_th=0.078.h5
+<Epoch 153>
+Epoch 1/1
+18s - loss: 0.0241
+ep=153, precision=0.169, recall=0.290, fscore=0.213, accuracy_frame=0.154, threshold=0.077
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=153.pred
+Saving Model: ./model/agentAct_4769/weights/ep=153_f1=0.213_frameAcc=0.154_th=0.077.h5
+<Epoch 154>
+Epoch 1/1
+17s - loss: 0.0240
+ep=154, precision=0.177, recall=0.279, fscore=0.217, accuracy_frame=0.165, threshold=0.089
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=154.pred
+Saving Model: ./model/agentAct_4769/weights/ep=154_f1=0.217_frameAcc=0.165_th=0.089.h5
+<Epoch 155>
+Epoch 1/1
+12s - loss: 0.0238
+ep=155, precision=0.169, recall=0.305, fscore=0.217, accuracy_frame=0.154, threshold=0.050
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=155.pred
+Saving Model: ./model/agentAct_4769/weights/ep=155_f1=0.217_frameAcc=0.154_th=0.050.h5
+<Epoch 156>
+Epoch 1/1
+14s - loss: 0.0235
+ep=156, precision=0.176, recall=0.288, fscore=0.218, accuracy_frame=0.160, threshold=0.052
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=156.pred
+Saving Model: ./model/agentAct_4769/weights/ep=156_f1=0.218_frameAcc=0.160_th=0.052.h5
+<Epoch 157>
+Epoch 1/1
+14s - loss: 0.0229
+ep=157, precision=0.176, recall=0.287, fscore=0.218, accuracy_frame=0.158, threshold=0.079
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=157.pred
+Saving Model: ./model/agentAct_4769/weights/ep=157_f1=0.218_frameAcc=0.158_th=0.079.h5
+<Epoch 158>
+Epoch 1/1
+14s - loss: 0.0230
+ep=158, precision=0.177, recall=0.283, fscore=0.217, accuracy_frame=0.159, threshold=0.097
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=158.pred
+Saving Model: ./model/agentAct_4769/weights/ep=158_f1=0.217_frameAcc=0.159_th=0.097.h5
+<Epoch 159>
+Epoch 1/1
+11s - loss: 0.0234
+ep=159, precision=0.181, recall=0.284, fscore=0.221, accuracy_frame=0.164, threshold=0.079
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=159.pred
+Saving Model: ./model/agentAct_4769/weights/ep=159_f1=0.221_frameAcc=0.164_th=0.079.h5
+<Epoch 160>
+Epoch 1/1
+14s - loss: 0.0230
+ep=160, precision=0.175, recall=0.296, fscore=0.220, accuracy_frame=0.156, threshold=0.058
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=160.pred
+Saving Model: ./model/agentAct_4769/weights/ep=160_f1=0.220_frameAcc=0.156_th=0.058.h5
+<Epoch 161>
+Epoch 1/1
+18s - loss: 0.0233
+ep=161, precision=0.166, recall=0.329, fscore=0.221, accuracy_frame=0.142, threshold=0.055
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=161.pred
+Saving Model: ./model/agentAct_4769/weights/ep=161_f1=0.221_frameAcc=0.142_th=0.055.h5
+<Epoch 162>
+Epoch 1/1
+18s - loss: 0.0227
+ep=162, precision=0.175, recall=0.303, fscore=0.222, accuracy_frame=0.151, threshold=0.078
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=162.pred
+Saving Model: ./model/agentAct_4769/weights/ep=162_f1=0.222_frameAcc=0.151_th=0.078.h5
+<Epoch 163>
+Epoch 1/1
+19s - loss: 0.0223
+ep=163, precision=0.177, recall=0.308, fscore=0.225, accuracy_frame=0.150, threshold=0.060
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=163.pred
+Saving Model: ./model/agentAct_4769/weights/ep=163_f1=0.225_frameAcc=0.150_th=0.060.h5
+<Epoch 164>
+Epoch 1/1
+18s - loss: 0.0224
+ep=164, precision=0.166, recall=0.327, fscore=0.220, accuracy_frame=0.141, threshold=0.058
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=164.pred
+Saving Model: ./model/agentAct_4769/weights/ep=164_f1=0.220_frameAcc=0.141_th=0.058.h5
+<Epoch 165>
+Epoch 1/1
+18s - loss: 0.0224
+ep=165, precision=0.164, recall=0.289, fscore=0.209, accuracy_frame=0.153, threshold=0.034
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=165.pred
+Saving Model: ./model/agentAct_4769/weights/ep=165_f1=0.209_frameAcc=0.153_th=0.034.h5
+<Epoch 166>
+Epoch 1/1
+18s - loss: 0.0224
+ep=166, precision=0.167, recall=0.306, fscore=0.216, accuracy_frame=0.150, threshold=0.063
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=166.pred
+Saving Model: ./model/agentAct_4769/weights/ep=166_f1=0.216_frameAcc=0.150_th=0.063.h5
+<Epoch 167>
+Epoch 1/1
+18s - loss: 0.0223
+ep=167, precision=0.172, recall=0.294, fscore=0.217, accuracy_frame=0.149, threshold=0.079
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=167.pred
+Saving Model: ./model/agentAct_4769/weights/ep=167_f1=0.217_frameAcc=0.149_th=0.079.h5
+<Epoch 168>
+Epoch 1/1
+17s - loss: 0.0219
+ep=168, precision=0.186, recall=0.285, fscore=0.225, accuracy_frame=0.162, threshold=0.120
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=168.pred
+Saving Model: ./model/agentAct_4769/weights/ep=168_f1=0.225_frameAcc=0.162_th=0.120.h5
+<Epoch 169>
+Epoch 1/1
+16s - loss: 0.0221
+ep=169, precision=0.161, recall=0.295, fscore=0.208, accuracy_frame=0.147, threshold=0.056
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=169.pred
+Saving Model: ./model/agentAct_4769/weights/ep=169_f1=0.208_frameAcc=0.147_th=0.056.h5
+<Epoch 170>
+Epoch 1/1
+18s - loss: 0.0218
+ep=170, precision=0.166, recall=0.318, fscore=0.218, accuracy_frame=0.150, threshold=0.043
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=170.pred
+Saving Model: ./model/agentAct_4769/weights/ep=170_f1=0.218_frameAcc=0.150_th=0.043.h5
+<Epoch 171>
+Epoch 1/1
+18s - loss: 0.0218
+ep=171, precision=0.175, recall=0.284, fscore=0.217, accuracy_frame=0.166, threshold=0.060
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=171.pred
+Saving Model: ./model/agentAct_4769/weights/ep=171_f1=0.217_frameAcc=0.166_th=0.060.h5
+<Epoch 172>
+Epoch 1/1
+18s - loss: 0.0216
+ep=172, precision=0.164, recall=0.282, fscore=0.208, accuracy_frame=0.153, threshold=0.045
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=172.pred
+Saving Model: ./model/agentAct_4769/weights/ep=172_f1=0.208_frameAcc=0.153_th=0.045.h5
+<Epoch 173>
+Epoch 1/1
+18s - loss: 0.0214
+ep=173, precision=0.181, recall=0.268, fscore=0.216, accuracy_frame=0.176, threshold=0.069
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=173.pred
+Saving Model: ./model/agentAct_4769/weights/ep=173_f1=0.216_frameAcc=0.176_th=0.069.h5
+<Epoch 174>
+Epoch 1/1
+18s - loss: 0.0217
+ep=174, precision=0.176, recall=0.273, fscore=0.214, accuracy_frame=0.165, threshold=0.066
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=174.pred
+Saving Model: ./model/agentAct_4769/weights/ep=174_f1=0.214_frameAcc=0.165_th=0.066.h5
+<Epoch 175>
+Epoch 1/1
+18s - loss: 0.0211
+ep=175, precision=0.175, recall=0.290, fscore=0.218, accuracy_frame=0.163, threshold=0.054
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=175.pred
+Saving Model: ./model/agentAct_4769/weights/ep=175_f1=0.218_frameAcc=0.163_th=0.054.h5
+<Epoch 176>
+Epoch 1/1
+18s - loss: 0.0211
+ep=176, precision=0.167, recall=0.288, fscore=0.211, accuracy_frame=0.155, threshold=0.070
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=176.pred
+Saving Model: ./model/agentAct_4769/weights/ep=176_f1=0.211_frameAcc=0.155_th=0.070.h5
+<Epoch 177>
+Epoch 1/1
+18s - loss: 0.0207
+ep=177, precision=0.157, recall=0.324, fscore=0.211, accuracy_frame=0.135, threshold=0.034
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=177.pred
+Saving Model: ./model/agentAct_4769/weights/ep=177_f1=0.211_frameAcc=0.135_th=0.034.h5
+<Epoch 178>
+Epoch 1/1
+17s - loss: 0.0207
+ep=178, precision=0.167, recall=0.301, fscore=0.215, accuracy_frame=0.145, threshold=0.050
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=178.pred
+Saving Model: ./model/agentAct_4769/weights/ep=178_f1=0.215_frameAcc=0.145_th=0.050.h5
+<Epoch 179>
+Epoch 1/1
+11s - loss: 0.0208
+ep=179, precision=0.171, recall=0.301, fscore=0.218, accuracy_frame=0.149, threshold=0.050
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=179.pred
+Saving Model: ./model/agentAct_4769/weights/ep=179_f1=0.218_frameAcc=0.149_th=0.050.h5
+<Epoch 180>
+Epoch 1/1
+14s - loss: 0.0207
+ep=180, precision=0.184, recall=0.267, fscore=0.218, accuracy_frame=0.174, threshold=0.070
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=180.pred
+Saving Model: ./model/agentAct_4769/weights/ep=180_f1=0.218_frameAcc=0.174_th=0.070.h5
+<Epoch 181>
+Epoch 1/1
+14s - loss: 0.0203
+ep=181, precision=0.182, recall=0.274, fscore=0.218, accuracy_frame=0.175, threshold=0.073
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=181.pred
+Saving Model: ./model/agentAct_4769/weights/ep=181_f1=0.218_frameAcc=0.175_th=0.073.h5
+<Epoch 182>
+Epoch 1/1
+14s - loss: 0.0201
+ep=182, precision=0.148, recall=0.306, fscore=0.199, accuracy_frame=0.140, threshold=0.033
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=182.pred
+Saving Model: ./model/agentAct_4769/weights/ep=182_f1=0.199_frameAcc=0.140_th=0.033.h5
+<Epoch 183>
+Epoch 1/1
+11s - loss: 0.0201
+ep=183, precision=0.154, recall=0.307, fscore=0.205, accuracy_frame=0.140, threshold=0.045
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=183.pred
+Saving Model: ./model/agentAct_4769/weights/ep=183_f1=0.205_frameAcc=0.140_th=0.045.h5
+<Epoch 184>
+Epoch 1/1
+14s - loss: 0.0201
+ep=184, precision=0.161, recall=0.302, fscore=0.211, accuracy_frame=0.141, threshold=0.055
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=184.pred
+Saving Model: ./model/agentAct_4769/weights/ep=184_f1=0.211_frameAcc=0.141_th=0.055.h5
+<Epoch 185>
+Epoch 1/1
+18s - loss: 0.0198
+ep=185, precision=0.158, recall=0.312, fscore=0.210, accuracy_frame=0.136, threshold=0.044
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=185.pred
+Saving Model: ./model/agentAct_4769/weights/ep=185_f1=0.210_frameAcc=0.136_th=0.044.h5
+<Epoch 186>
+Epoch 1/1
+18s - loss: 0.0200
+ep=186, precision=0.166, recall=0.261, fscore=0.203, accuracy_frame=0.174, threshold=0.048
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=186.pred
+Saving Model: ./model/agentAct_4769/weights/ep=186_f1=0.203_frameAcc=0.174_th=0.048.h5
+<Epoch 187>
+Epoch 1/1
+18s - loss: 0.0197
+ep=187, precision=0.160, recall=0.288, fscore=0.205, accuracy_frame=0.148, threshold=0.038
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=187.pred
+Saving Model: ./model/agentAct_4769/weights/ep=187_f1=0.205_frameAcc=0.148_th=0.038.h5
+<Epoch 188>
+Epoch 1/1
+18s - loss: 0.0202
+ep=188, precision=0.176, recall=0.285, fscore=0.218, accuracy_frame=0.160, threshold=0.063
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=188.pred
+Saving Model: ./model/agentAct_4769/weights/ep=188_f1=0.218_frameAcc=0.160_th=0.063.h5
+<Epoch 189>
+Epoch 1/1
+18s - loss: 0.0194
+ep=189, precision=0.157, recall=0.331, fscore=0.213, accuracy_frame=0.124, threshold=0.034
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=189.pred
+Saving Model: ./model/agentAct_4769/weights/ep=189_f1=0.213_frameAcc=0.124_th=0.034.h5
+<Epoch 190>
+Epoch 1/1
+18s - loss: 0.0198
+ep=190, precision=0.159, recall=0.305, fscore=0.209, accuracy_frame=0.144, threshold=0.040
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=190.pred
+Saving Model: ./model/agentAct_4769/weights/ep=190_f1=0.209_frameAcc=0.144_th=0.040.h5
+<Epoch 191>
+Epoch 1/1
+18s - loss: 0.0195
+ep=191, precision=0.153, recall=0.296, fscore=0.202, accuracy_frame=0.136, threshold=0.033
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=191.pred
+Saving Model: ./model/agentAct_4769/weights/ep=191_f1=0.202_frameAcc=0.136_th=0.033.h5
+<Epoch 192>
+Epoch 1/1
+17s - loss: 0.0196
+ep=192, precision=0.174, recall=0.273, fscore=0.213, accuracy_frame=0.168, threshold=0.054
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=192.pred
+Saving Model: ./model/agentAct_4769/weights/ep=192_f1=0.213_frameAcc=0.168_th=0.054.h5
+<Epoch 193>
+Epoch 1/1
+16s - loss: 0.0189
+ep=193, precision=0.173, recall=0.271, fscore=0.211, accuracy_frame=0.156, threshold=0.064
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=193.pred
+Saving Model: ./model/agentAct_4769/weights/ep=193_f1=0.211_frameAcc=0.156_th=0.064.h5
+<Epoch 194>
+Epoch 1/1
+18s - loss: 0.0189
+ep=194, precision=0.166, recall=0.304, fscore=0.215, accuracy_frame=0.150, threshold=0.050
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=194.pred
+Saving Model: ./model/agentAct_4769/weights/ep=194_f1=0.215_frameAcc=0.150_th=0.050.h5
+<Epoch 195>
+Epoch 1/1
+18s - loss: 0.0190
+ep=195, precision=0.160, recall=0.316, fscore=0.213, accuracy_frame=0.133, threshold=0.039
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=195.pred
+Saving Model: ./model/agentAct_4769/weights/ep=195_f1=0.213_frameAcc=0.133_th=0.039.h5
+<Epoch 196>
+Epoch 1/1
+18s - loss: 0.0190
+ep=196, precision=0.155, recall=0.304, fscore=0.205, accuracy_frame=0.137, threshold=0.039
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=196.pred
+Saving Model: ./model/agentAct_4769/weights/ep=196_f1=0.205_frameAcc=0.137_th=0.039.h5
+<Epoch 197>
+Epoch 1/1
+18s - loss: 0.0189
+ep=197, precision=0.149, recall=0.284, fscore=0.195, accuracy_frame=0.146, threshold=0.031
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=197.pred
+Saving Model: ./model/agentAct_4769/weights/ep=197_f1=0.195_frameAcc=0.146_th=0.031.h5
+<Epoch 198>
+Epoch 1/1
+18s - loss: 0.0189
+ep=198, precision=0.163, recall=0.265, fscore=0.202, accuracy_frame=0.158, threshold=0.066
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=198.pred
+Saving Model: ./model/agentAct_4769/weights/ep=198_f1=0.202_frameAcc=0.158_th=0.066.h5
+<Epoch 199>
+Epoch 1/1
+18s - loss: 0.0185
+ep=199, precision=0.167, recall=0.292, fscore=0.213, accuracy_frame=0.152, threshold=0.038
+Write dev results: ./model/agentAct_4769/dev_results/dev_ep=199.pred
+Saving Model: ./model/agentAct_4769/weights/ep=199_f1=0.213_frameAcc=0.152_th=0.038.h5

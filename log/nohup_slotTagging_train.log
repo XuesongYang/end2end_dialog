@@ -1,0 +1,1633 @@
+Using Theano backend.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '4769' (I am process '4768')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.12-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '4771' (I am process '4768')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.12-64/lock_dir
+Using gpu device 0: Tesla K40c (CNMeM is disabled, cuDNN 4007)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/metrics/classification.py:1074: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+Training model ...
+	batch_size = 32
+	data_npz = ./data/npz/dstc4.all.w-intent.slotTagging.npz
+	dev_data = <DataSetCSVslotTagging.DataSetCSVslotTagging object at 0x7ffbfea19bd0>
+	dropout_ratio = 0.5
+	embedding_size = 512
+	epoch_nb = 200
+	hidden_size = 128
+	loss = categorical_crossentropy
+	maxlen_userUtter = 67
+	model_folder = None
+	optimizer = adam
+	patience = 10
+	pid = 4768
+	test_data = None
+	test_intent_only = False
+	test_tag_only = False
+	threshold = None
+	train_data = <DataSetCSVslotTagging.DataSetCSVslotTagging object at 0x7ffbfe9a3790>
+	train_only = True
+	userIntent_vocab_size = 69
+	userTag_vocab_size = 88
+	weights_fname = None
+	word_vocab_size = 2253
+Building Graph ...
+<Epoch 0>
+Epoch 1/1
+91s - loss: 5.4167 - slot_output_loss: 5.2914 - intent_output_loss: 0.1252
+SlotTagging: ep=0, precision=0.000, recall=0.000, fscore=0.000, accuracy_frame=0.725
+Intent Prediction: ep=0, precision=0.546, recall=0.242, fscore=0.336, accuracy_frame=0.264, threshold=0.278
+NLU Frame: ep=0, accuracy=0.262
+Write dev results: ./model/slot_4768/dev_results/dev_ep=0.pred
+Saving Model: ./model/slot_4768/weights/ep=0_tagF1=0.000frameAcc=0.725_intentF1=0.336frameAcc=0.264th=0.278.h5
+<Epoch 1>
+Epoch 1/1
+172s - loss: 2.6177 - slot_output_loss: 2.5553 - intent_output_loss: 0.0624
+SlotTagging: ep=1, precision=0.370, recall=0.083, fscore=0.136, accuracy_frame=0.737
+Intent Prediction: ep=1, precision=0.555, recall=0.240, fscore=0.335, accuracy_frame=0.261, threshold=0.395
+NLU Frame: ep=1, accuracy=0.261
+Write dev results: ./model/slot_4768/dev_results/dev_ep=1.pred
+Saving Model: ./model/slot_4768/weights/ep=1_tagF1=0.136frameAcc=0.737_intentF1=0.335frameAcc=0.261th=0.395.h5
+<Epoch 2>
+Epoch 1/1
+161s - loss: 2.4040 - slot_output_loss: 2.3443 - intent_output_loss: 0.0598
+SlotTagging: ep=2, precision=0.333, recall=0.145, fscore=0.202, accuracy_frame=0.734
+Intent Prediction: ep=2, precision=0.561, recall=0.238, fscore=0.334, accuracy_frame=0.259, threshold=0.273
+NLU Frame: ep=2, accuracy=0.258
+Write dev results: ./model/slot_4768/dev_results/dev_ep=2.pred
+Saving Model: ./model/slot_4768/weights/ep=2_tagF1=0.202frameAcc=0.734_intentF1=0.334frameAcc=0.259th=0.273.h5
+<Epoch 3>
+Epoch 1/1
+64s - loss: 2.2116 - slot_output_loss: 2.1535 - intent_output_loss: 0.0581
+SlotTagging: ep=3, precision=0.374, recall=0.191, fscore=0.253, accuracy_frame=0.736
+Intent Prediction: ep=3, precision=0.519, recall=0.249, fscore=0.337, accuracy_frame=0.268, threshold=0.171
+NLU Frame: ep=3, accuracy=0.255
+Write dev results: ./model/slot_4768/dev_results/dev_ep=3.pred
+Saving Model: ./model/slot_4768/weights/ep=3_tagF1=0.253frameAcc=0.736_intentF1=0.337frameAcc=0.268th=0.171.h5
+<Epoch 4>
+Epoch 1/1
+171s - loss: 1.9768 - slot_output_loss: 1.9197 - intent_output_loss: 0.0571
+SlotTagging: ep=4, precision=0.444, recall=0.254, fscore=0.323, accuracy_frame=0.740
+Intent Prediction: ep=4, precision=0.416, recall=0.295, fscore=0.345, accuracy_frame=0.294, threshold=0.151
+NLU Frame: ep=4, accuracy=0.273
+Write dev results: ./model/slot_4768/dev_results/dev_ep=4.pred
+Saving Model: ./model/slot_4768/weights/ep=4_tagF1=0.323frameAcc=0.740_intentF1=0.345frameAcc=0.294th=0.151.h5
+<Epoch 5>
+Epoch 1/1
+171s - loss: 1.7633 - slot_output_loss: 1.7070 - intent_output_loss: 0.0563
+SlotTagging: ep=5, precision=0.512, recall=0.311, fscore=0.387, accuracy_frame=0.753
+Intent Prediction: ep=5, precision=0.301, recall=0.389, fscore=0.339, accuracy_frame=0.250, threshold=0.126
+NLU Frame: ep=5, accuracy=0.247
+Write dev results: ./model/slot_4768/dev_results/dev_ep=5.pred
+Saving Model: ./model/slot_4768/weights/ep=5_tagF1=0.387frameAcc=0.753_intentF1=0.339frameAcc=0.250th=0.126.h5
+<Epoch 6>
+Epoch 1/1
+66s - loss: 1.5962 - slot_output_loss: 1.5402 - intent_output_loss: 0.0560
+SlotTagging: ep=6, precision=0.559, recall=0.359, fscore=0.437, accuracy_frame=0.762
+Intent Prediction: ep=6, precision=0.297, recall=0.411, fscore=0.345, accuracy_frame=0.220, threshold=0.119
+NLU Frame: ep=6, accuracy=0.216
+Write dev results: ./model/slot_4768/dev_results/dev_ep=6.pred
+Saving Model: ./model/slot_4768/weights/ep=6_tagF1=0.437frameAcc=0.762_intentF1=0.345frameAcc=0.220th=0.119.h5
+<Epoch 7>
+Epoch 1/1
+171s - loss: 1.4302 - slot_output_loss: 1.3751 - intent_output_loss: 0.0551
+SlotTagging: ep=7, precision=0.552, recall=0.367, fscore=0.441, accuracy_frame=0.760
+Intent Prediction: ep=7, precision=0.345, recall=0.350, fscore=0.348, accuracy_frame=0.263, threshold=0.143
+NLU Frame: ep=7, accuracy=0.248
+Write dev results: ./model/slot_4768/dev_results/dev_ep=7.pred
+Saving Model: ./model/slot_4768/weights/ep=7_tagF1=0.441frameAcc=0.760_intentF1=0.348frameAcc=0.263th=0.143.h5
+<Epoch 8>
+Epoch 1/1
+171s - loss: 1.2879 - slot_output_loss: 1.2334 - intent_output_loss: 0.0545
+SlotTagging: ep=8, precision=0.538, recall=0.384, fscore=0.448, accuracy_frame=0.762
+Intent Prediction: ep=8, precision=0.311, recall=0.386, fscore=0.344, accuracy_frame=0.270, threshold=0.133
+NLU Frame: ep=8, accuracy=0.262
+Write dev results: ./model/slot_4768/dev_results/dev_ep=8.pred
+Saving Model: ./model/slot_4768/weights/ep=8_tagF1=0.448frameAcc=0.762_intentF1=0.344frameAcc=0.270th=0.133.h5
+<Epoch 9>
+Epoch 1/1
+85s - loss: 1.1342 - slot_output_loss: 1.0801 - intent_output_loss: 0.0541
+SlotTagging: ep=9, precision=0.539, recall=0.394, fscore=0.455, accuracy_frame=0.761
+Intent Prediction: ep=9, precision=0.271, recall=0.462, fscore=0.342, accuracy_frame=0.243, threshold=0.118
+NLU Frame: ep=9, accuracy=0.242
+Write dev results: ./model/slot_4768/dev_results/dev_ep=9.pred
+Saving Model: ./model/slot_4768/weights/ep=9_tagF1=0.455frameAcc=0.761_intentF1=0.342frameAcc=0.243th=0.118.h5
+<Epoch 10>
+Epoch 1/1
+172s - loss: 1.0214 - slot_output_loss: 0.9679 - intent_output_loss: 0.0535
+SlotTagging: ep=10, precision=0.473, recall=0.402, fscore=0.435, accuracy_frame=0.743
+Intent Prediction: ep=10, precision=0.482, recall=0.283, fscore=0.356, accuracy_frame=0.293, threshold=0.185
+NLU Frame: ep=10, accuracy=0.272
+Write dev results: ./model/slot_4768/dev_results/dev_ep=10.pred
+Saving Model: ./model/slot_4768/weights/ep=10_tagF1=0.435frameAcc=0.743_intentF1=0.356frameAcc=0.293th=0.185.h5
+<Epoch 11>
+Epoch 1/1
+172s - loss: 0.9092 - slot_output_loss: 0.8564 - intent_output_loss: 0.0528
+SlotTagging: ep=11, precision=0.495, recall=0.400, fscore=0.442, accuracy_frame=0.749
+Intent Prediction: ep=11, precision=0.445, recall=0.314, fscore=0.368, accuracy_frame=0.301, threshold=0.174
+NLU Frame: ep=11, accuracy=0.278
+Write dev results: ./model/slot_4768/dev_results/dev_ep=11.pred
+Saving Model: ./model/slot_4768/weights/ep=11_tagF1=0.442frameAcc=0.749_intentF1=0.368frameAcc=0.301th=0.174.h5
+<Epoch 12>
+Epoch 1/1
+89s - loss: 0.8434 - slot_output_loss: 0.7913 - intent_output_loss: 0.0522
+SlotTagging: ep=12, precision=0.495, recall=0.419, fscore=0.454, accuracy_frame=0.748
+Intent Prediction: ep=12, precision=0.447, recall=0.330, fscore=0.380, accuracy_frame=0.319, threshold=0.180
+NLU Frame: ep=12, accuracy=0.288
+Write dev results: ./model/slot_4768/dev_results/dev_ep=12.pred
+Saving Model: ./model/slot_4768/weights/ep=12_tagF1=0.454frameAcc=0.748_intentF1=0.380frameAcc=0.319th=0.180.h5
+<Epoch 13>
+Epoch 1/1
+172s - loss: 0.7787 - slot_output_loss: 0.7272 - intent_output_loss: 0.0515
+SlotTagging: ep=13, precision=0.516, recall=0.414, fscore=0.459, accuracy_frame=0.755
+Intent Prediction: ep=13, precision=0.459, recall=0.332, fscore=0.385, accuracy_frame=0.314, threshold=0.187
+NLU Frame: ep=13, accuracy=0.291
+Write dev results: ./model/slot_4768/dev_results/dev_ep=13.pred
+Saving Model: ./model/slot_4768/weights/ep=13_tagF1=0.459frameAcc=0.755_intentF1=0.385frameAcc=0.314th=0.187.h5
+<Epoch 14>
+Epoch 1/1
+172s - loss: 0.7037 - slot_output_loss: 0.6525 - intent_output_loss: 0.0512
+SlotTagging: ep=14, precision=0.532, recall=0.418, fscore=0.468, accuracy_frame=0.757
+Intent Prediction: ep=14, precision=0.451, recall=0.357, fscore=0.399, accuracy_frame=0.329, threshold=0.203
+NLU Frame: ep=14, accuracy=0.296
+Write dev results: ./model/slot_4768/dev_results/dev_ep=14.pred
+Saving Model: ./model/slot_4768/weights/ep=14_tagF1=0.468frameAcc=0.757_intentF1=0.399frameAcc=0.329th=0.203.h5
+<Epoch 15>
+Epoch 1/1
+88s - loss: 0.6467 - slot_output_loss: 0.5962 - intent_output_loss: 0.0505
+SlotTagging: ep=15, precision=0.498, recall=0.394, fscore=0.440, accuracy_frame=0.761
+Intent Prediction: ep=15, precision=0.389, recall=0.423, fscore=0.405, accuracy_frame=0.302, threshold=0.164
+NLU Frame: ep=15, accuracy=0.281
+Write dev results: ./model/slot_4768/dev_results/dev_ep=15.pred
+Saving Model: ./model/slot_4768/weights/ep=15_tagF1=0.440frameAcc=0.761_intentF1=0.405frameAcc=0.302th=0.164.h5
+<Epoch 16>
+Epoch 1/1
+172s - loss: 0.6037 - slot_output_loss: 0.5540 - intent_output_loss: 0.0498
+SlotTagging: ep=16, precision=0.477, recall=0.418, fscore=0.446, accuracy_frame=0.751
+Intent Prediction: ep=16, precision=0.419, recall=0.393, fscore=0.406, accuracy_frame=0.318, threshold=0.189
+NLU Frame: ep=16, accuracy=0.292
+Write dev results: ./model/slot_4768/dev_results/dev_ep=16.pred
+Saving Model: ./model/slot_4768/weights/ep=16_tagF1=0.446frameAcc=0.751_intentF1=0.406frameAcc=0.318th=0.189.h5
+<Epoch 17>
+Epoch 1/1
+173s - loss: 0.5681 - slot_output_loss: 0.5192 - intent_output_loss: 0.0489
+SlotTagging: ep=17, precision=0.517, recall=0.418, fscore=0.462, accuracy_frame=0.762
+Intent Prediction: ep=17, precision=0.430, recall=0.446, fscore=0.438, accuracy_frame=0.306, threshold=0.197
+NLU Frame: ep=17, accuracy=0.288
+Write dev results: ./model/slot_4768/dev_results/dev_ep=17.pred
+Saving Model: ./model/slot_4768/weights/ep=17_tagF1=0.462frameAcc=0.762_intentF1=0.438frameAcc=0.306th=0.197.h5
+<Epoch 18>
+Epoch 1/1
+88s - loss: 0.5061 - slot_output_loss: 0.4580 - intent_output_loss: 0.0481
+SlotTagging: ep=18, precision=0.469, recall=0.423, fscore=0.445, accuracy_frame=0.747
+Intent Prediction: ep=18, precision=0.443, recall=0.427, fscore=0.435, accuracy_frame=0.343, threshold=0.216
+NLU Frame: ep=18, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=18.pred
+Saving Model: ./model/slot_4768/weights/ep=18_tagF1=0.445frameAcc=0.747_intentF1=0.435frameAcc=0.343th=0.216.h5
+<Epoch 19>
+Epoch 1/1
+172s - loss: 0.4789 - slot_output_loss: 0.4314 - intent_output_loss: 0.0475
+SlotTagging: ep=19, precision=0.493, recall=0.420, fscore=0.454, accuracy_frame=0.757
+Intent Prediction: ep=19, precision=0.479, recall=0.419, fscore=0.447, accuracy_frame=0.324, threshold=0.230
+NLU Frame: ep=19, accuracy=0.301
+Write dev results: ./model/slot_4768/dev_results/dev_ep=19.pred
+Saving Model: ./model/slot_4768/weights/ep=19_tagF1=0.454frameAcc=0.757_intentF1=0.447frameAcc=0.324th=0.230.h5
+<Epoch 20>
+Epoch 1/1
+172s - loss: 0.4390 - slot_output_loss: 0.3921 - intent_output_loss: 0.0469
+SlotTagging: ep=20, precision=0.454, recall=0.420, fscore=0.436, accuracy_frame=0.745
+Intent Prediction: ep=20, precision=0.452, recall=0.425, fscore=0.438, accuracy_frame=0.335, threshold=0.224
+NLU Frame: ep=20, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=20.pred
+Saving Model: ./model/slot_4768/weights/ep=20_tagF1=0.436frameAcc=0.745_intentF1=0.438frameAcc=0.335th=0.224.h5
+<Epoch 21>
+Epoch 1/1
+89s - loss: 0.4043 - slot_output_loss: 0.3581 - intent_output_loss: 0.0463
+SlotTagging: ep=21, precision=0.509, recall=0.411, fscore=0.455, accuracy_frame=0.762
+Intent Prediction: ep=21, precision=0.461, recall=0.429, fscore=0.444, accuracy_frame=0.355, threshold=0.237
+NLU Frame: ep=21, accuracy=0.325
+Write dev results: ./model/slot_4768/dev_results/dev_ep=21.pred
+Saving Model: ./model/slot_4768/weights/ep=21_tagF1=0.455frameAcc=0.762_intentF1=0.444frameAcc=0.355th=0.237.h5
+<Epoch 22>
+Epoch 1/1
+172s - loss: 0.3707 - slot_output_loss: 0.3250 - intent_output_loss: 0.0456
+SlotTagging: ep=22, precision=0.473, recall=0.412, fscore=0.440, accuracy_frame=0.750
+Intent Prediction: ep=22, precision=0.437, recall=0.480, fscore=0.457, accuracy_frame=0.314, threshold=0.202
+NLU Frame: ep=22, accuracy=0.285
+Write dev results: ./model/slot_4768/dev_results/dev_ep=22.pred
+Saving Model: ./model/slot_4768/weights/ep=22_tagF1=0.440frameAcc=0.750_intentF1=0.457frameAcc=0.314th=0.202.h5
+<Epoch 23>
+Epoch 1/1
+163s - loss: 0.3570 - slot_output_loss: 0.3117 - intent_output_loss: 0.0452
+SlotTagging: ep=23, precision=0.483, recall=0.415, fscore=0.447, accuracy_frame=0.755
+Intent Prediction: ep=23, precision=0.489, recall=0.439, fscore=0.462, accuracy_frame=0.347, threshold=0.243
+NLU Frame: ep=23, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=23.pred
+Saving Model: ./model/slot_4768/weights/ep=23_tagF1=0.447frameAcc=0.755_intentF1=0.462frameAcc=0.347th=0.243.h5
+<Epoch 24>
+Epoch 1/1
+71s - loss: 0.3340 - slot_output_loss: 0.2893 - intent_output_loss: 0.0447
+SlotTagging: ep=24, precision=0.431, recall=0.428, fscore=0.429, accuracy_frame=0.737
+Intent Prediction: ep=24, precision=0.433, recall=0.485, fscore=0.457, accuracy_frame=0.320, threshold=0.226
+NLU Frame: ep=24, accuracy=0.296
+Write dev results: ./model/slot_4768/dev_results/dev_ep=24.pred
+Saving Model: ./model/slot_4768/weights/ep=24_tagF1=0.429frameAcc=0.737_intentF1=0.457frameAcc=0.320th=0.226.h5
+<Epoch 25>
+Epoch 1/1
+135s - loss: 0.2984 - slot_output_loss: 0.2539 - intent_output_loss: 0.0445
+SlotTagging: ep=25, precision=0.449, recall=0.413, fscore=0.431, accuracy_frame=0.747
+Intent Prediction: ep=25, precision=0.467, recall=0.451, fscore=0.459, accuracy_frame=0.365, threshold=0.248
+NLU Frame: ep=25, accuracy=0.323
+Write dev results: ./model/slot_4768/dev_results/dev_ep=25.pred
+Saving Model: ./model/slot_4768/weights/ep=25_tagF1=0.431frameAcc=0.747_intentF1=0.459frameAcc=0.365th=0.248.h5
+<Epoch 26>
+Epoch 1/1
+134s - loss: 0.2858 - slot_output_loss: 0.2421 - intent_output_loss: 0.0437
+SlotTagging: ep=26, precision=0.464, recall=0.424, fscore=0.443, accuracy_frame=0.748
+Intent Prediction: ep=26, precision=0.478, recall=0.474, fscore=0.476, accuracy_frame=0.352, threshold=0.266
+NLU Frame: ep=26, accuracy=0.320
+Write dev results: ./model/slot_4768/dev_results/dev_ep=26.pred
+Saving Model: ./model/slot_4768/weights/ep=26_tagF1=0.443frameAcc=0.748_intentF1=0.476frameAcc=0.352th=0.266.h5
+<Epoch 27>
+Epoch 1/1
+76s - loss: 0.2583 - slot_output_loss: 0.2150 - intent_output_loss: 0.0432
+SlotTagging: ep=27, precision=0.437, recall=0.437, fscore=0.437, accuracy_frame=0.739
+Intent Prediction: ep=27, precision=0.500, recall=0.449, fscore=0.473, accuracy_frame=0.357, threshold=0.290
+NLU Frame: ep=27, accuracy=0.319
+Write dev results: ./model/slot_4768/dev_results/dev_ep=27.pred
+Saving Model: ./model/slot_4768/weights/ep=27_tagF1=0.437frameAcc=0.739_intentF1=0.473frameAcc=0.357th=0.290.h5
+<Epoch 28>
+Epoch 1/1
+134s - loss: 0.2666 - slot_output_loss: 0.2237 - intent_output_loss: 0.0429
+SlotTagging: ep=28, precision=0.437, recall=0.433, fscore=0.435, accuracy_frame=0.741
+Intent Prediction: ep=28, precision=0.517, recall=0.445, fscore=0.478, accuracy_frame=0.359, threshold=0.292
+NLU Frame: ep=28, accuracy=0.326
+Write dev results: ./model/slot_4768/dev_results/dev_ep=28.pred
+Saving Model: ./model/slot_4768/weights/ep=28_tagF1=0.435frameAcc=0.741_intentF1=0.478frameAcc=0.359th=0.292.h5
+<Epoch 29>
+Epoch 1/1
+134s - loss: 0.2400 - slot_output_loss: 0.1974 - intent_output_loss: 0.0426
+SlotTagging: ep=29, precision=0.481, recall=0.411, fscore=0.443, accuracy_frame=0.756
+Intent Prediction: ep=29, precision=0.446, recall=0.509, fscore=0.476, accuracy_frame=0.327, threshold=0.219
+NLU Frame: ep=29, accuracy=0.299
+Write dev results: ./model/slot_4768/dev_results/dev_ep=29.pred
+Saving Model: ./model/slot_4768/weights/ep=29_tagF1=0.443frameAcc=0.756_intentF1=0.476frameAcc=0.327th=0.219.h5
+<Epoch 30>
+Epoch 1/1
+77s - loss: 0.2341 - slot_output_loss: 0.1921 - intent_output_loss: 0.0421
+SlotTagging: ep=30, precision=0.424, recall=0.430, fscore=0.427, accuracy_frame=0.733
+Intent Prediction: ep=30, precision=0.446, recall=0.510, fscore=0.476, accuracy_frame=0.317, threshold=0.222
+NLU Frame: ep=30, accuracy=0.281
+Write dev results: ./model/slot_4768/dev_results/dev_ep=30.pred
+Saving Model: ./model/slot_4768/weights/ep=30_tagF1=0.427frameAcc=0.733_intentF1=0.476frameAcc=0.317th=0.222.h5
+<Epoch 31>
+Epoch 1/1
+134s - loss: 0.2229 - slot_output_loss: 0.1809 - intent_output_loss: 0.0419
+SlotTagging: ep=31, precision=0.467, recall=0.428, fscore=0.446, accuracy_frame=0.750
+Intent Prediction: ep=31, precision=0.474, recall=0.485, fscore=0.479, accuracy_frame=0.355, threshold=0.242
+NLU Frame: ep=31, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=31.pred
+Saving Model: ./model/slot_4768/weights/ep=31_tagF1=0.446frameAcc=0.750_intentF1=0.479frameAcc=0.355th=0.242.h5
+<Epoch 32>
+Epoch 1/1
+134s - loss: 0.2251 - slot_output_loss: 0.1833 - intent_output_loss: 0.0418
+SlotTagging: ep=32, precision=0.429, recall=0.424, fscore=0.427, accuracy_frame=0.739
+Intent Prediction: ep=32, precision=0.495, recall=0.471, fscore=0.483, accuracy_frame=0.373, threshold=0.281
+NLU Frame: ep=32, accuracy=0.333
+Write dev results: ./model/slot_4768/dev_results/dev_ep=32.pred
+Saving Model: ./model/slot_4768/weights/ep=32_tagF1=0.427frameAcc=0.739_intentF1=0.483frameAcc=0.373th=0.281.h5
+<Epoch 33>
+Epoch 1/1
+78s - loss: 0.2061 - slot_output_loss: 0.1646 - intent_output_loss: 0.0415
+SlotTagging: ep=33, precision=0.415, recall=0.413, fscore=0.414, accuracy_frame=0.741
+Intent Prediction: ep=33, precision=0.442, recall=0.506, fscore=0.472, accuracy_frame=0.320, threshold=0.249
+NLU Frame: ep=33, accuracy=0.285
+Write dev results: ./model/slot_4768/dev_results/dev_ep=33.pred
+Saving Model: ./model/slot_4768/weights/ep=33_tagF1=0.414frameAcc=0.741_intentF1=0.472frameAcc=0.320th=0.249.h5
+<Epoch 34>
+Epoch 1/1
+134s - loss: 0.1928 - slot_output_loss: 0.1516 - intent_output_loss: 0.0413
+SlotTagging: ep=34, precision=0.459, recall=0.413, fscore=0.435, accuracy_frame=0.746
+Intent Prediction: ep=34, precision=0.513, recall=0.455, fscore=0.482, accuracy_frame=0.371, threshold=0.294
+NLU Frame: ep=34, accuracy=0.328
+Write dev results: ./model/slot_4768/dev_results/dev_ep=34.pred
+Saving Model: ./model/slot_4768/weights/ep=34_tagF1=0.435frameAcc=0.746_intentF1=0.482frameAcc=0.371th=0.294.h5
+<Epoch 35>
+Epoch 1/1
+134s - loss: 0.1934 - slot_output_loss: 0.1526 - intent_output_loss: 0.0409
+SlotTagging: ep=35, precision=0.493, recall=0.418, fscore=0.452, accuracy_frame=0.762
+Intent Prediction: ep=35, precision=0.420, recall=0.547, fscore=0.475, accuracy_frame=0.320, threshold=0.195
+NLU Frame: ep=35, accuracy=0.297
+Write dev results: ./model/slot_4768/dev_results/dev_ep=35.pred
+Saving Model: ./model/slot_4768/weights/ep=35_tagF1=0.452frameAcc=0.762_intentF1=0.475frameAcc=0.320th=0.195.h5
+<Epoch 36>
+Epoch 1/1
+77s - loss: 0.1862 - slot_output_loss: 0.1455 - intent_output_loss: 0.0408
+SlotTagging: ep=36, precision=0.461, recall=0.428, fscore=0.444, accuracy_frame=0.752
+Intent Prediction: ep=36, precision=0.503, recall=0.453, fscore=0.477, accuracy_frame=0.380, threshold=0.305
+NLU Frame: ep=36, accuracy=0.332
+Write dev results: ./model/slot_4768/dev_results/dev_ep=36.pred
+Saving Model: ./model/slot_4768/weights/ep=36_tagF1=0.444frameAcc=0.752_intentF1=0.477frameAcc=0.380th=0.305.h5
+<Epoch 37>
+Epoch 1/1
+134s - loss: 0.1620 - slot_output_loss: 0.1217 - intent_output_loss: 0.0403
+SlotTagging: ep=37, precision=0.437, recall=0.434, fscore=0.436, accuracy_frame=0.743
+Intent Prediction: ep=37, precision=0.509, recall=0.452, fscore=0.479, accuracy_frame=0.389, threshold=0.289
+NLU Frame: ep=37, accuracy=0.345
+Write dev results: ./model/slot_4768/dev_results/dev_ep=37.pred
+Saving Model: ./model/slot_4768/weights/ep=37_tagF1=0.436frameAcc=0.743_intentF1=0.479frameAcc=0.389th=0.289.h5
+<Epoch 38>
+Epoch 1/1
+134s - loss: 0.1624 - slot_output_loss: 0.1224 - intent_output_loss: 0.0400
+SlotTagging: ep=38, precision=0.425, recall=0.432, fscore=0.428, accuracy_frame=0.736
+Intent Prediction: ep=38, precision=0.478, recall=0.495, fscore=0.486, accuracy_frame=0.333, threshold=0.258
+NLU Frame: ep=38, accuracy=0.290
+Write dev results: ./model/slot_4768/dev_results/dev_ep=38.pred
+Saving Model: ./model/slot_4768/weights/ep=38_tagF1=0.428frameAcc=0.736_intentF1=0.486frameAcc=0.333th=0.258.h5
+<Epoch 39>
+Epoch 1/1
+78s - loss: 0.1637 - slot_output_loss: 0.1239 - intent_output_loss: 0.0398
+SlotTagging: ep=39, precision=0.445, recall=0.429, fscore=0.437, accuracy_frame=0.752
+Intent Prediction: ep=39, precision=0.457, recall=0.514, fscore=0.484, accuracy_frame=0.332, threshold=0.245
+NLU Frame: ep=39, accuracy=0.290
+Write dev results: ./model/slot_4768/dev_results/dev_ep=39.pred
+Saving Model: ./model/slot_4768/weights/ep=39_tagF1=0.437frameAcc=0.752_intentF1=0.484frameAcc=0.332th=0.245.h5
+<Epoch 40>
+Epoch 1/1
+134s - loss: 0.1617 - slot_output_loss: 0.1220 - intent_output_loss: 0.0398
+SlotTagging: ep=40, precision=0.438, recall=0.435, fscore=0.436, accuracy_frame=0.746
+Intent Prediction: ep=40, precision=0.448, recall=0.556, fscore=0.496, accuracy_frame=0.310, threshold=0.233
+NLU Frame: ep=40, accuracy=0.282
+Write dev results: ./model/slot_4768/dev_results/dev_ep=40.pred
+Saving Model: ./model/slot_4768/weights/ep=40_tagF1=0.436frameAcc=0.746_intentF1=0.496frameAcc=0.310th=0.233.h5
+<Epoch 41>
+Epoch 1/1
+134s - loss: 0.1464 - slot_output_loss: 0.1070 - intent_output_loss: 0.0394
+SlotTagging: ep=41, precision=0.485, recall=0.428, fscore=0.455, accuracy_frame=0.759
+Intent Prediction: ep=41, precision=0.446, recall=0.539, fscore=0.488, accuracy_frame=0.305, threshold=0.240
+NLU Frame: ep=41, accuracy=0.278
+Write dev results: ./model/slot_4768/dev_results/dev_ep=41.pred
+Saving Model: ./model/slot_4768/weights/ep=41_tagF1=0.455frameAcc=0.759_intentF1=0.488frameAcc=0.305th=0.240.h5
+<Epoch 42>
+Epoch 1/1
+77s - loss: 0.1453 - slot_output_loss: 0.1060 - intent_output_loss: 0.0393
+SlotTagging: ep=42, precision=0.507, recall=0.414, fscore=0.456, accuracy_frame=0.765
+Intent Prediction: ep=42, precision=0.479, recall=0.494, fscore=0.486, accuracy_frame=0.345, threshold=0.272
+NLU Frame: ep=42, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=42.pred
+Saving Model: ./model/slot_4768/weights/ep=42_tagF1=0.456frameAcc=0.765_intentF1=0.486frameAcc=0.345th=0.272.h5
+<Epoch 43>
+Epoch 1/1
+134s - loss: 0.1276 - slot_output_loss: 0.0889 - intent_output_loss: 0.0387
+SlotTagging: ep=43, precision=0.450, recall=0.418, fscore=0.433, accuracy_frame=0.750
+Intent Prediction: ep=43, precision=0.454, recall=0.538, fscore=0.492, accuracy_frame=0.330, threshold=0.240
+NLU Frame: ep=43, accuracy=0.295
+Write dev results: ./model/slot_4768/dev_results/dev_ep=43.pred
+Saving Model: ./model/slot_4768/weights/ep=43_tagF1=0.433frameAcc=0.750_intentF1=0.492frameAcc=0.330th=0.240.h5
+<Epoch 44>
+Epoch 1/1
+134s - loss: 0.1474 - slot_output_loss: 0.1086 - intent_output_loss: 0.0388
+SlotTagging: ep=44, precision=0.399, recall=0.440, fscore=0.418, accuracy_frame=0.729
+Intent Prediction: ep=44, precision=0.430, recall=0.561, fscore=0.487, accuracy_frame=0.299, threshold=0.217
+NLU Frame: ep=44, accuracy=0.271
+Write dev results: ./model/slot_4768/dev_results/dev_ep=44.pred
+Saving Model: ./model/slot_4768/weights/ep=44_tagF1=0.418frameAcc=0.729_intentF1=0.487frameAcc=0.299th=0.217.h5
+<Epoch 45>
+Epoch 1/1
+77s - loss: 0.1310 - slot_output_loss: 0.0923 - intent_output_loss: 0.0387
+SlotTagging: ep=45, precision=0.484, recall=0.418, fscore=0.449, accuracy_frame=0.759
+Intent Prediction: ep=45, precision=0.429, recall=0.584, fscore=0.495, accuracy_frame=0.304, threshold=0.204
+NLU Frame: ep=45, accuracy=0.281
+Write dev results: ./model/slot_4768/dev_results/dev_ep=45.pred
+Saving Model: ./model/slot_4768/weights/ep=45_tagF1=0.449frameAcc=0.759_intentF1=0.495frameAcc=0.304th=0.204.h5
+<Epoch 46>
+Epoch 1/1
+135s - loss: 0.1268 - slot_output_loss: 0.0882 - intent_output_loss: 0.0386
+SlotTagging: ep=46, precision=0.491, recall=0.410, fscore=0.447, accuracy_frame=0.765
+Intent Prediction: ep=46, precision=0.494, recall=0.487, fscore=0.491, accuracy_frame=0.385, threshold=0.275
+NLU Frame: ep=46, accuracy=0.343
+Write dev results: ./model/slot_4768/dev_results/dev_ep=46.pred
+Saving Model: ./model/slot_4768/weights/ep=46_tagF1=0.447frameAcc=0.765_intentF1=0.491frameAcc=0.385th=0.275.h5
+<Epoch 47>
+Epoch 1/1
+134s - loss: 0.1279 - slot_output_loss: 0.0896 - intent_output_loss: 0.0383
+SlotTagging: ep=47, precision=0.455, recall=0.428, fscore=0.441, accuracy_frame=0.755
+Intent Prediction: ep=47, precision=0.461, recall=0.547, fscore=0.500, accuracy_frame=0.333, threshold=0.250
+NLU Frame: ep=47, accuracy=0.298
+Write dev results: ./model/slot_4768/dev_results/dev_ep=47.pred
+Saving Model: ./model/slot_4768/weights/ep=47_tagF1=0.441frameAcc=0.755_intentF1=0.500frameAcc=0.333th=0.250.h5
+<Epoch 48>
+Epoch 1/1
+77s - loss: 0.1127 - slot_output_loss: 0.0747 - intent_output_loss: 0.0381
+SlotTagging: ep=48, precision=0.433, recall=0.432, fscore=0.433, accuracy_frame=0.742
+Intent Prediction: ep=48, precision=0.445, recall=0.546, fscore=0.490, accuracy_frame=0.325, threshold=0.237
+NLU Frame: ep=48, accuracy=0.294
+Write dev results: ./model/slot_4768/dev_results/dev_ep=48.pred
+Saving Model: ./model/slot_4768/weights/ep=48_tagF1=0.433frameAcc=0.742_intentF1=0.490frameAcc=0.325th=0.237.h5
+<Epoch 49>
+Epoch 1/1
+134s - loss: 0.1218 - slot_output_loss: 0.0842 - intent_output_loss: 0.0376
+SlotTagging: ep=49, precision=0.460, recall=0.433, fscore=0.446, accuracy_frame=0.752
+Intent Prediction: ep=49, precision=0.451, recall=0.547, fscore=0.494, accuracy_frame=0.316, threshold=0.255
+NLU Frame: ep=49, accuracy=0.289
+Write dev results: ./model/slot_4768/dev_results/dev_ep=49.pred
+Saving Model: ./model/slot_4768/weights/ep=49_tagF1=0.446frameAcc=0.752_intentF1=0.494frameAcc=0.316th=0.255.h5
+<Epoch 50>
+Epoch 1/1
+134s - loss: 0.1145 - slot_output_loss: 0.0769 - intent_output_loss: 0.0376
+SlotTagging: ep=50, precision=0.456, recall=0.434, fscore=0.445, accuracy_frame=0.745
+Intent Prediction: ep=50, precision=0.487, recall=0.521, fscore=0.504, accuracy_frame=0.372, threshold=0.260
+NLU Frame: ep=50, accuracy=0.336
+Write dev results: ./model/slot_4768/dev_results/dev_ep=50.pred
+Saving Model: ./model/slot_4768/weights/ep=50_tagF1=0.445frameAcc=0.745_intentF1=0.504frameAcc=0.372th=0.260.h5
+<Epoch 51>
+Epoch 1/1
+79s - loss: 0.1177 - slot_output_loss: 0.0801 - intent_output_loss: 0.0376
+SlotTagging: ep=51, precision=0.472, recall=0.421, fscore=0.445, accuracy_frame=0.751
+Intent Prediction: ep=51, precision=0.460, recall=0.542, fscore=0.497, accuracy_frame=0.329, threshold=0.245
+NLU Frame: ep=51, accuracy=0.293
+Write dev results: ./model/slot_4768/dev_results/dev_ep=51.pred
+Saving Model: ./model/slot_4768/weights/ep=51_tagF1=0.445frameAcc=0.751_intentF1=0.497frameAcc=0.329th=0.245.h5
+<Epoch 52>
+Epoch 1/1
+134s - loss: 0.1005 - slot_output_loss: 0.0632 - intent_output_loss: 0.0373
+SlotTagging: ep=52, precision=0.463, recall=0.430, fscore=0.446, accuracy_frame=0.752
+Intent Prediction: ep=52, precision=0.461, recall=0.518, fscore=0.488, accuracy_frame=0.341, threshold=0.254
+NLU Frame: ep=52, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=52.pred
+Saving Model: ./model/slot_4768/weights/ep=52_tagF1=0.446frameAcc=0.752_intentF1=0.488frameAcc=0.341th=0.254.h5
+<Epoch 53>
+Epoch 1/1
+134s - loss: 0.1082 - slot_output_loss: 0.0712 - intent_output_loss: 0.0370
+SlotTagging: ep=53, precision=0.460, recall=0.424, fscore=0.441, accuracy_frame=0.750
+Intent Prediction: ep=53, precision=0.474, recall=0.525, fscore=0.499, accuracy_frame=0.345, threshold=0.255
+NLU Frame: ep=53, accuracy=0.300
+Write dev results: ./model/slot_4768/dev_results/dev_ep=53.pred
+Saving Model: ./model/slot_4768/weights/ep=53_tagF1=0.441frameAcc=0.750_intentF1=0.499frameAcc=0.345th=0.255.h5
+<Epoch 54>
+Epoch 1/1
+78s - loss: 0.1146 - slot_output_loss: 0.0776 - intent_output_loss: 0.0370
+SlotTagging: ep=54, precision=0.442, recall=0.420, fscore=0.430, accuracy_frame=0.748
+Intent Prediction: ep=54, precision=0.452, recall=0.548, fscore=0.495, accuracy_frame=0.333, threshold=0.245
+NLU Frame: ep=54, accuracy=0.297
+Write dev results: ./model/slot_4768/dev_results/dev_ep=54.pred
+Saving Model: ./model/slot_4768/weights/ep=54_tagF1=0.430frameAcc=0.748_intentF1=0.495frameAcc=0.333th=0.245.h5
+<Epoch 55>
+Epoch 1/1
+134s - loss: 0.1179 - slot_output_loss: 0.0809 - intent_output_loss: 0.0369
+SlotTagging: ep=55, precision=0.493, recall=0.411, fscore=0.448, accuracy_frame=0.762
+Intent Prediction: ep=55, precision=0.498, recall=0.473, fscore=0.485, accuracy_frame=0.353, threshold=0.300
+NLU Frame: ep=55, accuracy=0.315
+Write dev results: ./model/slot_4768/dev_results/dev_ep=55.pred
+Saving Model: ./model/slot_4768/weights/ep=55_tagF1=0.448frameAcc=0.762_intentF1=0.485frameAcc=0.353th=0.300.h5
+<Epoch 56>
+Epoch 1/1
+134s - loss: 0.1357 - slot_output_loss: 0.0988 - intent_output_loss: 0.0369
+SlotTagging: ep=56, precision=0.496, recall=0.406, fscore=0.446, accuracy_frame=0.768
+Intent Prediction: ep=56, precision=0.480, recall=0.505, fscore=0.492, accuracy_frame=0.379, threshold=0.258
+NLU Frame: ep=56, accuracy=0.339
+Write dev results: ./model/slot_4768/dev_results/dev_ep=56.pred
+Saving Model: ./model/slot_4768/weights/ep=56_tagF1=0.446frameAcc=0.768_intentF1=0.492frameAcc=0.379th=0.258.h5
+<Epoch 57>
+Epoch 1/1
+79s - loss: 0.1035 - slot_output_loss: 0.0670 - intent_output_loss: 0.0365
+SlotTagging: ep=57, precision=0.445, recall=0.427, fscore=0.436, accuracy_frame=0.755
+Intent Prediction: ep=57, precision=0.494, recall=0.508, fscore=0.501, accuracy_frame=0.350, threshold=0.271
+NLU Frame: ep=57, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=57.pred
+Saving Model: ./model/slot_4768/weights/ep=57_tagF1=0.436frameAcc=0.755_intentF1=0.501frameAcc=0.350th=0.271.h5
+<Epoch 58>
+Epoch 1/1
+134s - loss: 0.0914 - slot_output_loss: 0.0551 - intent_output_loss: 0.0363
+SlotTagging: ep=58, precision=0.468, recall=0.425, fscore=0.446, accuracy_frame=0.760
+Intent Prediction: ep=58, precision=0.464, recall=0.517, fscore=0.489, accuracy_frame=0.342, threshold=0.265
+NLU Frame: ep=58, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=58.pred
+Saving Model: ./model/slot_4768/weights/ep=58_tagF1=0.446frameAcc=0.760_intentF1=0.489frameAcc=0.342th=0.265.h5
+<Epoch 59>
+Epoch 1/1
+134s - loss: 0.0947 - slot_output_loss: 0.0586 - intent_output_loss: 0.0361
+SlotTagging: ep=59, precision=0.451, recall=0.424, fscore=0.437, accuracy_frame=0.755
+Intent Prediction: ep=59, precision=0.539, recall=0.457, fscore=0.495, accuracy_frame=0.388, threshold=0.338
+NLU Frame: ep=59, accuracy=0.348
+Write dev results: ./model/slot_4768/dev_results/dev_ep=59.pred
+Saving Model: ./model/slot_4768/weights/ep=59_tagF1=0.437frameAcc=0.755_intentF1=0.495frameAcc=0.388th=0.338.h5
+<Epoch 60>
+Epoch 1/1
+77s - loss: 0.0935 - slot_output_loss: 0.0575 - intent_output_loss: 0.0360
+SlotTagging: ep=60, precision=0.415, recall=0.434, fscore=0.424, accuracy_frame=0.742
+Intent Prediction: ep=60, precision=0.452, recall=0.536, fscore=0.491, accuracy_frame=0.350, threshold=0.240
+NLU Frame: ep=60, accuracy=0.320
+Write dev results: ./model/slot_4768/dev_results/dev_ep=60.pred
+Saving Model: ./model/slot_4768/weights/ep=60_tagF1=0.424frameAcc=0.742_intentF1=0.491frameAcc=0.350th=0.240.h5
+<Epoch 61>
+Epoch 1/1
+133s - loss: 0.0908 - slot_output_loss: 0.0547 - intent_output_loss: 0.0361
+SlotTagging: ep=61, precision=0.494, recall=0.420, fscore=0.454, accuracy_frame=0.760
+Intent Prediction: ep=61, precision=0.462, recall=0.532, fscore=0.495, accuracy_frame=0.335, threshold=0.251
+NLU Frame: ep=61, accuracy=0.300
+Write dev results: ./model/slot_4768/dev_results/dev_ep=61.pred
+Saving Model: ./model/slot_4768/weights/ep=61_tagF1=0.454frameAcc=0.760_intentF1=0.495frameAcc=0.335th=0.251.h5
+<Epoch 62>
+Epoch 1/1
+134s - loss: 0.0919 - slot_output_loss: 0.0559 - intent_output_loss: 0.0361
+SlotTagging: ep=62, precision=0.430, recall=0.426, fscore=0.428, accuracy_frame=0.743
+Intent Prediction: ep=62, precision=0.489, recall=0.514, fscore=0.501, accuracy_frame=0.368, threshold=0.290
+NLU Frame: ep=62, accuracy=0.331
+Write dev results: ./model/slot_4768/dev_results/dev_ep=62.pred
+Saving Model: ./model/slot_4768/weights/ep=62_tagF1=0.428frameAcc=0.743_intentF1=0.501frameAcc=0.368th=0.290.h5
+<Epoch 63>
+Epoch 1/1
+78s - loss: 0.0887 - slot_output_loss: 0.0533 - intent_output_loss: 0.0354
+SlotTagging: ep=63, precision=0.437, recall=0.421, fscore=0.429, accuracy_frame=0.749
+Intent Prediction: ep=63, precision=0.468, recall=0.523, fscore=0.494, accuracy_frame=0.330, threshold=0.287
+NLU Frame: ep=63, accuracy=0.291
+Write dev results: ./model/slot_4768/dev_results/dev_ep=63.pred
+Saving Model: ./model/slot_4768/weights/ep=63_tagF1=0.429frameAcc=0.749_intentF1=0.494frameAcc=0.330th=0.287.h5
+<Epoch 64>
+Epoch 1/1
+133s - loss: 0.0865 - slot_output_loss: 0.0512 - intent_output_loss: 0.0353
+SlotTagging: ep=64, precision=0.458, recall=0.419, fscore=0.438, accuracy_frame=0.753
+Intent Prediction: ep=64, precision=0.503, recall=0.493, fscore=0.498, accuracy_frame=0.385, threshold=0.282
+NLU Frame: ep=64, accuracy=0.342
+Write dev results: ./model/slot_4768/dev_results/dev_ep=64.pred
+Saving Model: ./model/slot_4768/weights/ep=64_tagF1=0.438frameAcc=0.753_intentF1=0.498frameAcc=0.385th=0.282.h5
+<Epoch 65>
+Epoch 1/1
+134s - loss: 0.0871 - slot_output_loss: 0.0519 - intent_output_loss: 0.0352
+SlotTagging: ep=65, precision=0.454, recall=0.406, fscore=0.429, accuracy_frame=0.754
+Intent Prediction: ep=65, precision=0.475, recall=0.511, fscore=0.492, accuracy_frame=0.345, threshold=0.275
+NLU Frame: ep=65, accuracy=0.306
+Write dev results: ./model/slot_4768/dev_results/dev_ep=65.pred
+Saving Model: ./model/slot_4768/weights/ep=65_tagF1=0.429frameAcc=0.754_intentF1=0.492frameAcc=0.345th=0.275.h5
+<Epoch 66>
+Epoch 1/1
+78s - loss: 0.0851 - slot_output_loss: 0.0502 - intent_output_loss: 0.0349
+SlotTagging: ep=66, precision=0.443, recall=0.406, fscore=0.424, accuracy_frame=0.753
+Intent Prediction: ep=66, precision=0.492, recall=0.498, fscore=0.495, accuracy_frame=0.352, threshold=0.295
+NLU Frame: ep=66, accuracy=0.309
+Write dev results: ./model/slot_4768/dev_results/dev_ep=66.pred
+Saving Model: ./model/slot_4768/weights/ep=66_tagF1=0.424frameAcc=0.753_intentF1=0.495frameAcc=0.352th=0.295.h5
+<Epoch 67>
+Epoch 1/1
+134s - loss: 0.0971 - slot_output_loss: 0.0620 - intent_output_loss: 0.0351
+SlotTagging: ep=67, precision=0.459, recall=0.418, fscore=0.437, accuracy_frame=0.755
+Intent Prediction: ep=67, precision=0.505, recall=0.470, fscore=0.487, accuracy_frame=0.396, threshold=0.288
+NLU Frame: ep=67, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=67.pred
+Saving Model: ./model/slot_4768/weights/ep=67_tagF1=0.437frameAcc=0.755_intentF1=0.487frameAcc=0.396th=0.288.h5
+<Epoch 68>
+Epoch 1/1
+133s - loss: 0.1047 - slot_output_loss: 0.0697 - intent_output_loss: 0.0350
+SlotTagging: ep=68, precision=0.433, recall=0.428, fscore=0.431, accuracy_frame=0.747
+Intent Prediction: ep=68, precision=0.510, recall=0.475, fscore=0.492, accuracy_frame=0.388, threshold=0.310
+NLU Frame: ep=68, accuracy=0.345
+Write dev results: ./model/slot_4768/dev_results/dev_ep=68.pred
+Saving Model: ./model/slot_4768/weights/ep=68_tagF1=0.431frameAcc=0.747_intentF1=0.492frameAcc=0.388th=0.310.h5
+<Epoch 69>
+Epoch 1/1
+79s - loss: 0.0811 - slot_output_loss: 0.0463 - intent_output_loss: 0.0348
+SlotTagging: ep=69, precision=0.456, recall=0.433, fscore=0.444, accuracy_frame=0.759
+Intent Prediction: ep=69, precision=0.498, recall=0.512, fscore=0.505, accuracy_frame=0.358, threshold=0.290
+NLU Frame: ep=69, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=69.pred
+Saving Model: ./model/slot_4768/weights/ep=69_tagF1=0.444frameAcc=0.759_intentF1=0.505frameAcc=0.358th=0.290.h5
+<Epoch 70>
+Epoch 1/1
+135s - loss: 0.0765 - slot_output_loss: 0.0419 - intent_output_loss: 0.0347
+SlotTagging: ep=70, precision=0.458, recall=0.409, fscore=0.432, accuracy_frame=0.760
+Intent Prediction: ep=70, precision=0.465, recall=0.544, fscore=0.501, accuracy_frame=0.337, threshold=0.256
+NLU Frame: ep=70, accuracy=0.301
+Write dev results: ./model/slot_4768/dev_results/dev_ep=70.pred
+Saving Model: ./model/slot_4768/weights/ep=70_tagF1=0.432frameAcc=0.760_intentF1=0.501frameAcc=0.337th=0.256.h5
+<Epoch 71>
+Epoch 1/1
+134s - loss: 0.0906 - slot_output_loss: 0.0562 - intent_output_loss: 0.0344
+SlotTagging: ep=71, precision=0.458, recall=0.422, fscore=0.439, accuracy_frame=0.756
+Intent Prediction: ep=71, precision=0.544, recall=0.458, fscore=0.497, accuracy_frame=0.390, threshold=0.330
+NLU Frame: ep=71, accuracy=0.350
+Write dev results: ./model/slot_4768/dev_results/dev_ep=71.pred
+Saving Model: ./model/slot_4768/weights/ep=71_tagF1=0.439frameAcc=0.756_intentF1=0.497frameAcc=0.390th=0.330.h5
+<Epoch 72>
+Epoch 1/1
+77s - loss: 0.0924 - slot_output_loss: 0.0580 - intent_output_loss: 0.0343
+SlotTagging: ep=72, precision=0.435, recall=0.424, fscore=0.429, accuracy_frame=0.753
+Intent Prediction: ep=72, precision=0.443, recall=0.566, fscore=0.497, accuracy_frame=0.323, threshold=0.233
+NLU Frame: ep=72, accuracy=0.297
+Write dev results: ./model/slot_4768/dev_results/dev_ep=72.pred
+Saving Model: ./model/slot_4768/weights/ep=72_tagF1=0.429frameAcc=0.753_intentF1=0.497frameAcc=0.323th=0.233.h5
+<Epoch 73>
+Epoch 1/1
+134s - loss: 0.0840 - slot_output_loss: 0.0499 - intent_output_loss: 0.0341
+SlotTagging: ep=73, precision=0.408, recall=0.416, fscore=0.412, accuracy_frame=0.744
+Intent Prediction: ep=73, precision=0.483, recall=0.517, fscore=0.500, accuracy_frame=0.352, threshold=0.269
+NLU Frame: ep=73, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=73.pred
+Saving Model: ./model/slot_4768/weights/ep=73_tagF1=0.412frameAcc=0.744_intentF1=0.500frameAcc=0.352th=0.269.h5
+<Epoch 74>
+Epoch 1/1
+135s - loss: 0.0872 - slot_output_loss: 0.0530 - intent_output_loss: 0.0342
+SlotTagging: ep=74, precision=0.416, recall=0.412, fscore=0.414, accuracy_frame=0.746
+Intent Prediction: ep=74, precision=0.464, recall=0.542, fscore=0.500, accuracy_frame=0.340, threshold=0.248
+NLU Frame: ep=74, accuracy=0.304
+Write dev results: ./model/slot_4768/dev_results/dev_ep=74.pred
+Saving Model: ./model/slot_4768/weights/ep=74_tagF1=0.414frameAcc=0.746_intentF1=0.500frameAcc=0.340th=0.248.h5
+<Epoch 75>
+Epoch 1/1
+77s - loss: 0.0818 - slot_output_loss: 0.0478 - intent_output_loss: 0.0340
+SlotTagging: ep=75, precision=0.463, recall=0.412, fscore=0.436, accuracy_frame=0.757
+Intent Prediction: ep=75, precision=0.497, recall=0.489, fscore=0.493, accuracy_frame=0.393, threshold=0.280
+NLU Frame: ep=75, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=75.pred
+Saving Model: ./model/slot_4768/weights/ep=75_tagF1=0.436frameAcc=0.757_intentF1=0.493frameAcc=0.393th=0.280.h5
+<Epoch 76>
+Epoch 1/1
+134s - loss: 0.0799 - slot_output_loss: 0.0461 - intent_output_loss: 0.0338
+SlotTagging: ep=76, precision=0.448, recall=0.413, fscore=0.430, accuracy_frame=0.751
+Intent Prediction: ep=76, precision=0.513, recall=0.482, fscore=0.497, accuracy_frame=0.386, threshold=0.300
+NLU Frame: ep=76, accuracy=0.349
+Write dev results: ./model/slot_4768/dev_results/dev_ep=76.pred
+Saving Model: ./model/slot_4768/weights/ep=76_tagF1=0.430frameAcc=0.751_intentF1=0.497frameAcc=0.386th=0.300.h5
+<Epoch 77>
+Epoch 1/1
+134s - loss: 0.0742 - slot_output_loss: 0.0409 - intent_output_loss: 0.0332
+SlotTagging: ep=77, precision=0.458, recall=0.410, fscore=0.433, accuracy_frame=0.760
+Intent Prediction: ep=77, precision=0.478, recall=0.521, fscore=0.499, accuracy_frame=0.359, threshold=0.268
+NLU Frame: ep=77, accuracy=0.320
+Write dev results: ./model/slot_4768/dev_results/dev_ep=77.pred
+Saving Model: ./model/slot_4768/weights/ep=77_tagF1=0.433frameAcc=0.760_intentF1=0.499frameAcc=0.359th=0.268.h5
+<Epoch 78>
+Epoch 1/1
+78s - loss: 0.0818 - slot_output_loss: 0.0484 - intent_output_loss: 0.0334
+SlotTagging: ep=78, precision=0.432, recall=0.420, fscore=0.426, accuracy_frame=0.748
+Intent Prediction: ep=78, precision=0.525, recall=0.475, fscore=0.499, accuracy_frame=0.396, threshold=0.321
+NLU Frame: ep=78, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=78.pred
+Saving Model: ./model/slot_4768/weights/ep=78_tagF1=0.426frameAcc=0.748_intentF1=0.499frameAcc=0.396th=0.321.h5
+<Epoch 79>
+Epoch 1/1
+134s - loss: 0.0660 - slot_output_loss: 0.0326 - intent_output_loss: 0.0334
+SlotTagging: ep=79, precision=0.410, recall=0.422, fscore=0.416, accuracy_frame=0.740
+Intent Prediction: ep=79, precision=0.487, recall=0.519, fscore=0.502, accuracy_frame=0.357, threshold=0.275
+NLU Frame: ep=79, accuracy=0.314
+Write dev results: ./model/slot_4768/dev_results/dev_ep=79.pred
+Saving Model: ./model/slot_4768/weights/ep=79_tagF1=0.416frameAcc=0.740_intentF1=0.502frameAcc=0.357th=0.275.h5
+<Epoch 80>
+Epoch 1/1
+134s - loss: 0.0703 - slot_output_loss: 0.0372 - intent_output_loss: 0.0332
+SlotTagging: ep=80, precision=0.424, recall=0.420, fscore=0.422, accuracy_frame=0.746
+Intent Prediction: ep=80, precision=0.448, recall=0.553, fscore=0.495, accuracy_frame=0.339, threshold=0.234
+NLU Frame: ep=80, accuracy=0.304
+Write dev results: ./model/slot_4768/dev_results/dev_ep=80.pred
+Saving Model: ./model/slot_4768/weights/ep=80_tagF1=0.422frameAcc=0.746_intentF1=0.495frameAcc=0.339th=0.234.h5
+<Epoch 81>
+Epoch 1/1
+78s - loss: 0.0767 - slot_output_loss: 0.0433 - intent_output_loss: 0.0334
+SlotTagging: ep=81, precision=0.444, recall=0.422, fscore=0.433, accuracy_frame=0.751
+Intent Prediction: ep=81, precision=0.471, recall=0.519, fscore=0.494, accuracy_frame=0.362, threshold=0.268
+NLU Frame: ep=81, accuracy=0.319
+Write dev results: ./model/slot_4768/dev_results/dev_ep=81.pred
+Saving Model: ./model/slot_4768/weights/ep=81_tagF1=0.433frameAcc=0.751_intentF1=0.494frameAcc=0.362th=0.268.h5
+<Epoch 82>
+Epoch 1/1
+134s - loss: 0.0674 - slot_output_loss: 0.0341 - intent_output_loss: 0.0333
+SlotTagging: ep=82, precision=0.449, recall=0.418, fscore=0.433, accuracy_frame=0.752
+Intent Prediction: ep=82, precision=0.460, recall=0.538, fscore=0.496, accuracy_frame=0.344, threshold=0.255
+NLU Frame: ep=82, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=82.pred
+Saving Model: ./model/slot_4768/weights/ep=82_tagF1=0.433frameAcc=0.752_intentF1=0.496frameAcc=0.344th=0.255.h5
+<Epoch 83>
+Epoch 1/1
+134s - loss: 0.0670 - slot_output_loss: 0.0340 - intent_output_loss: 0.0330
+SlotTagging: ep=83, precision=0.439, recall=0.428, fscore=0.433, accuracy_frame=0.749
+Intent Prediction: ep=83, precision=0.493, recall=0.505, fscore=0.499, accuracy_frame=0.391, threshold=0.268
+NLU Frame: ep=83, accuracy=0.350
+Write dev results: ./model/slot_4768/dev_results/dev_ep=83.pred
+Saving Model: ./model/slot_4768/weights/ep=83_tagF1=0.433frameAcc=0.749_intentF1=0.499frameAcc=0.391th=0.268.h5
+<Epoch 84>
+Epoch 1/1
+76s - loss: 0.0673 - slot_output_loss: 0.0346 - intent_output_loss: 0.0327
+SlotTagging: ep=84, precision=0.441, recall=0.426, fscore=0.433, accuracy_frame=0.746
+Intent Prediction: ep=84, precision=0.460, recall=0.523, fscore=0.490, accuracy_frame=0.340, threshold=0.258
+NLU Frame: ep=84, accuracy=0.305
+Write dev results: ./model/slot_4768/dev_results/dev_ep=84.pred
+Saving Model: ./model/slot_4768/weights/ep=84_tagF1=0.433frameAcc=0.746_intentF1=0.490frameAcc=0.340th=0.258.h5
+<Epoch 85>
+Epoch 1/1
+134s - loss: 0.0636 - slot_output_loss: 0.0309 - intent_output_loss: 0.0327
+SlotTagging: ep=85, precision=0.458, recall=0.413, fscore=0.434, accuracy_frame=0.755
+Intent Prediction: ep=85, precision=0.469, recall=0.522, fscore=0.494, accuracy_frame=0.342, threshold=0.271
+NLU Frame: ep=85, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=85.pred
+Saving Model: ./model/slot_4768/weights/ep=85_tagF1=0.434frameAcc=0.755_intentF1=0.494frameAcc=0.342th=0.271.h5
+<Epoch 86>
+Epoch 1/1
+135s - loss: 0.0656 - slot_output_loss: 0.0328 - intent_output_loss: 0.0328
+SlotTagging: ep=86, precision=0.444, recall=0.442, fscore=0.443, accuracy_frame=0.752
+Intent Prediction: ep=86, precision=0.461, recall=0.532, fscore=0.494, accuracy_frame=0.345, threshold=0.258
+NLU Frame: ep=86, accuracy=0.308
+Write dev results: ./model/slot_4768/dev_results/dev_ep=86.pred
+Saving Model: ./model/slot_4768/weights/ep=86_tagF1=0.443frameAcc=0.752_intentF1=0.494frameAcc=0.345th=0.258.h5
+<Epoch 87>
+Epoch 1/1
+78s - loss: 0.0717 - slot_output_loss: 0.0392 - intent_output_loss: 0.0324
+SlotTagging: ep=87, precision=0.436, recall=0.424, fscore=0.430, accuracy_frame=0.752
+Intent Prediction: ep=87, precision=0.467, recall=0.525, fscore=0.494, accuracy_frame=0.344, threshold=0.261
+NLU Frame: ep=87, accuracy=0.308
+Write dev results: ./model/slot_4768/dev_results/dev_ep=87.pred
+Saving Model: ./model/slot_4768/weights/ep=87_tagF1=0.430frameAcc=0.752_intentF1=0.494frameAcc=0.344th=0.261.h5
+<Epoch 88>
+Epoch 1/1
+135s - loss: 0.0683 - slot_output_loss: 0.0362 - intent_output_loss: 0.0321
+SlotTagging: ep=88, precision=0.487, recall=0.410, fscore=0.445, accuracy_frame=0.764
+Intent Prediction: ep=88, precision=0.460, recall=0.524, fscore=0.490, accuracy_frame=0.347, threshold=0.261
+NLU Frame: ep=88, accuracy=0.309
+Write dev results: ./model/slot_4768/dev_results/dev_ep=88.pred
+Saving Model: ./model/slot_4768/weights/ep=88_tagF1=0.445frameAcc=0.764_intentF1=0.490frameAcc=0.347th=0.261.h5
+<Epoch 89>
+Epoch 1/1
+134s - loss: 0.0682 - slot_output_loss: 0.0359 - intent_output_loss: 0.0322
+SlotTagging: ep=89, precision=0.456, recall=0.426, fscore=0.440, accuracy_frame=0.758
+Intent Prediction: ep=89, precision=0.409, recall=0.592, fscore=0.484, accuracy_frame=0.303, threshold=0.182
+NLU Frame: ep=89, accuracy=0.280
+Write dev results: ./model/slot_4768/dev_results/dev_ep=89.pred
+Saving Model: ./model/slot_4768/weights/ep=89_tagF1=0.440frameAcc=0.758_intentF1=0.484frameAcc=0.303th=0.182.h5
+<Epoch 90>
+Epoch 1/1
+77s - loss: 0.0746 - slot_output_loss: 0.0427 - intent_output_loss: 0.0319
+SlotTagging: ep=90, precision=0.459, recall=0.414, fscore=0.435, accuracy_frame=0.756
+Intent Prediction: ep=90, precision=0.531, recall=0.444, fscore=0.484, accuracy_frame=0.390, threshold=0.342
+NLU Frame: ep=90, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=90.pred
+Saving Model: ./model/slot_4768/weights/ep=90_tagF1=0.435frameAcc=0.756_intentF1=0.484frameAcc=0.390th=0.342.h5
+<Epoch 91>
+Epoch 1/1
+134s - loss: 0.0677 - slot_output_loss: 0.0355 - intent_output_loss: 0.0322
+SlotTagging: ep=91, precision=0.470, recall=0.417, fscore=0.442, accuracy_frame=0.755
+Intent Prediction: ep=91, precision=0.493, recall=0.473, fscore=0.483, accuracy_frame=0.351, threshold=0.309
+NLU Frame: ep=91, accuracy=0.312
+Write dev results: ./model/slot_4768/dev_results/dev_ep=91.pred
+Saving Model: ./model/slot_4768/weights/ep=91_tagF1=0.442frameAcc=0.755_intentF1=0.483frameAcc=0.351th=0.309.h5
+<Epoch 92>
+Epoch 1/1
+134s - loss: 0.0800 - slot_output_loss: 0.0483 - intent_output_loss: 0.0317
+SlotTagging: ep=92, precision=0.434, recall=0.427, fscore=0.431, accuracy_frame=0.754
+Intent Prediction: ep=92, precision=0.514, recall=0.470, fscore=0.491, accuracy_frame=0.391, threshold=0.304
+NLU Frame: ep=92, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=92.pred
+Saving Model: ./model/slot_4768/weights/ep=92_tagF1=0.431frameAcc=0.754_intentF1=0.491frameAcc=0.391th=0.304.h5
+<Epoch 93>
+Epoch 1/1
+77s - loss: 0.0699 - slot_output_loss: 0.0381 - intent_output_loss: 0.0319
+SlotTagging: ep=93, precision=0.445, recall=0.429, fscore=0.437, accuracy_frame=0.749
+Intent Prediction: ep=93, precision=0.463, recall=0.525, fscore=0.492, accuracy_frame=0.334, threshold=0.261
+NLU Frame: ep=93, accuracy=0.300
+Write dev results: ./model/slot_4768/dev_results/dev_ep=93.pred
+Saving Model: ./model/slot_4768/weights/ep=93_tagF1=0.437frameAcc=0.749_intentF1=0.492frameAcc=0.334th=0.261.h5
+<Epoch 94>
+Epoch 1/1
+134s - loss: 0.0636 - slot_output_loss: 0.0321 - intent_output_loss: 0.0315
+SlotTagging: ep=94, precision=0.471, recall=0.426, fscore=0.447, accuracy_frame=0.758
+Intent Prediction: ep=94, precision=0.474, recall=0.503, fscore=0.488, accuracy_frame=0.381, threshold=0.265
+NLU Frame: ep=94, accuracy=0.346
+Write dev results: ./model/slot_4768/dev_results/dev_ep=94.pred
+Saving Model: ./model/slot_4768/weights/ep=94_tagF1=0.447frameAcc=0.758_intentF1=0.488frameAcc=0.381th=0.265.h5
+<Epoch 95>
+Epoch 1/1
+134s - loss: 0.0637 - slot_output_loss: 0.0323 - intent_output_loss: 0.0314
+SlotTagging: ep=95, precision=0.462, recall=0.424, fscore=0.442, accuracy_frame=0.759
+Intent Prediction: ep=95, precision=0.484, recall=0.505, fscore=0.494, accuracy_frame=0.374, threshold=0.265
+NLU Frame: ep=95, accuracy=0.341
+Write dev results: ./model/slot_4768/dev_results/dev_ep=95.pred
+Saving Model: ./model/slot_4768/weights/ep=95_tagF1=0.442frameAcc=0.759_intentF1=0.494frameAcc=0.374th=0.265.h5
+<Epoch 96>
+Epoch 1/1
+77s - loss: 0.0647 - slot_output_loss: 0.0332 - intent_output_loss: 0.0315
+SlotTagging: ep=96, precision=0.443, recall=0.428, fscore=0.435, accuracy_frame=0.746
+Intent Prediction: ep=96, precision=0.510, recall=0.475, fscore=0.492, accuracy_frame=0.395, threshold=0.316
+NLU Frame: ep=96, accuracy=0.347
+Write dev results: ./model/slot_4768/dev_results/dev_ep=96.pred
+Saving Model: ./model/slot_4768/weights/ep=96_tagF1=0.435frameAcc=0.746_intentF1=0.492frameAcc=0.395th=0.316.h5
+<Epoch 97>
+Epoch 1/1
+135s - loss: 0.0777 - slot_output_loss: 0.0460 - intent_output_loss: 0.0317
+SlotTagging: ep=97, precision=0.425, recall=0.413, fscore=0.419, accuracy_frame=0.743
+Intent Prediction: ep=97, precision=0.517, recall=0.465, fscore=0.490, accuracy_frame=0.394, threshold=0.322
+NLU Frame: ep=97, accuracy=0.354
+Write dev results: ./model/slot_4768/dev_results/dev_ep=97.pred
+Saving Model: ./model/slot_4768/weights/ep=97_tagF1=0.419frameAcc=0.743_intentF1=0.490frameAcc=0.394th=0.322.h5
+<Epoch 98>
+Epoch 1/1
+134s - loss: 0.0622 - slot_output_loss: 0.0309 - intent_output_loss: 0.0314
+SlotTagging: ep=98, precision=0.457, recall=0.406, fscore=0.430, accuracy_frame=0.751
+Intent Prediction: ep=98, precision=0.445, recall=0.553, fscore=0.493, accuracy_frame=0.329, threshold=0.222
+NLU Frame: ep=98, accuracy=0.292
+Write dev results: ./model/slot_4768/dev_results/dev_ep=98.pred
+Saving Model: ./model/slot_4768/weights/ep=98_tagF1=0.430frameAcc=0.751_intentF1=0.493frameAcc=0.329th=0.222.h5
+<Epoch 99>
+Epoch 1/1
+77s - loss: 0.0633 - slot_output_loss: 0.0324 - intent_output_loss: 0.0310
+SlotTagging: ep=99, precision=0.463, recall=0.424, fscore=0.442, accuracy_frame=0.761
+Intent Prediction: ep=99, precision=0.474, recall=0.507, fscore=0.490, accuracy_frame=0.349, threshold=0.282
+NLU Frame: ep=99, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=99.pred
+Saving Model: ./model/slot_4768/weights/ep=99_tagF1=0.442frameAcc=0.761_intentF1=0.490frameAcc=0.349th=0.282.h5
+<Epoch 100>
+Epoch 1/1
+135s - loss: 0.0607 - slot_output_loss: 0.0295 - intent_output_loss: 0.0312
+SlotTagging: ep=100, precision=0.455, recall=0.424, fscore=0.439, accuracy_frame=0.758
+Intent Prediction: ep=100, precision=0.509, recall=0.485, fscore=0.497, accuracy_frame=0.390, threshold=0.307
+NLU Frame: ep=100, accuracy=0.350
+Write dev results: ./model/slot_4768/dev_results/dev_ep=100.pred
+Saving Model: ./model/slot_4768/weights/ep=100_tagF1=0.439frameAcc=0.758_intentF1=0.497frameAcc=0.390th=0.307.h5
+<Epoch 101>
+Epoch 1/1
+136s - loss: 0.0624 - slot_output_loss: 0.0315 - intent_output_loss: 0.0310
+SlotTagging: ep=101, precision=0.414, recall=0.429, fscore=0.421, accuracy_frame=0.747
+Intent Prediction: ep=101, precision=0.475, recall=0.517, fscore=0.495, accuracy_frame=0.345, threshold=0.272
+NLU Frame: ep=101, accuracy=0.308
+Write dev results: ./model/slot_4768/dev_results/dev_ep=101.pred
+Saving Model: ./model/slot_4768/weights/ep=101_tagF1=0.421frameAcc=0.747_intentF1=0.495frameAcc=0.345th=0.272.h5
+<Epoch 102>
+Epoch 1/1
+75s - loss: 0.0610 - slot_output_loss: 0.0302 - intent_output_loss: 0.0307
+SlotTagging: ep=102, precision=0.457, recall=0.421, fscore=0.438, accuracy_frame=0.756
+Intent Prediction: ep=102, precision=0.489, recall=0.502, fscore=0.496, accuracy_frame=0.352, threshold=0.291
+NLU Frame: ep=102, accuracy=0.311
+Write dev results: ./model/slot_4768/dev_results/dev_ep=102.pred
+Saving Model: ./model/slot_4768/weights/ep=102_tagF1=0.438frameAcc=0.756_intentF1=0.496frameAcc=0.352th=0.291.h5
+<Epoch 103>
+Epoch 1/1
+134s - loss: 0.0679 - slot_output_loss: 0.0368 - intent_output_loss: 0.0311
+SlotTagging: ep=103, precision=0.445, recall=0.416, fscore=0.430, accuracy_frame=0.758
+Intent Prediction: ep=103, precision=0.477, recall=0.503, fscore=0.490, accuracy_frame=0.376, threshold=0.280
+NLU Frame: ep=103, accuracy=0.340
+Write dev results: ./model/slot_4768/dev_results/dev_ep=103.pred
+Saving Model: ./model/slot_4768/weights/ep=103_tagF1=0.430frameAcc=0.758_intentF1=0.490frameAcc=0.376th=0.280.h5
+<Epoch 104>
+Epoch 1/1
+134s - loss: 0.0672 - slot_output_loss: 0.0366 - intent_output_loss: 0.0307
+SlotTagging: ep=104, precision=0.447, recall=0.418, fscore=0.432, accuracy_frame=0.757
+Intent Prediction: ep=104, precision=0.523, recall=0.467, fscore=0.493, accuracy_frame=0.398, threshold=0.332
+NLU Frame: ep=104, accuracy=0.358
+Write dev results: ./model/slot_4768/dev_results/dev_ep=104.pred
+Saving Model: ./model/slot_4768/weights/ep=104_tagF1=0.432frameAcc=0.757_intentF1=0.493frameAcc=0.398th=0.332.h5
+<Epoch 105>
+Epoch 1/1
+78s - loss: 0.0604 - slot_output_loss: 0.0297 - intent_output_loss: 0.0307
+SlotTagging: ep=105, precision=0.494, recall=0.417, fscore=0.452, accuracy_frame=0.771
+Intent Prediction: ep=105, precision=0.485, recall=0.509, fscore=0.497, accuracy_frame=0.351, threshold=0.281
+NLU Frame: ep=105, accuracy=0.314
+Write dev results: ./model/slot_4768/dev_results/dev_ep=105.pred
+Saving Model: ./model/slot_4768/weights/ep=105_tagF1=0.452frameAcc=0.771_intentF1=0.497frameAcc=0.351th=0.281.h5
+<Epoch 106>
+Epoch 1/1
+135s - loss: 0.0573 - slot_output_loss: 0.0266 - intent_output_loss: 0.0306
+SlotTagging: ep=106, precision=0.461, recall=0.419, fscore=0.439, accuracy_frame=0.761
+Intent Prediction: ep=106, precision=0.520, recall=0.477, fscore=0.497, accuracy_frame=0.394, threshold=0.333
+NLU Frame: ep=106, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=106.pred
+Saving Model: ./model/slot_4768/weights/ep=106_tagF1=0.439frameAcc=0.761_intentF1=0.497frameAcc=0.394th=0.333.h5
+<Epoch 107>
+Epoch 1/1
+135s - loss: 0.0583 - slot_output_loss: 0.0281 - intent_output_loss: 0.0302
+SlotTagging: ep=107, precision=0.451, recall=0.416, fscore=0.433, accuracy_frame=0.752
+Intent Prediction: ep=107, precision=0.487, recall=0.512, fscore=0.499, accuracy_frame=0.352, threshold=0.289
+NLU Frame: ep=107, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=107.pred
+Saving Model: ./model/slot_4768/weights/ep=107_tagF1=0.433frameAcc=0.752_intentF1=0.499frameAcc=0.352th=0.289.h5
+<Epoch 108>
+Epoch 1/1
+76s - loss: 0.0609 - slot_output_loss: 0.0307 - intent_output_loss: 0.0301
+SlotTagging: ep=108, precision=0.453, recall=0.423, fscore=0.437, accuracy_frame=0.758
+Intent Prediction: ep=108, precision=0.474, recall=0.522, fscore=0.497, accuracy_frame=0.347, threshold=0.274
+NLU Frame: ep=108, accuracy=0.309
+Write dev results: ./model/slot_4768/dev_results/dev_ep=108.pred
+Saving Model: ./model/slot_4768/weights/ep=108_tagF1=0.437frameAcc=0.758_intentF1=0.497frameAcc=0.347th=0.274.h5
+<Epoch 109>
+Epoch 1/1
+135s - loss: 0.0644 - slot_output_loss: 0.0344 - intent_output_loss: 0.0300
+SlotTagging: ep=109, precision=0.475, recall=0.416, fscore=0.444, accuracy_frame=0.766
+Intent Prediction: ep=109, precision=0.458, recall=0.533, fscore=0.493, accuracy_frame=0.348, threshold=0.246
+NLU Frame: ep=109, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=109.pred
+Saving Model: ./model/slot_4768/weights/ep=109_tagF1=0.444frameAcc=0.766_intentF1=0.493frameAcc=0.348th=0.246.h5
+<Epoch 110>
+Epoch 1/1
+135s - loss: 0.0584 - slot_output_loss: 0.0282 - intent_output_loss: 0.0302
+SlotTagging: ep=110, precision=0.443, recall=0.417, fscore=0.430, accuracy_frame=0.758
+Intent Prediction: ep=110, precision=0.467, recall=0.527, fscore=0.495, accuracy_frame=0.352, threshold=0.255
+NLU Frame: ep=110, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=110.pred
+Saving Model: ./model/slot_4768/weights/ep=110_tagF1=0.430frameAcc=0.758_intentF1=0.495frameAcc=0.352th=0.255.h5
+<Epoch 111>
+Epoch 1/1
+75s - loss: 0.0703 - slot_output_loss: 0.0401 - intent_output_loss: 0.0302
+SlotTagging: ep=111, precision=0.418, recall=0.433, fscore=0.426, accuracy_frame=0.739
+Intent Prediction: ep=111, precision=0.472, recall=0.514, fscore=0.492, accuracy_frame=0.351, threshold=0.267
+NLU Frame: ep=111, accuracy=0.310
+Write dev results: ./model/slot_4768/dev_results/dev_ep=111.pred
+Saving Model: ./model/slot_4768/weights/ep=111_tagF1=0.426frameAcc=0.739_intentF1=0.492frameAcc=0.351th=0.267.h5
+<Epoch 112>
+Epoch 1/1
+135s - loss: 0.0737 - slot_output_loss: 0.0435 - intent_output_loss: 0.0302
+SlotTagging: ep=112, precision=0.439, recall=0.418, fscore=0.428, accuracy_frame=0.755
+Intent Prediction: ep=112, precision=0.452, recall=0.534, fscore=0.490, accuracy_frame=0.341, threshold=0.252
+NLU Frame: ep=112, accuracy=0.311
+Write dev results: ./model/slot_4768/dev_results/dev_ep=112.pred
+Saving Model: ./model/slot_4768/weights/ep=112_tagF1=0.428frameAcc=0.755_intentF1=0.490frameAcc=0.341th=0.252.h5
+<Epoch 113>
+Epoch 1/1
+135s - loss: 0.0625 - slot_output_loss: 0.0327 - intent_output_loss: 0.0298
+SlotTagging: ep=113, precision=0.441, recall=0.423, fscore=0.432, accuracy_frame=0.755
+Intent Prediction: ep=113, precision=0.465, recall=0.505, fscore=0.484, accuracy_frame=0.346, threshold=0.288
+NLU Frame: ep=113, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=113.pred
+Saving Model: ./model/slot_4768/weights/ep=113_tagF1=0.432frameAcc=0.755_intentF1=0.484frameAcc=0.346th=0.288.h5
+<Epoch 114>
+Epoch 1/1
+77s - loss: 0.0638 - slot_output_loss: 0.0336 - intent_output_loss: 0.0302
+SlotTagging: ep=114, precision=0.480, recall=0.416, fscore=0.446, accuracy_frame=0.758
+Intent Prediction: ep=114, precision=0.468, recall=0.518, fscore=0.492, accuracy_frame=0.381, threshold=0.253
+NLU Frame: ep=114, accuracy=0.346
+Write dev results: ./model/slot_4768/dev_results/dev_ep=114.pred
+Saving Model: ./model/slot_4768/weights/ep=114_tagF1=0.446frameAcc=0.758_intentF1=0.492frameAcc=0.381th=0.253.h5
+<Epoch 115>
+Epoch 1/1
+135s - loss: 0.0613 - slot_output_loss: 0.0315 - intent_output_loss: 0.0298
+SlotTagging: ep=115, precision=0.451, recall=0.426, fscore=0.438, accuracy_frame=0.751
+Intent Prediction: ep=115, precision=0.465, recall=0.529, fscore=0.495, accuracy_frame=0.337, threshold=0.258
+NLU Frame: ep=115, accuracy=0.302
+Write dev results: ./model/slot_4768/dev_results/dev_ep=115.pred
+Saving Model: ./model/slot_4768/weights/ep=115_tagF1=0.438frameAcc=0.751_intentF1=0.495frameAcc=0.337th=0.258.h5
+<Epoch 116>
+Epoch 1/1
+135s - loss: 0.0597 - slot_output_loss: 0.0303 - intent_output_loss: 0.0294
+SlotTagging: ep=116, precision=0.448, recall=0.421, fscore=0.434, accuracy_frame=0.749
+Intent Prediction: ep=116, precision=0.498, recall=0.489, fscore=0.493, accuracy_frame=0.394, threshold=0.305
+NLU Frame: ep=116, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=116.pred
+Saving Model: ./model/slot_4768/weights/ep=116_tagF1=0.434frameAcc=0.749_intentF1=0.493frameAcc=0.394th=0.305.h5
+<Epoch 117>
+Epoch 1/1
+76s - loss: 0.0600 - slot_output_loss: 0.0307 - intent_output_loss: 0.0293
+SlotTagging: ep=117, precision=0.437, recall=0.420, fscore=0.428, accuracy_frame=0.747
+Intent Prediction: ep=117, precision=0.574, recall=0.431, fscore=0.492, accuracy_frame=0.403, threshold=0.407
+NLU Frame: ep=117, accuracy=0.357
+Write dev results: ./model/slot_4768/dev_results/dev_ep=117.pred
+Saving Model: ./model/slot_4768/weights/ep=117_tagF1=0.428frameAcc=0.747_intentF1=0.492frameAcc=0.403th=0.407.h5
+<Epoch 118>
+Epoch 1/1
+135s - loss: 0.0590 - slot_output_loss: 0.0295 - intent_output_loss: 0.0295
+SlotTagging: ep=118, precision=0.441, recall=0.411, fscore=0.426, accuracy_frame=0.749
+Intent Prediction: ep=118, precision=0.484, recall=0.505, fscore=0.495, accuracy_frame=0.360, threshold=0.288
+NLU Frame: ep=118, accuracy=0.318
+Write dev results: ./model/slot_4768/dev_results/dev_ep=118.pred
+Saving Model: ./model/slot_4768/weights/ep=118_tagF1=0.426frameAcc=0.749_intentF1=0.495frameAcc=0.360th=0.288.h5
+<Epoch 119>
+Epoch 1/1
+135s - loss: 0.0516 - slot_output_loss: 0.0222 - intent_output_loss: 0.0294
+SlotTagging: ep=119, precision=0.432, recall=0.415, fscore=0.423, accuracy_frame=0.745
+Intent Prediction: ep=119, precision=0.444, recall=0.539, fscore=0.487, accuracy_frame=0.333, threshold=0.242
+NLU Frame: ep=119, accuracy=0.300
+Write dev results: ./model/slot_4768/dev_results/dev_ep=119.pred
+Saving Model: ./model/slot_4768/weights/ep=119_tagF1=0.423frameAcc=0.745_intentF1=0.487frameAcc=0.333th=0.242.h5
+<Epoch 120>
+Epoch 1/1
+76s - loss: 0.0543 - slot_output_loss: 0.0252 - intent_output_loss: 0.0290
+SlotTagging: ep=120, precision=0.463, recall=0.420, fscore=0.441, accuracy_frame=0.763
+Intent Prediction: ep=120, precision=0.487, recall=0.494, fscore=0.491, accuracy_frame=0.353, threshold=0.310
+NLU Frame: ep=120, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=120.pred
+Saving Model: ./model/slot_4768/weights/ep=120_tagF1=0.441frameAcc=0.763_intentF1=0.491frameAcc=0.353th=0.310.h5
+<Epoch 121>
+Epoch 1/1
+135s - loss: 0.0554 - slot_output_loss: 0.0263 - intent_output_loss: 0.0291
+SlotTagging: ep=121, precision=0.429, recall=0.420, fscore=0.424, accuracy_frame=0.751
+Intent Prediction: ep=121, precision=0.464, recall=0.519, fscore=0.490, accuracy_frame=0.346, threshold=0.270
+NLU Frame: ep=121, accuracy=0.306
+Write dev results: ./model/slot_4768/dev_results/dev_ep=121.pred
+Saving Model: ./model/slot_4768/weights/ep=121_tagF1=0.424frameAcc=0.751_intentF1=0.490frameAcc=0.346th=0.270.h5
+<Epoch 122>
+Epoch 1/1
+135s - loss: 0.0553 - slot_output_loss: 0.0263 - intent_output_loss: 0.0289
+SlotTagging: ep=122, precision=0.428, recall=0.425, fscore=0.426, accuracy_frame=0.746
+Intent Prediction: ep=122, precision=0.511, recall=0.483, fscore=0.497, accuracy_frame=0.396, threshold=0.318
+NLU Frame: ep=122, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=122.pred
+Saving Model: ./model/slot_4768/weights/ep=122_tagF1=0.426frameAcc=0.746_intentF1=0.497frameAcc=0.396th=0.318.h5
+<Epoch 123>
+Epoch 1/1
+77s - loss: 0.0553 - slot_output_loss: 0.0263 - intent_output_loss: 0.0290
+SlotTagging: ep=123, precision=0.433, recall=0.418, fscore=0.425, accuracy_frame=0.748
+Intent Prediction: ep=123, precision=0.490, recall=0.500, fscore=0.495, accuracy_frame=0.390, threshold=0.287
+NLU Frame: ep=123, accuracy=0.344
+Write dev results: ./model/slot_4768/dev_results/dev_ep=123.pred
+Saving Model: ./model/slot_4768/weights/ep=123_tagF1=0.425frameAcc=0.748_intentF1=0.495frameAcc=0.390th=0.287.h5
+<Epoch 124>
+Epoch 1/1
+135s - loss: 0.0499 - slot_output_loss: 0.0212 - intent_output_loss: 0.0287
+SlotTagging: ep=124, precision=0.419, recall=0.429, fscore=0.424, accuracy_frame=0.746
+Intent Prediction: ep=124, precision=0.515, recall=0.461, fscore=0.486, accuracy_frame=0.397, threshold=0.321
+NLU Frame: ep=124, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=124.pred
+Saving Model: ./model/slot_4768/weights/ep=124_tagF1=0.424frameAcc=0.746_intentF1=0.486frameAcc=0.397th=0.321.h5
+<Epoch 125>
+Epoch 1/1
+134s - loss: 0.0518 - slot_output_loss: 0.0232 - intent_output_loss: 0.0286
+SlotTagging: ep=125, precision=0.447, recall=0.417, fscore=0.432, accuracy_frame=0.756
+Intent Prediction: ep=125, precision=0.494, recall=0.484, fscore=0.489, accuracy_frame=0.394, threshold=0.304
+NLU Frame: ep=125, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=125.pred
+Saving Model: ./model/slot_4768/weights/ep=125_tagF1=0.432frameAcc=0.756_intentF1=0.489frameAcc=0.394th=0.304.h5
+<Epoch 126>
+Epoch 1/1
+77s - loss: 0.0510 - slot_output_loss: 0.0225 - intent_output_loss: 0.0285
+SlotTagging: ep=126, precision=0.426, recall=0.415, fscore=0.420, accuracy_frame=0.748
+Intent Prediction: ep=126, precision=0.481, recall=0.510, fscore=0.495, accuracy_frame=0.386, threshold=0.278
+NLU Frame: ep=126, accuracy=0.345
+Write dev results: ./model/slot_4768/dev_results/dev_ep=126.pred
+Saving Model: ./model/slot_4768/weights/ep=126_tagF1=0.420frameAcc=0.748_intentF1=0.495frameAcc=0.386th=0.278.h5
+<Epoch 127>
+Epoch 1/1
+135s - loss: 0.0591 - slot_output_loss: 0.0306 - intent_output_loss: 0.0285
+SlotTagging: ep=127, precision=0.440, recall=0.415, fscore=0.427, accuracy_frame=0.746
+Intent Prediction: ep=127, precision=0.513, recall=0.481, fscore=0.496, accuracy_frame=0.391, threshold=0.327
+NLU Frame: ep=127, accuracy=0.349
+Write dev results: ./model/slot_4768/dev_results/dev_ep=127.pred
+Saving Model: ./model/slot_4768/weights/ep=127_tagF1=0.427frameAcc=0.746_intentF1=0.496frameAcc=0.391th=0.327.h5
+<Epoch 128>
+Epoch 1/1
+135s - loss: 0.0511 - slot_output_loss: 0.0228 - intent_output_loss: 0.0283
+SlotTagging: ep=128, precision=0.462, recall=0.405, fscore=0.431, accuracy_frame=0.762
+Intent Prediction: ep=128, precision=0.462, recall=0.529, fscore=0.493, accuracy_frame=0.349, threshold=0.249
+NLU Frame: ep=128, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=128.pred
+Saving Model: ./model/slot_4768/weights/ep=128_tagF1=0.431frameAcc=0.762_intentF1=0.493frameAcc=0.349th=0.249.h5
+<Epoch 129>
+Epoch 1/1
+78s - loss: 0.0535 - slot_output_loss: 0.0254 - intent_output_loss: 0.0281
+SlotTagging: ep=129, precision=0.450, recall=0.416, fscore=0.432, accuracy_frame=0.756
+Intent Prediction: ep=129, precision=0.502, recall=0.480, fscore=0.491, accuracy_frame=0.394, threshold=0.316
+NLU Frame: ep=129, accuracy=0.350
+Write dev results: ./model/slot_4768/dev_results/dev_ep=129.pred
+Saving Model: ./model/slot_4768/weights/ep=129_tagF1=0.432frameAcc=0.756_intentF1=0.491frameAcc=0.394th=0.316.h5
+<Epoch 130>
+Epoch 1/1
+135s - loss: 0.0591 - slot_output_loss: 0.0307 - intent_output_loss: 0.0283
+SlotTagging: ep=130, precision=0.464, recall=0.404, fscore=0.432, accuracy_frame=0.764
+Intent Prediction: ep=130, precision=0.509, recall=0.475, fscore=0.492, accuracy_frame=0.402, threshold=0.323
+NLU Frame: ep=130, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=130.pred
+Saving Model: ./model/slot_4768/weights/ep=130_tagF1=0.432frameAcc=0.764_intentF1=0.492frameAcc=0.402th=0.323.h5
+<Epoch 131>
+Epoch 1/1
+135s - loss: 0.0493 - slot_output_loss: 0.0214 - intent_output_loss: 0.0279
+SlotTagging: ep=131, precision=0.445, recall=0.411, fscore=0.427, accuracy_frame=0.754
+Intent Prediction: ep=131, precision=0.485, recall=0.497, fscore=0.491, accuracy_frame=0.361, threshold=0.289
+NLU Frame: ep=131, accuracy=0.322
+Write dev results: ./model/slot_4768/dev_results/dev_ep=131.pred
+Saving Model: ./model/slot_4768/weights/ep=131_tagF1=0.427frameAcc=0.754_intentF1=0.491frameAcc=0.361th=0.289.h5
+<Epoch 132>
+Epoch 1/1
+75s - loss: 0.0589 - slot_output_loss: 0.0309 - intent_output_loss: 0.0280
+SlotTagging: ep=132, precision=0.427, recall=0.421, fscore=0.424, accuracy_frame=0.747
+Intent Prediction: ep=132, precision=0.523, recall=0.475, fscore=0.498, accuracy_frame=0.409, threshold=0.334
+NLU Frame: ep=132, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=132.pred
+Saving Model: ./model/slot_4768/weights/ep=132_tagF1=0.424frameAcc=0.747_intentF1=0.498frameAcc=0.409th=0.334.h5
+<Epoch 133>
+Epoch 1/1
+135s - loss: 0.0562 - slot_output_loss: 0.0285 - intent_output_loss: 0.0277
+SlotTagging: ep=133, precision=0.452, recall=0.420, fscore=0.435, accuracy_frame=0.759
+Intent Prediction: ep=133, precision=0.495, recall=0.492, fscore=0.494, accuracy_frame=0.395, threshold=0.302
+NLU Frame: ep=133, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=133.pred
+Saving Model: ./model/slot_4768/weights/ep=133_tagF1=0.435frameAcc=0.759_intentF1=0.494frameAcc=0.395th=0.302.h5
+<Epoch 134>
+Epoch 1/1
+135s - loss: 0.0495 - slot_output_loss: 0.0219 - intent_output_loss: 0.0276
+SlotTagging: ep=134, precision=0.465, recall=0.426, fscore=0.445, accuracy_frame=0.759
+Intent Prediction: ep=134, precision=0.488, recall=0.487, fscore=0.488, accuracy_frame=0.362, threshold=0.312
+NLU Frame: ep=134, accuracy=0.322
+Write dev results: ./model/slot_4768/dev_results/dev_ep=134.pred
+Saving Model: ./model/slot_4768/weights/ep=134_tagF1=0.445frameAcc=0.759_intentF1=0.488frameAcc=0.362th=0.312.h5
+<Epoch 135>
+Epoch 1/1
+77s - loss: 0.0498 - slot_output_loss: 0.0224 - intent_output_loss: 0.0274
+SlotTagging: ep=135, precision=0.477, recall=0.427, fscore=0.450, accuracy_frame=0.764
+Intent Prediction: ep=135, precision=0.519, recall=0.456, fscore=0.486, accuracy_frame=0.402, threshold=0.335
+NLU Frame: ep=135, accuracy=0.359
+Write dev results: ./model/slot_4768/dev_results/dev_ep=135.pred
+Saving Model: ./model/slot_4768/weights/ep=135_tagF1=0.450frameAcc=0.764_intentF1=0.486frameAcc=0.402th=0.335.h5
+<Epoch 136>
+Epoch 1/1
+135s - loss: 0.0509 - slot_output_loss: 0.0233 - intent_output_loss: 0.0276
+SlotTagging: ep=136, precision=0.444, recall=0.425, fscore=0.434, accuracy_frame=0.751
+Intent Prediction: ep=136, precision=0.487, recall=0.497, fscore=0.492, accuracy_frame=0.395, threshold=0.287
+NLU Frame: ep=136, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=136.pred
+Saving Model: ./model/slot_4768/weights/ep=136_tagF1=0.434frameAcc=0.751_intentF1=0.492frameAcc=0.395th=0.287.h5
+<Epoch 137>
+Epoch 1/1
+135s - loss: 0.0472 - slot_output_loss: 0.0198 - intent_output_loss: 0.0275
+SlotTagging: ep=137, precision=0.450, recall=0.410, fscore=0.429, accuracy_frame=0.759
+Intent Prediction: ep=137, precision=0.461, recall=0.529, fscore=0.492, accuracy_frame=0.349, threshold=0.255
+NLU Frame: ep=137, accuracy=0.307
+Write dev results: ./model/slot_4768/dev_results/dev_ep=137.pred
+Saving Model: ./model/slot_4768/weights/ep=137_tagF1=0.429frameAcc=0.759_intentF1=0.492frameAcc=0.349th=0.255.h5
+<Epoch 138>
+Epoch 1/1
+76s - loss: 0.0513 - slot_output_loss: 0.0238 - intent_output_loss: 0.0275
+SlotTagging: ep=138, precision=0.446, recall=0.416, fscore=0.431, accuracy_frame=0.755
+Intent Prediction: ep=138, precision=0.464, recall=0.499, fscore=0.481, accuracy_frame=0.349, threshold=0.290
+NLU Frame: ep=138, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=138.pred
+Saving Model: ./model/slot_4768/weights/ep=138_tagF1=0.431frameAcc=0.755_intentF1=0.481frameAcc=0.349th=0.290.h5
+<Epoch 139>
+Epoch 1/1
+135s - loss: 0.0526 - slot_output_loss: 0.0251 - intent_output_loss: 0.0275
+SlotTagging: ep=139, precision=0.455, recall=0.412, fscore=0.432, accuracy_frame=0.762
+Intent Prediction: ep=139, precision=0.525, recall=0.451, fscore=0.485, accuracy_frame=0.409, threshold=0.348
+NLU Frame: ep=139, accuracy=0.366
+Write dev results: ./model/slot_4768/dev_results/dev_ep=139.pred
+Saving Model: ./model/slot_4768/weights/ep=139_tagF1=0.432frameAcc=0.762_intentF1=0.485frameAcc=0.409th=0.348.h5
+<Epoch 140>
+Epoch 1/1
+135s - loss: 0.0535 - slot_output_loss: 0.0259 - intent_output_loss: 0.0275
+SlotTagging: ep=140, precision=0.460, recall=0.412, fscore=0.434, accuracy_frame=0.757
+Intent Prediction: ep=140, precision=0.517, recall=0.454, fscore=0.483, accuracy_frame=0.403, threshold=0.329
+NLU Frame: ep=140, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=140.pred
+Saving Model: ./model/slot_4768/weights/ep=140_tagF1=0.434frameAcc=0.757_intentF1=0.483frameAcc=0.403th=0.329.h5
+<Epoch 141>
+Epoch 1/1
+76s - loss: 0.0551 - slot_output_loss: 0.0279 - intent_output_loss: 0.0272
+SlotTagging: ep=141, precision=0.491, recall=0.411, fscore=0.447, accuracy_frame=0.770
+Intent Prediction: ep=141, precision=0.494, recall=0.496, fscore=0.495, accuracy_frame=0.359, threshold=0.305
+NLU Frame: ep=141, accuracy=0.321
+Write dev results: ./model/slot_4768/dev_results/dev_ep=141.pred
+Saving Model: ./model/slot_4768/weights/ep=141_tagF1=0.447frameAcc=0.770_intentF1=0.495frameAcc=0.359th=0.305.h5
+<Epoch 142>
+Epoch 1/1
+135s - loss: 0.0548 - slot_output_loss: 0.0273 - intent_output_loss: 0.0275
+SlotTagging: ep=142, precision=0.455, recall=0.421, fscore=0.437, accuracy_frame=0.758
+Intent Prediction: ep=142, precision=0.523, recall=0.457, fscore=0.488, accuracy_frame=0.415, threshold=0.344
+NLU Frame: ep=142, accuracy=0.367
+Write dev results: ./model/slot_4768/dev_results/dev_ep=142.pred
+Saving Model: ./model/slot_4768/weights/ep=142_tagF1=0.437frameAcc=0.758_intentF1=0.488frameAcc=0.415th=0.344.h5
+<Epoch 143>
+Epoch 1/1
+135s - loss: 0.0498 - slot_output_loss: 0.0221 - intent_output_loss: 0.0277
+SlotTagging: ep=143, precision=0.456, recall=0.418, fscore=0.436, accuracy_frame=0.759
+Intent Prediction: ep=143, precision=0.475, recall=0.511, fscore=0.493, accuracy_frame=0.389, threshold=0.250
+NLU Frame: ep=143, accuracy=0.351
+Write dev results: ./model/slot_4768/dev_results/dev_ep=143.pred
+Saving Model: ./model/slot_4768/weights/ep=143_tagF1=0.436frameAcc=0.759_intentF1=0.493frameAcc=0.389th=0.250.h5
+<Epoch 144>
+Epoch 1/1
+77s - loss: 0.0467 - slot_output_loss: 0.0194 - intent_output_loss: 0.0274
+SlotTagging: ep=144, precision=0.446, recall=0.418, fscore=0.432, accuracy_frame=0.756
+Intent Prediction: ep=144, precision=0.495, recall=0.487, fscore=0.491, accuracy_frame=0.402, threshold=0.309
+NLU Frame: ep=144, accuracy=0.358
+Write dev results: ./model/slot_4768/dev_results/dev_ep=144.pred
+Saving Model: ./model/slot_4768/weights/ep=144_tagF1=0.432frameAcc=0.756_intentF1=0.491frameAcc=0.402th=0.309.h5
+<Epoch 145>
+Epoch 1/1
+134s - loss: 0.0485 - slot_output_loss: 0.0215 - intent_output_loss: 0.0270
+SlotTagging: ep=145, precision=0.464, recall=0.418, fscore=0.440, accuracy_frame=0.756
+Intent Prediction: ep=145, precision=0.452, recall=0.526, fscore=0.486, accuracy_frame=0.352, threshold=0.242
+NLU Frame: ep=145, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=145.pred
+Saving Model: ./model/slot_4768/weights/ep=145_tagF1=0.440frameAcc=0.756_intentF1=0.486frameAcc=0.352th=0.242.h5
+<Epoch 146>
+Epoch 1/1
+134s - loss: 0.0473 - slot_output_loss: 0.0205 - intent_output_loss: 0.0268
+SlotTagging: ep=146, precision=0.468, recall=0.429, fscore=0.448, accuracy_frame=0.763
+Intent Prediction: ep=146, precision=0.507, recall=0.484, fscore=0.495, accuracy_frame=0.416, threshold=0.301
+NLU Frame: ep=146, accuracy=0.371
+Write dev results: ./model/slot_4768/dev_results/dev_ep=146.pred
+Saving Model: ./model/slot_4768/weights/ep=146_tagF1=0.448frameAcc=0.763_intentF1=0.495frameAcc=0.416th=0.301.h5
+<Epoch 147>
+Epoch 1/1
+79s - loss: 0.0574 - slot_output_loss: 0.0303 - intent_output_loss: 0.0270
+SlotTagging: ep=147, precision=0.467, recall=0.425, fscore=0.445, accuracy_frame=0.761
+Intent Prediction: ep=147, precision=0.467, recall=0.517, fscore=0.491, accuracy_frame=0.362, threshold=0.268
+NLU Frame: ep=147, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=147.pred
+Saving Model: ./model/slot_4768/weights/ep=147_tagF1=0.445frameAcc=0.761_intentF1=0.491frameAcc=0.362th=0.268.h5
+<Epoch 148>
+Epoch 1/1
+135s - loss: 0.0546 - slot_output_loss: 0.0276 - intent_output_loss: 0.0270
+SlotTagging: ep=148, precision=0.482, recall=0.413, fscore=0.445, accuracy_frame=0.766
+Intent Prediction: ep=148, precision=0.507, recall=0.474, fscore=0.490, accuracy_frame=0.403, threshold=0.320
+NLU Frame: ep=148, accuracy=0.362
+Write dev results: ./model/slot_4768/dev_results/dev_ep=148.pred
+Saving Model: ./model/slot_4768/weights/ep=148_tagF1=0.445frameAcc=0.766_intentF1=0.490frameAcc=0.403th=0.320.h5
+<Epoch 149>
+Epoch 1/1
+135s - loss: 0.0615 - slot_output_loss: 0.0349 - intent_output_loss: 0.0267
+SlotTagging: ep=149, precision=0.429, recall=0.424, fscore=0.426, accuracy_frame=0.745
+Intent Prediction: ep=149, precision=0.499, recall=0.485, fscore=0.492, accuracy_frame=0.373, threshold=0.329
+NLU Frame: ep=149, accuracy=0.321
+Write dev results: ./model/slot_4768/dev_results/dev_ep=149.pred
+Saving Model: ./model/slot_4768/weights/ep=149_tagF1=0.426frameAcc=0.745_intentF1=0.492frameAcc=0.373th=0.329.h5
+<Epoch 150>
+Epoch 1/1
+75s - loss: 0.0479 - slot_output_loss: 0.0208 - intent_output_loss: 0.0271
+SlotTagging: ep=150, precision=0.448, recall=0.417, fscore=0.432, accuracy_frame=0.752
+Intent Prediction: ep=150, precision=0.484, recall=0.504, fscore=0.494, accuracy_frame=0.396, threshold=0.274
+NLU Frame: ep=150, accuracy=0.353
+Write dev results: ./model/slot_4768/dev_results/dev_ep=150.pred
+Saving Model: ./model/slot_4768/weights/ep=150_tagF1=0.432frameAcc=0.752_intentF1=0.494frameAcc=0.396th=0.274.h5
+<Epoch 151>
+Epoch 1/1
+135s - loss: 0.0490 - slot_output_loss: 0.0223 - intent_output_loss: 0.0266
+SlotTagging: ep=151, precision=0.467, recall=0.413, fscore=0.438, accuracy_frame=0.758
+Intent Prediction: ep=151, precision=0.539, recall=0.468, fscore=0.501, accuracy_frame=0.413, threshold=0.353
+NLU Frame: ep=151, accuracy=0.368
+Write dev results: ./model/slot_4768/dev_results/dev_ep=151.pred
+Saving Model: ./model/slot_4768/weights/ep=151_tagF1=0.438frameAcc=0.758_intentF1=0.501frameAcc=0.413th=0.353.h5
+<Epoch 152>
+Epoch 1/1
+134s - loss: 0.0476 - slot_output_loss: 0.0211 - intent_output_loss: 0.0265
+SlotTagging: ep=152, precision=0.467, recall=0.403, fscore=0.433, accuracy_frame=0.764
+Intent Prediction: ep=152, precision=0.505, recall=0.488, fscore=0.496, accuracy_frame=0.408, threshold=0.303
+NLU Frame: ep=152, accuracy=0.363
+Write dev results: ./model/slot_4768/dev_results/dev_ep=152.pred
+Saving Model: ./model/slot_4768/weights/ep=152_tagF1=0.433frameAcc=0.764_intentF1=0.496frameAcc=0.408th=0.303.h5
+<Epoch 153>
+Epoch 1/1
+77s - loss: 0.0548 - slot_output_loss: 0.0282 - intent_output_loss: 0.0265
+SlotTagging: ep=153, precision=0.443, recall=0.425, fscore=0.434, accuracy_frame=0.751
+Intent Prediction: ep=153, precision=0.509, recall=0.475, fscore=0.491, accuracy_frame=0.412, threshold=0.313
+NLU Frame: ep=153, accuracy=0.365
+Write dev results: ./model/slot_4768/dev_results/dev_ep=153.pred
+Saving Model: ./model/slot_4768/weights/ep=153_tagF1=0.434frameAcc=0.751_intentF1=0.491frameAcc=0.412th=0.313.h5
+<Epoch 154>
+Epoch 1/1
+134s - loss: 0.0475 - slot_output_loss: 0.0211 - intent_output_loss: 0.0264
+SlotTagging: ep=154, precision=0.467, recall=0.414, fscore=0.439, accuracy_frame=0.756
+Intent Prediction: ep=154, precision=0.470, recall=0.512, fscore=0.490, accuracy_frame=0.362, threshold=0.271
+NLU Frame: ep=154, accuracy=0.319
+Write dev results: ./model/slot_4768/dev_results/dev_ep=154.pred
+Saving Model: ./model/slot_4768/weights/ep=154_tagF1=0.439frameAcc=0.756_intentF1=0.490frameAcc=0.362th=0.271.h5
+<Epoch 155>
+Epoch 1/1
+135s - loss: 0.0489 - slot_output_loss: 0.0224 - intent_output_loss: 0.0265
+SlotTagging: ep=155, precision=0.446, recall=0.418, fscore=0.432, accuracy_frame=0.748
+Intent Prediction: ep=155, precision=0.474, recall=0.509, fscore=0.491, accuracy_frame=0.362, threshold=0.280
+NLU Frame: ep=155, accuracy=0.318
+Write dev results: ./model/slot_4768/dev_results/dev_ep=155.pred
+Saving Model: ./model/slot_4768/weights/ep=155_tagF1=0.432frameAcc=0.748_intentF1=0.491frameAcc=0.362th=0.280.h5
+<Epoch 156>
+Epoch 1/1
+78s - loss: 0.0582 - slot_output_loss: 0.0316 - intent_output_loss: 0.0266
+SlotTagging: ep=156, precision=0.445, recall=0.428, fscore=0.436, accuracy_frame=0.750
+Intent Prediction: ep=156, precision=0.492, recall=0.480, fscore=0.486, accuracy_frame=0.403, threshold=0.306
+NLU Frame: ep=156, accuracy=0.354
+Write dev results: ./model/slot_4768/dev_results/dev_ep=156.pred
+Saving Model: ./model/slot_4768/weights/ep=156_tagF1=0.436frameAcc=0.750_intentF1=0.486frameAcc=0.403th=0.306.h5
+<Epoch 157>
+Epoch 1/1
+134s - loss: 0.0539 - slot_output_loss: 0.0275 - intent_output_loss: 0.0264
+SlotTagging: ep=157, precision=0.461, recall=0.432, fscore=0.446, accuracy_frame=0.756
+Intent Prediction: ep=157, precision=0.504, recall=0.473, fscore=0.488, accuracy_frame=0.400, threshold=0.320
+NLU Frame: ep=157, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=157.pred
+Saving Model: ./model/slot_4768/weights/ep=157_tagF1=0.446frameAcc=0.756_intentF1=0.488frameAcc=0.400th=0.320.h5
+<Epoch 158>
+Epoch 1/1
+134s - loss: 0.0514 - slot_output_loss: 0.0252 - intent_output_loss: 0.0261
+SlotTagging: ep=158, precision=0.456, recall=0.417, fscore=0.436, accuracy_frame=0.755
+Intent Prediction: ep=158, precision=0.488, recall=0.493, fscore=0.491, accuracy_frame=0.397, threshold=0.285
+NLU Frame: ep=158, accuracy=0.352
+Write dev results: ./model/slot_4768/dev_results/dev_ep=158.pred
+Saving Model: ./model/slot_4768/weights/ep=158_tagF1=0.436frameAcc=0.755_intentF1=0.491frameAcc=0.397th=0.285.h5
+<Epoch 159>
+Epoch 1/1
+76s - loss: 0.0490 - slot_output_loss: 0.0228 - intent_output_loss: 0.0262
+SlotTagging: ep=159, precision=0.462, recall=0.414, fscore=0.437, accuracy_frame=0.757
+Intent Prediction: ep=159, precision=0.484, recall=0.492, fscore=0.488, accuracy_frame=0.360, threshold=0.300
+NLU Frame: ep=159, accuracy=0.315
+Write dev results: ./model/slot_4768/dev_results/dev_ep=159.pred
+Saving Model: ./model/slot_4768/weights/ep=159_tagF1=0.437frameAcc=0.757_intentF1=0.488frameAcc=0.360th=0.300.h5
+<Epoch 160>
+Epoch 1/1
+134s - loss: 0.0462 - slot_output_loss: 0.0203 - intent_output_loss: 0.0260
+SlotTagging: ep=160, precision=0.448, recall=0.423, fscore=0.435, accuracy_frame=0.750
+Intent Prediction: ep=160, precision=0.487, recall=0.480, fscore=0.483, accuracy_frame=0.405, threshold=0.290
+NLU Frame: ep=160, accuracy=0.360
+Write dev results: ./model/slot_4768/dev_results/dev_ep=160.pred
+Saving Model: ./model/slot_4768/weights/ep=160_tagF1=0.435frameAcc=0.750_intentF1=0.483frameAcc=0.405th=0.290.h5
+<Epoch 161>
+Epoch 1/1
+135s - loss: 0.0473 - slot_output_loss: 0.0211 - intent_output_loss: 0.0262
+SlotTagging: ep=161, precision=0.454, recall=0.412, fscore=0.432, accuracy_frame=0.750
+Intent Prediction: ep=161, precision=0.489, recall=0.484, fscore=0.487, accuracy_frame=0.410, threshold=0.287
+NLU Frame: ep=161, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=161.pred
+Saving Model: ./model/slot_4768/weights/ep=161_tagF1=0.432frameAcc=0.750_intentF1=0.487frameAcc=0.410th=0.287.h5
+<Epoch 162>
+Epoch 1/1
+76s - loss: 0.0506 - slot_output_loss: 0.0248 - intent_output_loss: 0.0258
+SlotTagging: ep=162, precision=0.460, recall=0.424, fscore=0.441, accuracy_frame=0.752
+Intent Prediction: ep=162, precision=0.510, recall=0.467, fscore=0.487, accuracy_frame=0.417, threshold=0.327
+NLU Frame: ep=162, accuracy=0.367
+Write dev results: ./model/slot_4768/dev_results/dev_ep=162.pred
+Saving Model: ./model/slot_4768/weights/ep=162_tagF1=0.441frameAcc=0.752_intentF1=0.487frameAcc=0.417th=0.327.h5
+<Epoch 163>
+Epoch 1/1
+135s - loss: 0.0478 - slot_output_loss: 0.0220 - intent_output_loss: 0.0257
+SlotTagging: ep=163, precision=0.493, recall=0.411, fscore=0.448, accuracy_frame=0.763
+Intent Prediction: ep=163, precision=0.541, recall=0.450, fscore=0.491, accuracy_frame=0.411, threshold=0.378
+NLU Frame: ep=163, accuracy=0.364
+Write dev results: ./model/slot_4768/dev_results/dev_ep=163.pred
+Saving Model: ./model/slot_4768/weights/ep=163_tagF1=0.448frameAcc=0.763_intentF1=0.491frameAcc=0.411th=0.378.h5
+<Epoch 164>
+Epoch 1/1
+135s - loss: 0.0492 - slot_output_loss: 0.0236 - intent_output_loss: 0.0256
+SlotTagging: ep=164, precision=0.468, recall=0.423, fscore=0.444, accuracy_frame=0.760
+Intent Prediction: ep=164, precision=0.503, recall=0.476, fscore=0.489, accuracy_frame=0.395, threshold=0.319
+NLU Frame: ep=164, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=164.pred
+Saving Model: ./model/slot_4768/weights/ep=164_tagF1=0.444frameAcc=0.760_intentF1=0.489frameAcc=0.395th=0.319.h5
+<Epoch 165>
+Epoch 1/1
+77s - loss: 0.0467 - slot_output_loss: 0.0211 - intent_output_loss: 0.0256
+SlotTagging: ep=165, precision=0.469, recall=0.419, fscore=0.443, accuracy_frame=0.756
+Intent Prediction: ep=165, precision=0.536, recall=0.441, fscore=0.484, accuracy_frame=0.407, threshold=0.394
+NLU Frame: ep=165, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=165.pred
+Saving Model: ./model/slot_4768/weights/ep=165_tagF1=0.443frameAcc=0.756_intentF1=0.484frameAcc=0.407th=0.394.h5
+<Epoch 166>
+Epoch 1/1
+135s - loss: 0.0530 - slot_output_loss: 0.0270 - intent_output_loss: 0.0260
+SlotTagging: ep=166, precision=0.470, recall=0.424, fscore=0.446, accuracy_frame=0.759
+Intent Prediction: ep=166, precision=0.494, recall=0.484, fscore=0.489, accuracy_frame=0.401, threshold=0.298
+NLU Frame: ep=166, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=166.pred
+Saving Model: ./model/slot_4768/weights/ep=166_tagF1=0.446frameAcc=0.759_intentF1=0.489frameAcc=0.401th=0.298.h5
+<Epoch 167>
+Epoch 1/1
+134s - loss: 0.0483 - slot_output_loss: 0.0225 - intent_output_loss: 0.0258
+SlotTagging: ep=167, precision=0.460, recall=0.419, fscore=0.438, accuracy_frame=0.756
+Intent Prediction: ep=167, precision=0.526, recall=0.442, fscore=0.480, accuracy_frame=0.400, threshold=0.377
+NLU Frame: ep=167, accuracy=0.354
+Write dev results: ./model/slot_4768/dev_results/dev_ep=167.pred
+Saving Model: ./model/slot_4768/weights/ep=167_tagF1=0.438frameAcc=0.756_intentF1=0.480frameAcc=0.400th=0.377.h5
+<Epoch 168>
+Epoch 1/1
+79s - loss: 0.0488 - slot_output_loss: 0.0230 - intent_output_loss: 0.0258
+SlotTagging: ep=168, precision=0.449, recall=0.415, fscore=0.431, accuracy_frame=0.759
+Intent Prediction: ep=168, precision=0.497, recall=0.481, fscore=0.489, accuracy_frame=0.406, threshold=0.307
+NLU Frame: ep=168, accuracy=0.363
+Write dev results: ./model/slot_4768/dev_results/dev_ep=168.pred
+Saving Model: ./model/slot_4768/weights/ep=168_tagF1=0.431frameAcc=0.759_intentF1=0.489frameAcc=0.406th=0.307.h5
+<Epoch 169>
+Epoch 1/1
+135s - loss: 0.0422 - slot_output_loss: 0.0166 - intent_output_loss: 0.0256
+SlotTagging: ep=169, precision=0.450, recall=0.413, fscore=0.431, accuracy_frame=0.757
+Intent Prediction: ep=169, precision=0.484, recall=0.486, fscore=0.485, accuracy_frame=0.403, threshold=0.280
+NLU Frame: ep=169, accuracy=0.361
+Write dev results: ./model/slot_4768/dev_results/dev_ep=169.pred
+Saving Model: ./model/slot_4768/weights/ep=169_tagF1=0.431frameAcc=0.757_intentF1=0.485frameAcc=0.403th=0.280.h5
+<Epoch 170>
+Epoch 1/1
+135s - loss: 0.0467 - slot_output_loss: 0.0212 - intent_output_loss: 0.0255
+SlotTagging: ep=170, precision=0.463, recall=0.426, fscore=0.444, accuracy_frame=0.754
+Intent Prediction: ep=170, precision=0.468, recall=0.485, fscore=0.476, accuracy_frame=0.363, threshold=0.294
+NLU Frame: ep=170, accuracy=0.322
+Write dev results: ./model/slot_4768/dev_results/dev_ep=170.pred
+Saving Model: ./model/slot_4768/weights/ep=170_tagF1=0.444frameAcc=0.754_intentF1=0.476frameAcc=0.363th=0.294.h5
+<Epoch 171>
+Epoch 1/1
+77s - loss: 0.0509 - slot_output_loss: 0.0255 - intent_output_loss: 0.0254
+SlotTagging: ep=171, precision=0.467, recall=0.424, fscore=0.445, accuracy_frame=0.757
+Intent Prediction: ep=171, precision=0.501, recall=0.464, fscore=0.482, accuracy_frame=0.403, threshold=0.318
+NLU Frame: ep=171, accuracy=0.358
+Write dev results: ./model/slot_4768/dev_results/dev_ep=171.pred
+Saving Model: ./model/slot_4768/weights/ep=171_tagF1=0.445frameAcc=0.757_intentF1=0.482frameAcc=0.403th=0.318.h5
+<Epoch 172>
+Epoch 1/1
+135s - loss: 0.0456 - slot_output_loss: 0.0199 - intent_output_loss: 0.0257
+SlotTagging: ep=172, precision=0.427, recall=0.435, fscore=0.431, accuracy_frame=0.747
+Intent Prediction: ep=172, precision=0.476, recall=0.489, fscore=0.482, accuracy_frame=0.358, threshold=0.313
+NLU Frame: ep=172, accuracy=0.309
+Write dev results: ./model/slot_4768/dev_results/dev_ep=172.pred
+Saving Model: ./model/slot_4768/weights/ep=172_tagF1=0.431frameAcc=0.747_intentF1=0.482frameAcc=0.358th=0.313.h5
+<Epoch 173>
+Epoch 1/1
+135s - loss: 0.0416 - slot_output_loss: 0.0163 - intent_output_loss: 0.0253
+SlotTagging: ep=173, precision=0.446, recall=0.416, fscore=0.431, accuracy_frame=0.753
+Intent Prediction: ep=173, precision=0.500, recall=0.483, fscore=0.492, accuracy_frame=0.402, threshold=0.315
+NLU Frame: ep=173, accuracy=0.356
+Write dev results: ./model/slot_4768/dev_results/dev_ep=173.pred
+Saving Model: ./model/slot_4768/weights/ep=173_tagF1=0.431frameAcc=0.753_intentF1=0.492frameAcc=0.402th=0.315.h5
+<Epoch 174>
+Epoch 1/1
+77s - loss: 0.0425 - slot_output_loss: 0.0174 - intent_output_loss: 0.0251
+SlotTagging: ep=174, precision=0.461, recall=0.420, fscore=0.440, accuracy_frame=0.758
+Intent Prediction: ep=174, precision=0.491, recall=0.487, fscore=0.489, accuracy_frame=0.408, threshold=0.297
+NLU Frame: ep=174, accuracy=0.364
+Write dev results: ./model/slot_4768/dev_results/dev_ep=174.pred
+Saving Model: ./model/slot_4768/weights/ep=174_tagF1=0.440frameAcc=0.758_intentF1=0.489frameAcc=0.408th=0.297.h5
+<Epoch 175>
+Epoch 1/1
+134s - loss: 0.0449 - slot_output_loss: 0.0199 - intent_output_loss: 0.0250
+SlotTagging: ep=175, precision=0.468, recall=0.416, fscore=0.440, accuracy_frame=0.759
+Intent Prediction: ep=175, precision=0.452, recall=0.531, fscore=0.488, accuracy_frame=0.349, threshold=0.251
+NLU Frame: ep=175, accuracy=0.309
+Write dev results: ./model/slot_4768/dev_results/dev_ep=175.pred
+Saving Model: ./model/slot_4768/weights/ep=175_tagF1=0.440frameAcc=0.759_intentF1=0.488frameAcc=0.349th=0.251.h5
+<Epoch 176>
+Epoch 1/1
+135s - loss: 0.0468 - slot_output_loss: 0.0218 - intent_output_loss: 0.0250
+SlotTagging: ep=176, precision=0.453, recall=0.417, fscore=0.434, accuracy_frame=0.755
+Intent Prediction: ep=176, precision=0.478, recall=0.493, fscore=0.485, accuracy_frame=0.400, threshold=0.288
+NLU Frame: ep=176, accuracy=0.360
+Write dev results: ./model/slot_4768/dev_results/dev_ep=176.pred
+Saving Model: ./model/slot_4768/weights/ep=176_tagF1=0.434frameAcc=0.755_intentF1=0.485frameAcc=0.400th=0.288.h5
+<Epoch 177>
+Epoch 1/1
+78s - loss: 0.0497 - slot_output_loss: 0.0247 - intent_output_loss: 0.0251
+SlotTagging: ep=177, precision=0.460, recall=0.427, fscore=0.443, accuracy_frame=0.756
+Intent Prediction: ep=177, precision=0.491, recall=0.462, fscore=0.476, accuracy_frame=0.402, threshold=0.319
+NLU Frame: ep=177, accuracy=0.358
+Write dev results: ./model/slot_4768/dev_results/dev_ep=177.pred
+Saving Model: ./model/slot_4768/weights/ep=177_tagF1=0.443frameAcc=0.756_intentF1=0.476frameAcc=0.402th=0.319.h5
+<Epoch 178>
+Epoch 1/1
+134s - loss: 0.0482 - slot_output_loss: 0.0233 - intent_output_loss: 0.0249
+SlotTagging: ep=178, precision=0.460, recall=0.420, fscore=0.439, accuracy_frame=0.751
+Intent Prediction: ep=178, precision=0.500, recall=0.471, fscore=0.485, accuracy_frame=0.407, threshold=0.320
+NLU Frame: ep=178, accuracy=0.358
+Write dev results: ./model/slot_4768/dev_results/dev_ep=178.pred
+Saving Model: ./model/slot_4768/weights/ep=178_tagF1=0.439frameAcc=0.751_intentF1=0.485frameAcc=0.407th=0.320.h5
+<Epoch 179>
+Epoch 1/1
+134s - loss: 0.0590 - slot_output_loss: 0.0341 - intent_output_loss: 0.0249
+SlotTagging: ep=179, precision=0.458, recall=0.410, fscore=0.433, accuracy_frame=0.758
+Intent Prediction: ep=179, precision=0.530, recall=0.470, fscore=0.498, accuracy_frame=0.417, threshold=0.351
+NLU Frame: ep=179, accuracy=0.366
+Write dev results: ./model/slot_4768/dev_results/dev_ep=179.pred
+Saving Model: ./model/slot_4768/weights/ep=179_tagF1=0.433frameAcc=0.758_intentF1=0.498frameAcc=0.417th=0.351.h5
+<Epoch 180>
+Epoch 1/1
+78s - loss: 0.0480 - slot_output_loss: 0.0232 - intent_output_loss: 0.0248
+SlotTagging: ep=180, precision=0.461, recall=0.416, fscore=0.437, accuracy_frame=0.756
+Intent Prediction: ep=180, precision=0.524, recall=0.457, fscore=0.488, accuracy_frame=0.412, threshold=0.356
+NLU Frame: ep=180, accuracy=0.366
+Write dev results: ./model/slot_4768/dev_results/dev_ep=180.pred
+Saving Model: ./model/slot_4768/weights/ep=180_tagF1=0.437frameAcc=0.756_intentF1=0.488frameAcc=0.412th=0.356.h5
+<Epoch 181>
+Epoch 1/1
+135s - loss: 0.0483 - slot_output_loss: 0.0235 - intent_output_loss: 0.0249
+SlotTagging: ep=181, precision=0.441, recall=0.409, fscore=0.424, accuracy_frame=0.752
+Intent Prediction: ep=181, precision=0.511, recall=0.465, fscore=0.487, accuracy_frame=0.417, threshold=0.323
+NLU Frame: ep=181, accuracy=0.365
+Write dev results: ./model/slot_4768/dev_results/dev_ep=181.pred
+Saving Model: ./model/slot_4768/weights/ep=181_tagF1=0.424frameAcc=0.752_intentF1=0.487frameAcc=0.417th=0.323.h5
+<Epoch 182>
+Epoch 1/1
+134s - loss: 0.0502 - slot_output_loss: 0.0252 - intent_output_loss: 0.0250
+SlotTagging: ep=182, precision=0.487, recall=0.414, fscore=0.448, accuracy_frame=0.763
+Intent Prediction: ep=182, precision=0.508, recall=0.479, fscore=0.493, accuracy_frame=0.416, threshold=0.323
+NLU Frame: ep=182, accuracy=0.368
+Write dev results: ./model/slot_4768/dev_results/dev_ep=182.pred
+Saving Model: ./model/slot_4768/weights/ep=182_tagF1=0.448frameAcc=0.763_intentF1=0.493frameAcc=0.416th=0.323.h5
+<Epoch 183>
+Epoch 1/1
+76s - loss: 0.0509 - slot_output_loss: 0.0262 - intent_output_loss: 0.0247
+SlotTagging: ep=183, precision=0.478, recall=0.429, fscore=0.452, accuracy_frame=0.762
+Intent Prediction: ep=183, precision=0.537, recall=0.467, fscore=0.499, accuracy_frame=0.418, threshold=0.366
+NLU Frame: ep=183, accuracy=0.372
+Write dev results: ./model/slot_4768/dev_results/dev_ep=183.pred
+Saving Model: ./model/slot_4768/weights/ep=183_tagF1=0.452frameAcc=0.762_intentF1=0.499frameAcc=0.418th=0.366.h5
+<Epoch 184>
+Epoch 1/1
+135s - loss: 0.0497 - slot_output_loss: 0.0251 - intent_output_loss: 0.0246
+SlotTagging: ep=184, precision=0.459, recall=0.424, fscore=0.441, accuracy_frame=0.754
+Intent Prediction: ep=184, precision=0.450, recall=0.535, fscore=0.489, accuracy_frame=0.351, threshold=0.233
+NLU Frame: ep=184, accuracy=0.316
+Write dev results: ./model/slot_4768/dev_results/dev_ep=184.pred
+Saving Model: ./model/slot_4768/weights/ep=184_tagF1=0.441frameAcc=0.754_intentF1=0.489frameAcc=0.351th=0.233.h5
+<Epoch 185>
+Epoch 1/1
+135s - loss: 0.0523 - slot_output_loss: 0.0274 - intent_output_loss: 0.0249
+SlotTagging: ep=185, precision=0.466, recall=0.423, fscore=0.444, accuracy_frame=0.759
+Intent Prediction: ep=185, precision=0.520, recall=0.457, fscore=0.486, accuracy_frame=0.409, threshold=0.356
+NLU Frame: ep=185, accuracy=0.363
+Write dev results: ./model/slot_4768/dev_results/dev_ep=185.pred
+Saving Model: ./model/slot_4768/weights/ep=185_tagF1=0.444frameAcc=0.759_intentF1=0.486frameAcc=0.409th=0.356.h5
+<Epoch 186>
+Epoch 1/1
+76s - loss: 0.0535 - slot_output_loss: 0.0286 - intent_output_loss: 0.0249
+SlotTagging: ep=186, precision=0.472, recall=0.423, fscore=0.446, accuracy_frame=0.761
+Intent Prediction: ep=186, precision=0.502, recall=0.464, fscore=0.482, accuracy_frame=0.414, threshold=0.333
+NLU Frame: ep=186, accuracy=0.366
+Write dev results: ./model/slot_4768/dev_results/dev_ep=186.pred
+Saving Model: ./model/slot_4768/weights/ep=186_tagF1=0.446frameAcc=0.761_intentF1=0.482frameAcc=0.414th=0.333.h5
+<Epoch 187>
+Epoch 1/1
+135s - loss: 0.0441 - slot_output_loss: 0.0193 - intent_output_loss: 0.0248
+SlotTagging: ep=187, precision=0.470, recall=0.418, fscore=0.443, accuracy_frame=0.758
+Intent Prediction: ep=187, precision=0.493, recall=0.472, fscore=0.482, accuracy_frame=0.401, threshold=0.317
+NLU Frame: ep=187, accuracy=0.359
+Write dev results: ./model/slot_4768/dev_results/dev_ep=187.pred
+Saving Model: ./model/slot_4768/weights/ep=187_tagF1=0.443frameAcc=0.758_intentF1=0.482frameAcc=0.401th=0.317.h5
+<Epoch 188>
+Epoch 1/1
+135s - loss: 0.0482 - slot_output_loss: 0.0233 - intent_output_loss: 0.0248
+SlotTagging: ep=188, precision=0.459, recall=0.424, fscore=0.441, accuracy_frame=0.750
+Intent Prediction: ep=188, precision=0.505, recall=0.462, fscore=0.483, accuracy_frame=0.409, threshold=0.333
+NLU Frame: ep=188, accuracy=0.363
+Write dev results: ./model/slot_4768/dev_results/dev_ep=188.pred
+Saving Model: ./model/slot_4768/weights/ep=188_tagF1=0.441frameAcc=0.750_intentF1=0.483frameAcc=0.409th=0.333.h5
+<Epoch 189>
+Epoch 1/1
+76s - loss: 0.0460 - slot_output_loss: 0.0215 - intent_output_loss: 0.0245
+SlotTagging: ep=189, precision=0.463, recall=0.419, fscore=0.440, accuracy_frame=0.757
+Intent Prediction: ep=189, precision=0.512, recall=0.468, fscore=0.489, accuracy_frame=0.411, threshold=0.342
+NLU Frame: ep=189, accuracy=0.365
+Write dev results: ./model/slot_4768/dev_results/dev_ep=189.pred
+Saving Model: ./model/slot_4768/weights/ep=189_tagF1=0.440frameAcc=0.757_intentF1=0.489frameAcc=0.411th=0.342.h5
+<Epoch 190>
+Epoch 1/1
+135s - loss: 0.0495 - slot_output_loss: 0.0249 - intent_output_loss: 0.0246
+SlotTagging: ep=190, precision=0.454, recall=0.420, fscore=0.436, accuracy_frame=0.750
+Intent Prediction: ep=190, precision=0.473, recall=0.504, fscore=0.488, accuracy_frame=0.369, threshold=0.287
+NLU Frame: ep=190, accuracy=0.323
+Write dev results: ./model/slot_4768/dev_results/dev_ep=190.pred
+Saving Model: ./model/slot_4768/weights/ep=190_tagF1=0.436frameAcc=0.750_intentF1=0.488frameAcc=0.369th=0.287.h5
+<Epoch 191>
+Epoch 1/1
+135s - loss: 0.0457 - slot_output_loss: 0.0214 - intent_output_loss: 0.0243
+SlotTagging: ep=191, precision=0.450, recall=0.407, fscore=0.428, accuracy_frame=0.752
+Intent Prediction: ep=191, precision=0.452, recall=0.515, fscore=0.481, accuracy_frame=0.359, threshold=0.257
+NLU Frame: ep=191, accuracy=0.313
+Write dev results: ./model/slot_4768/dev_results/dev_ep=191.pred
+Saving Model: ./model/slot_4768/weights/ep=191_tagF1=0.428frameAcc=0.752_intentF1=0.481frameAcc=0.359th=0.257.h5
+<Epoch 192>
+Epoch 1/1
+76s - loss: 0.0443 - slot_output_loss: 0.0198 - intent_output_loss: 0.0245
+SlotTagging: ep=192, precision=0.439, recall=0.427, fscore=0.433, accuracy_frame=0.748
+Intent Prediction: ep=192, precision=0.501, recall=0.475, fscore=0.488, accuracy_frame=0.407, threshold=0.312
+NLU Frame: ep=192, accuracy=0.357
+Write dev results: ./model/slot_4768/dev_results/dev_ep=192.pred
+Saving Model: ./model/slot_4768/weights/ep=192_tagF1=0.433frameAcc=0.748_intentF1=0.488frameAcc=0.407th=0.312.h5
+<Epoch 193>
+Epoch 1/1
+134s - loss: 0.0414 - slot_output_loss: 0.0173 - intent_output_loss: 0.0240
+SlotTagging: ep=193, precision=0.469, recall=0.420, fscore=0.444, accuracy_frame=0.756
+Intent Prediction: ep=193, precision=0.530, recall=0.445, fscore=0.484, accuracy_frame=0.413, threshold=0.396
+NLU Frame: ep=193, accuracy=0.362
+Write dev results: ./model/slot_4768/dev_results/dev_ep=193.pred
+Saving Model: ./model/slot_4768/weights/ep=193_tagF1=0.444frameAcc=0.756_intentF1=0.484frameAcc=0.413th=0.396.h5
+<Epoch 194>
+Epoch 1/1
+134s - loss: 0.0430 - slot_output_loss: 0.0188 - intent_output_loss: 0.0242
+SlotTagging: ep=194, precision=0.468, recall=0.416, fscore=0.440, accuracy_frame=0.755
+Intent Prediction: ep=194, precision=0.530, recall=0.462, fscore=0.493, accuracy_frame=0.419, threshold=0.356
+NLU Frame: ep=194, accuracy=0.370
+Write dev results: ./model/slot_4768/dev_results/dev_ep=194.pred
+Saving Model: ./model/slot_4768/weights/ep=194_tagF1=0.440frameAcc=0.755_intentF1=0.493frameAcc=0.419th=0.356.h5
+<Epoch 195>
+Epoch 1/1
+77s - loss: 0.0470 - slot_output_loss: 0.0230 - intent_output_loss: 0.0240
+SlotTagging: ep=195, precision=0.466, recall=0.416, fscore=0.439, accuracy_frame=0.756
+Intent Prediction: ep=195, precision=0.542, recall=0.446, fscore=0.489, accuracy_frame=0.415, threshold=0.425
+NLU Frame: ep=195, accuracy=0.362
+Write dev results: ./model/slot_4768/dev_results/dev_ep=195.pred
+Saving Model: ./model/slot_4768/weights/ep=195_tagF1=0.439frameAcc=0.756_intentF1=0.489frameAcc=0.415th=0.425.h5
+<Epoch 196>
+Epoch 1/1
+134s - loss: 0.0441 - slot_output_loss: 0.0202 - intent_output_loss: 0.0239
+SlotTagging: ep=196, precision=0.476, recall=0.424, fscore=0.448, accuracy_frame=0.759
+Intent Prediction: ep=196, precision=0.541, recall=0.458, fscore=0.496, accuracy_frame=0.419, threshold=0.391
+NLU Frame: ep=196, accuracy=0.372
+Write dev results: ./model/slot_4768/dev_results/dev_ep=196.pred
+Saving Model: ./model/slot_4768/weights/ep=196_tagF1=0.448frameAcc=0.759_intentF1=0.496frameAcc=0.419th=0.391.h5
+<Epoch 197>
+Epoch 1/1
+134s - loss: 0.0453 - slot_output_loss: 0.0211 - intent_output_loss: 0.0242
+SlotTagging: ep=197, precision=0.482, recall=0.424, fscore=0.451, accuracy_frame=0.767
+Intent Prediction: ep=197, precision=0.524, recall=0.463, fscore=0.492, accuracy_frame=0.413, threshold=0.381
+NLU Frame: ep=197, accuracy=0.365
+Write dev results: ./model/slot_4768/dev_results/dev_ep=197.pred
+Saving Model: ./model/slot_4768/weights/ep=197_tagF1=0.451frameAcc=0.767_intentF1=0.492frameAcc=0.413th=0.381.h5
+<Epoch 198>
+Epoch 1/1
+78s - loss: 0.0485 - slot_output_loss: 0.0245 - intent_output_loss: 0.0239
+SlotTagging: ep=198, precision=0.444, recall=0.427, fscore=0.435, accuracy_frame=0.749
+Intent Prediction: ep=198, precision=0.436, recall=0.541, fscore=0.483, accuracy_frame=0.347, threshold=0.218
+NLU Frame: ep=198, accuracy=0.308
+Write dev results: ./model/slot_4768/dev_results/dev_ep=198.pred
+Saving Model: ./model/slot_4768/weights/ep=198_tagF1=0.435frameAcc=0.749_intentF1=0.483frameAcc=0.347th=0.218.h5
+<Epoch 199>
+Epoch 1/1
+135s - loss: 0.0434 - slot_output_loss: 0.0193 - intent_output_loss: 0.0242
+SlotTagging: ep=199, precision=0.449, recall=0.433, fscore=0.441, accuracy_frame=0.747
+Intent Prediction: ep=199, precision=0.489, recall=0.482, fscore=0.485, accuracy_frame=0.407, threshold=0.304
+NLU Frame: ep=199, accuracy=0.360
+Write dev results: ./model/slot_4768/dev_results/dev_ep=199.pred
+Saving Model: ./model/slot_4768/weights/ep=199_tagF1=0.441frameAcc=0.747_intentF1=0.485frameAcc=0.407th=0.304.h5

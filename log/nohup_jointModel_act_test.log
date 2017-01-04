@@ -1,0 +1,13 @@
+Using Theano backend.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7194' (I am process '7199')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7196' (I am process '7199')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5105)
+Loading model ...
+Predicting ...
+	test_utter=./model/joint_4770/test_result/utter.txt
+	act_probs=./model/joint_4770/test_result/actProb_ep=172.npz
+	act_pred=./model/joint_4770/test_result/act_ep=172.pred
+	act_target=./model/joint_4770/test_result/act_test.target
+AgentActPred: precision=0.1853, recall=0.1957, fscore=0.1904, accuracy_frame=0.2284

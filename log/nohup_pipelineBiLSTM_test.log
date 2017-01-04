@@ -1,0 +1,31 @@
+Using Theano backend.
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5105)
+	act_threshold=0.064
+	act_weights=./model/agentAct_4769/weights/ep=139_f1=0.228_frameAcc=0.202_th=0.154.h5
+	intent_threshold=0.391
+	intent_weights=./model/slot_4768/weights/ep=196_tagF1=0.448frameAcc=0.759_intentF1=0.496frameAcc=0.419th=0.391.h5
+	model_folder=./model/pipe_30857
+	npz_file=./data/npz/dstc4.all.w-intent.agentActPred.npz
+	tag_weights=./model/slot_4768/weights/ep=14_tagF1=0.468frameAcc=0.757_intentF1=0.399frameAcc=0.329th=0.203.h5
+	tune_threshold=False
+	test_result_folder=./model/pipe_30857/test
+Loading model ...
+Predicting ...
+	test_utter=./model/pipe_30857/test/test_result/utter.txt
+	tag_probs=./model/pipe_30857/test/test_result/tagProb_ep=14.npz
+	tag_pred=./model/pipe_30857/test/test_result/tag_ep=14.pred
+	tag_target=./model/pipe_30857/test/test_result/tag_test.target
+SlotTagging: precision=0.5463, recall=0.3996, fscore=0.4615, accuracy_frame=0.7684
+Loading model ...
+Predicting ...
+	test_utter=./model/pipe_30857/test/test_result/utter.txt
+	intent_probs=./model/pipe_30857/test/test_result/intentProb_ep=196.npz
+	intent_pred=./model/pipe_30857/test/test_result/intent_ep=196.pred
+	intent_target=./model/pipe_30857/test/test_result/intent_test.target
+IntentPred: precision=0.5219, recall=0.4355, fscore=0.4748, accuracy_frame=0.3996
+Loading model ...
+Predicting ...
+	act_probs=./model/pipe_30857/test/test_results/actProb_ep=139.npz
+	act_target=./model/pipe_30857/test/test_results/act_test.target
+	act_pred=./model/pipe_30857/test/test_results/act_ep=139.pred
+AgentActPred: precision=0.1487, recall=0.3001, fscore=0.1989, accuracy_frame=0.1196

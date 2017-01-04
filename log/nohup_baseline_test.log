@@ -1,0 +1,37 @@
+Using Theano backend.
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5105)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator LabelBinarizer from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator SVC from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator _ConstantPredictor from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator OneVsRestClassifier from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+<Oracle Results of Agent Action Prediction>
+	loading model: ./model/baseline_4771/oracle_act-model_F1=0.279_FrameAcc=0.062_th=0.162.npz
+	predicting ...
+	precision=0.3020, recall=0.3104, fscore=0.3061, accuracy_frame=0.0765
+	test_pred=./model/baseline_4771/oracle_act-test.pred
+	test_target=./model/baseline_4771/oracle_act-test.target
+	test_utter=./model/baseline_4771/utter_test.txt
+<Pipelined Results of Slot Tagging>
+	loading model ...
+	predicting Slot Tags ...
+	tag_target=./model/baseline_4771/userUtterTag_test.target
+	tag_pred=./model/baseline_4771/userUtterTag_test.pred
+	precision=0.6141, recall=0.3021, fscore=0.4050, accuracy_frame=0.7731
+<Pipelined Results of User Intent Prediction>
+	loading model: ./model/baseline_4771/pipeline_intent-model_F1=0.508_FrameAcc=0.389_th=0.225.npz
+	predicting ...
+	precision=0.5256, recall=0.4724, fscore=0.4975, accuracy_frame=0.3719
+	test_pred=./model/baseline_4771/pipeline_intent-test.pred
+	test_target=./model/baseline_4771/pipeline_intent-test.target
+	test_utter=./model/baseline_4771/utter_test.txt
+<Pipelined Results of Agent Action Prediction>
+	loading model: ./model/baseline_4771/oracle_act-model_F1=0.279_FrameAcc=0.062_th=0.162.npz
+	predicting ...
+	precision=0.2992, recall=0.3248, fscore=0.3115, accuracy_frame=0.0771
+	test_pred=./model/baseline_4771/pipeline_act-test.pred
+	test_target=./model/baseline_4771/pipeline_act-test.target
+	test_utter=./model/baseline_4771/utter_test.txt

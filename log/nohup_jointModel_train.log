@@ -1,0 +1,1832 @@
+nohup: ignoring input
+Using Theano backend.
+Using gpu device 0: Tesla K40c (CNMeM is disabled, cuDNN 4007)
+Training model ...
+	agentAct_vocab_size = 66
+	batch_size = 32
+	context_size = None
+	data_npz = ./data/npz/dstc4.all.w-intent.jointModel.npz
+	dev_data = <DataSetCSVjoint.DataSetCSVjoint object at 0x7f8aebabcc10>
+	dropout_ratio = 0.5
+	embedding_size = 512
+	epoch_nb = 200
+	hidden_size = 256
+	loss = categorical_crossentropy
+	maxlen_userUtter = 67
+	model_folder = None
+	optimizer = adam
+	patience = 10
+	pid = 4770
+	test_act_only = False
+	test_data = None
+	test_intent_only = False
+	test_tag_only = False
+	threshold = None
+	train_data = <DataSetCSVjoint.DataSetCSVjoint object at 0x7f8aeba42cd0>
+	train_only = True
+	userIntent_vocab_size = 69
+	userTag_vocab_size = 88
+	weights_fname = None
+	window_size = 5
+	word_vocab_size = 2253
+Building Graph ...
+<Epoch 0>
+Epoch 1/1
+430s - loss: 0.2578 - slot_output_loss: 0.0849 - intent_output_loss: 0.0832 - act_output_loss: 0.0897
+Agent Act Prediction: ep=0, precision=0.205, recall=0.366, fscore=0.263, accuracy_frame=0.030, threshold=0.121
+SlotTagging: ep=0, precision=0.322, recall=0.094, fscore=0.146, accuracy_frame=0.739
+Intent Prediction: ep=0, precision=0.607, recall=0.240, fscore=0.344, accuracy_frame=0.261, threshold=0.414
+NLU Frame: ep=0, accuracy=0.261
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=0.pred, ./model/joint_4770/dev_results/tag_ep=0.pred
+Saving Model: ./model/joint_4770/weights/ep=0_tagF1=0.146_intentF1=0.344th=0.414_NLUframeAcc=0.261_actF1=0.263frameAcc=0.030th=0.121.h5
+<Epoch 1>
+Epoch 1/1
+435s - loss: 0.1613 - slot_output_loss: 0.0428 - intent_output_loss: 0.0513 - act_output_loss: 0.0672
+Agent Act Prediction: ep=1, precision=0.289, recall=0.254, fscore=0.270, accuracy_frame=0.074, threshold=0.189
+SlotTagging: ep=1, precision=0.371, recall=0.184, fscore=0.246, accuracy_frame=0.736
+Intent Prediction: ep=1, precision=0.446, recall=0.407, fscore=0.426, accuracy_frame=0.301, threshold=0.176
+NLU Frame: ep=1, accuracy=0.281
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=1.pred, ./model/joint_4770/dev_results/tag_ep=1.pred
+Saving Model: ./model/joint_4770/weights/ep=1_tagF1=0.246_intentF1=0.426th=0.176_NLUframeAcc=0.281_actF1=0.270frameAcc=0.074th=0.189.h5
+<Epoch 2>
+Epoch 1/1
+432s - loss: 0.1471 - slot_output_loss: 0.0348 - intent_output_loss: 0.0469 - act_output_loss: 0.0654
+Agent Act Prediction: ep=2, precision=0.208, recall=0.411, fscore=0.276, accuracy_frame=0.031, threshold=0.099
+SlotTagging: ep=2, precision=0.513, recall=0.287, fscore=0.369, accuracy_frame=0.751
+Intent Prediction: ep=2, precision=0.482, recall=0.384, fscore=0.428, accuracy_frame=0.360, threshold=0.177
+NLU Frame: ep=2, accuracy=0.310
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=2.pred, ./model/joint_4770/dev_results/tag_ep=2.pred
+Saving Model: ./model/joint_4770/weights/ep=2_tagF1=0.369_intentF1=0.428th=0.177_NLUframeAcc=0.310_actF1=0.276frameAcc=0.031th=0.099.h5
+<Epoch 3>
+Epoch 1/1
+430s - loss: 0.1346 - slot_output_loss: 0.0270 - intent_output_loss: 0.0446 - act_output_loss: 0.0630
+Agent Act Prediction: ep=3, precision=0.234, recall=0.379, fscore=0.289, accuracy_frame=0.047, threshold=0.148
+SlotTagging: ep=3, precision=0.514, recall=0.344, fscore=0.413, accuracy_frame=0.756
+Intent Prediction: ep=3, precision=0.455, recall=0.439, fscore=0.447, accuracy_frame=0.365, threshold=0.225
+NLU Frame: ep=3, accuracy=0.330
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=3.pred, ./model/joint_4770/dev_results/tag_ep=3.pred
+Saving Model: ./model/joint_4770/weights/ep=3_tagF1=0.413_intentF1=0.447th=0.225_NLUframeAcc=0.330_actF1=0.289frameAcc=0.047th=0.148.h5
+<Epoch 4>
+Epoch 1/1
+430s - loss: 0.1262 - slot_output_loss: 0.0209 - intent_output_loss: 0.0435 - act_output_loss: 0.0619
+Agent Act Prediction: ep=4, precision=0.248, recall=0.354, fscore=0.292, accuracy_frame=0.055, threshold=0.143
+SlotTagging: ep=4, precision=0.481, recall=0.382, fscore=0.426, accuracy_frame=0.752
+Intent Prediction: ep=4, precision=0.448, recall=0.456, fscore=0.452, accuracy_frame=0.328, threshold=0.259
+NLU Frame: ep=4, accuracy=0.302
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=4.pred, ./model/joint_4770/dev_results/tag_ep=4.pred
+Saving Model: ./model/joint_4770/weights/ep=4_tagF1=0.426_intentF1=0.452th=0.259_NLUframeAcc=0.302_actF1=0.292frameAcc=0.055th=0.143.h5
+<Epoch 5>
+Epoch 1/1
+430s - loss: 0.1202 - slot_output_loss: 0.0167 - intent_output_loss: 0.0423 - act_output_loss: 0.0612
+Agent Act Prediction: ep=5, precision=0.225, recall=0.433, fscore=0.296, accuracy_frame=0.038, threshold=0.094
+SlotTagging: ep=5, precision=0.498, recall=0.379, fscore=0.431, accuracy_frame=0.751
+Intent Prediction: ep=5, precision=0.533, recall=0.384, fscore=0.446, accuracy_frame=0.374, threshold=0.278
+NLU Frame: ep=5, accuracy=0.334
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=5.pred, ./model/joint_4770/dev_results/tag_ep=5.pred
+Saving Model: ./model/joint_4770/weights/ep=5_tagF1=0.431_intentF1=0.446th=0.278_NLUframeAcc=0.334_actF1=0.296frameAcc=0.038th=0.094.h5
+<Epoch 6>
+Epoch 1/1
+430s - loss: 0.1152 - slot_output_loss: 0.0135 - intent_output_loss: 0.0410 - act_output_loss: 0.0608
+Agent Act Prediction: ep=6, precision=0.225, recall=0.445, fscore=0.299, accuracy_frame=0.034, threshold=0.138
+SlotTagging: ep=6, precision=0.468, recall=0.396, fscore=0.429, accuracy_frame=0.746
+Intent Prediction: ep=6, precision=0.484, recall=0.437, fscore=0.459, accuracy_frame=0.375, threshold=0.273
+NLU Frame: ep=6, accuracy=0.332
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=6.pred, ./model/joint_4770/dev_results/tag_ep=6.pred
+Saving Model: ./model/joint_4770/weights/ep=6_tagF1=0.429_intentF1=0.459th=0.273_NLUframeAcc=0.332_actF1=0.299frameAcc=0.034th=0.138.h5
+<Epoch 7>
+Epoch 1/1
+414s - loss: 0.1110 - slot_output_loss: 0.0112 - intent_output_loss: 0.0392 - act_output_loss: 0.0606
+Agent Act Prediction: ep=7, precision=0.225, recall=0.444, fscore=0.298, accuracy_frame=0.036, threshold=0.088
+SlotTagging: ep=7, precision=0.459, recall=0.390, fscore=0.422, accuracy_frame=0.748
+Intent Prediction: ep=7, precision=0.494, recall=0.475, fscore=0.484, accuracy_frame=0.368, threshold=0.288
+NLU Frame: ep=7, accuracy=0.329
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=7.pred, ./model/joint_4770/dev_results/tag_ep=7.pred
+Saving Model: ./model/joint_4770/weights/ep=7_tagF1=0.422_intentF1=0.484th=0.288_NLUframeAcc=0.329_actF1=0.298frameAcc=0.036th=0.088.h5
+<Epoch 8>
+Epoch 1/1
+347s - loss: 0.1066 - slot_output_loss: 0.0092 - intent_output_loss: 0.0373 - act_output_loss: 0.0600
+Agent Act Prediction: ep=8, precision=0.238, recall=0.411, fscore=0.302, accuracy_frame=0.047, threshold=0.131
+SlotTagging: ep=8, precision=0.498, recall=0.390, fscore=0.438, accuracy_frame=0.758
+Intent Prediction: ep=8, precision=0.440, recall=0.564, fscore=0.494, accuracy_frame=0.333, threshold=0.221
+NLU Frame: ep=8, accuracy=0.296
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=8.pred, ./model/joint_4770/dev_results/tag_ep=8.pred
+Saving Model: ./model/joint_4770/weights/ep=8_tagF1=0.438_intentF1=0.494th=0.221_NLUframeAcc=0.296_actF1=0.302frameAcc=0.047th=0.131.h5
+<Epoch 9>
+Epoch 1/1
+348s - loss: 0.1032 - slot_output_loss: 0.0078 - intent_output_loss: 0.0357 - act_output_loss: 0.0597
+Agent Act Prediction: ep=9, precision=0.224, recall=0.406, fscore=0.289, accuracy_frame=0.037, threshold=0.118
+SlotTagging: ep=9, precision=0.482, recall=0.394, fscore=0.433, accuracy_frame=0.757
+Intent Prediction: ep=9, precision=0.501, recall=0.485, fscore=0.493, accuracy_frame=0.400, threshold=0.310
+NLU Frame: ep=9, accuracy=0.354
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=9.pred, ./model/joint_4770/dev_results/tag_ep=9.pred
+Saving Model: ./model/joint_4770/weights/ep=9_tagF1=0.433_intentF1=0.493th=0.310_NLUframeAcc=0.354_actF1=0.289frameAcc=0.037th=0.118.h5
+<Epoch 10>
+Epoch 1/1
+349s - loss: 0.1005 - slot_output_loss: 0.0068 - intent_output_loss: 0.0342 - act_output_loss: 0.0595
+Agent Act Prediction: ep=10, precision=0.228, recall=0.394, fscore=0.289, accuracy_frame=0.041, threshold=0.156
+SlotTagging: ep=10, precision=0.478, recall=0.392, fscore=0.431, accuracy_frame=0.750
+Intent Prediction: ep=10, precision=0.475, recall=0.545, fscore=0.508, accuracy_frame=0.351, threshold=0.251
+NLU Frame: ep=10, accuracy=0.309
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=10.pred, ./model/joint_4770/dev_results/tag_ep=10.pred
+Saving Model: ./model/joint_4770/weights/ep=10_tagF1=0.431_intentF1=0.508th=0.251_NLUframeAcc=0.309_actF1=0.289frameAcc=0.041th=0.156.h5
+<Epoch 11>
+Epoch 1/1
+348s - loss: 0.0977 - slot_output_loss: 0.0057 - intent_output_loss: 0.0325 - act_output_loss: 0.0594
+Agent Act Prediction: ep=11, precision=0.235, recall=0.411, fscore=0.299, accuracy_frame=0.041, threshold=0.162
+SlotTagging: ep=11, precision=0.482, recall=0.399, fscore=0.437, accuracy_frame=0.755
+Intent Prediction: ep=11, precision=0.458, recall=0.577, fscore=0.511, accuracy_frame=0.340, threshold=0.231
+NLU Frame: ep=11, accuracy=0.302
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=11.pred, ./model/joint_4770/dev_results/tag_ep=11.pred
+Saving Model: ./model/joint_4770/weights/ep=11_tagF1=0.437_intentF1=0.511th=0.231_NLUframeAcc=0.302_actF1=0.299frameAcc=0.041th=0.162.h5
+<Epoch 12>
+Epoch 1/1
+348s - loss: 0.0952 - slot_output_loss: 0.0051 - intent_output_loss: 0.0311 - act_output_loss: 0.0590
+Agent Act Prediction: ep=12, precision=0.227, recall=0.437, fscore=0.299, accuracy_frame=0.036, threshold=0.127
+SlotTagging: ep=12, precision=0.465, recall=0.381, fscore=0.419, accuracy_frame=0.754
+Intent Prediction: ep=12, precision=0.546, recall=0.489, fscore=0.516, accuracy_frame=0.429, threshold=0.349
+NLU Frame: ep=12, accuracy=0.374
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=12.pred, ./model/joint_4770/dev_results/tag_ep=12.pred
+Saving Model: ./model/joint_4770/weights/ep=12_tagF1=0.419_intentF1=0.516th=0.349_NLUframeAcc=0.374_actF1=0.299frameAcc=0.036th=0.127.h5
+<Epoch 13>
+Epoch 1/1
+348s - loss: 0.0925 - slot_output_loss: 0.0044 - intent_output_loss: 0.0294 - act_output_loss: 0.0587
+Agent Act Prediction: ep=13, precision=0.227, recall=0.443, fscore=0.300, accuracy_frame=0.035, threshold=0.139
+SlotTagging: ep=13, precision=0.464, recall=0.391, fscore=0.425, accuracy_frame=0.749
+Intent Prediction: ep=13, precision=0.538, recall=0.501, fscore=0.519, accuracy_frame=0.435, threshold=0.342
+NLU Frame: ep=13, accuracy=0.379
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=13.pred, ./model/joint_4770/dev_results/tag_ep=13.pred
+Saving Model: ./model/joint_4770/weights/ep=13_tagF1=0.425_intentF1=0.519th=0.342_NLUframeAcc=0.379_actF1=0.300frameAcc=0.035th=0.139.h5
+<Epoch 14>
+Epoch 1/1
+348s - loss: 0.0901 - slot_output_loss: 0.0038 - intent_output_loss: 0.0279 - act_output_loss: 0.0583
+Agent Act Prediction: ep=14, precision=0.232, recall=0.410, fscore=0.297, accuracy_frame=0.040, threshold=0.117
+SlotTagging: ep=14, precision=0.472, recall=0.382, fscore=0.423, accuracy_frame=0.749
+Intent Prediction: ep=14, precision=0.468, recall=0.575, fscore=0.516, accuracy_frame=0.367, threshold=0.230
+NLU Frame: ep=14, accuracy=0.325
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=14.pred, ./model/joint_4770/dev_results/tag_ep=14.pred
+Saving Model: ./model/joint_4770/weights/ep=14_tagF1=0.423_intentF1=0.516th=0.230_NLUframeAcc=0.325_actF1=0.297frameAcc=0.040th=0.117.h5
+<Epoch 15>
+Epoch 1/1
+348s - loss: 0.0877 - slot_output_loss: 0.0034 - intent_output_loss: 0.0262 - act_output_loss: 0.0581
+Agent Act Prediction: ep=15, precision=0.233, recall=0.438, fscore=0.305, accuracy_frame=0.040, threshold=0.161
+SlotTagging: ep=15, precision=0.448, recall=0.395, fscore=0.420, accuracy_frame=0.746
+Intent Prediction: ep=15, precision=0.496, recall=0.531, fscore=0.513, accuracy_frame=0.386, threshold=0.290
+NLU Frame: ep=15, accuracy=0.336
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=15.pred, ./model/joint_4770/dev_results/tag_ep=15.pred
+Saving Model: ./model/joint_4770/weights/ep=15_tagF1=0.420_intentF1=0.513th=0.290_NLUframeAcc=0.336_actF1=0.305frameAcc=0.040th=0.161.h5
+<Epoch 16>
+Epoch 1/1
+349s - loss: 0.0857 - slot_output_loss: 0.0032 - intent_output_loss: 0.0248 - act_output_loss: 0.0578
+Agent Act Prediction: ep=16, precision=0.256, recall=0.366, fscore=0.301, accuracy_frame=0.065, threshold=0.142
+SlotTagging: ep=16, precision=0.460, recall=0.395, fscore=0.425, accuracy_frame=0.753
+Intent Prediction: ep=16, precision=0.526, recall=0.490, fscore=0.507, accuracy_frame=0.426, threshold=0.322
+NLU Frame: ep=16, accuracy=0.373
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=16.pred, ./model/joint_4770/dev_results/tag_ep=16.pred
+Saving Model: ./model/joint_4770/weights/ep=16_tagF1=0.425_intentF1=0.507th=0.322_NLUframeAcc=0.373_actF1=0.301frameAcc=0.065th=0.142.h5
+<Epoch 17>
+Epoch 1/1
+348s - loss: 0.0831 - slot_output_loss: 0.0028 - intent_output_loss: 0.0232 - act_output_loss: 0.0570
+Agent Act Prediction: ep=17, precision=0.229, recall=0.385, fscore=0.287, accuracy_frame=0.048, threshold=0.114
+SlotTagging: ep=17, precision=0.470, recall=0.388, fscore=0.425, accuracy_frame=0.757
+Intent Prediction: ep=17, precision=0.530, recall=0.492, fscore=0.511, accuracy_frame=0.424, threshold=0.353
+NLU Frame: ep=17, accuracy=0.376
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=17.pred, ./model/joint_4770/dev_results/tag_ep=17.pred
+Saving Model: ./model/joint_4770/weights/ep=17_tagF1=0.425_intentF1=0.511th=0.353_NLUframeAcc=0.376_actF1=0.287frameAcc=0.048th=0.114.h5
+<Epoch 18>
+Epoch 1/1
+349s - loss: 0.0814 - slot_output_loss: 0.0027 - intent_output_loss: 0.0219 - act_output_loss: 0.0568
+Agent Act Prediction: ep=18, precision=0.241, recall=0.384, fscore=0.296, accuracy_frame=0.061, threshold=0.151
+SlotTagging: ep=18, precision=0.471, recall=0.396, fscore=0.430, accuracy_frame=0.753
+Intent Prediction: ep=18, precision=0.546, recall=0.471, fscore=0.506, accuracy_frame=0.417, threshold=0.396
+NLU Frame: ep=18, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=18.pred, ./model/joint_4770/dev_results/tag_ep=18.pred
+Saving Model: ./model/joint_4770/weights/ep=18_tagF1=0.430_intentF1=0.506th=0.396_NLUframeAcc=0.365_actF1=0.296frameAcc=0.061th=0.151.h5
+<Epoch 19>
+Epoch 1/1
+348s - loss: 0.0790 - slot_output_loss: 0.0024 - intent_output_loss: 0.0208 - act_output_loss: 0.0558
+Agent Act Prediction: ep=19, precision=0.255, recall=0.366, fscore=0.300, accuracy_frame=0.085, threshold=0.164
+SlotTagging: ep=19, precision=0.485, recall=0.386, fscore=0.430, accuracy_frame=0.753
+Intent Prediction: ep=19, precision=0.552, recall=0.458, fscore=0.501, accuracy_frame=0.423, threshold=0.464
+NLU Frame: ep=19, accuracy=0.370
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=19.pred, ./model/joint_4770/dev_results/tag_ep=19.pred
+Saving Model: ./model/joint_4770/weights/ep=19_tagF1=0.430_intentF1=0.501th=0.464_NLUframeAcc=0.370_actF1=0.300frameAcc=0.085th=0.164.h5
+<Epoch 20>
+Epoch 1/1
+348s - loss: 0.0771 - slot_output_loss: 0.0022 - intent_output_loss: 0.0195 - act_output_loss: 0.0555
+Agent Act Prediction: ep=20, precision=0.233, recall=0.391, fscore=0.292, accuracy_frame=0.057, threshold=0.140
+SlotTagging: ep=20, precision=0.445, recall=0.399, fscore=0.421, accuracy_frame=0.750
+Intent Prediction: ep=20, precision=0.498, recall=0.496, fscore=0.497, accuracy_frame=0.408, threshold=0.316
+NLU Frame: ep=20, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=20.pred, ./model/joint_4770/dev_results/tag_ep=20.pred
+Saving Model: ./model/joint_4770/weights/ep=20_tagF1=0.421_intentF1=0.497th=0.316_NLUframeAcc=0.364_actF1=0.292frameAcc=0.057th=0.140.h5
+<Epoch 21>
+Epoch 1/1
+348s - loss: 0.0756 - slot_output_loss: 0.0021 - intent_output_loss: 0.0185 - act_output_loss: 0.0550
+Agent Act Prediction: ep=21, precision=0.265, recall=0.358, fscore=0.305, accuracy_frame=0.099, threshold=0.170
+SlotTagging: ep=21, precision=0.461, recall=0.391, fscore=0.423, accuracy_frame=0.752
+Intent Prediction: ep=21, precision=0.489, recall=0.513, fscore=0.501, accuracy_frame=0.425, threshold=0.319
+NLU Frame: ep=21, accuracy=0.380
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=21.pred, ./model/joint_4770/dev_results/tag_ep=21.pred
+Saving Model: ./model/joint_4770/weights/ep=21_tagF1=0.423_intentF1=0.501th=0.319_NLUframeAcc=0.380_actF1=0.305frameAcc=0.099th=0.170.h5
+<Epoch 22>
+Epoch 1/1
+349s - loss: 0.0737 - slot_output_loss: 0.0020 - intent_output_loss: 0.0174 - act_output_loss: 0.0543
+Agent Act Prediction: ep=22, precision=0.208, recall=0.446, fscore=0.283, accuracy_frame=0.028, threshold=0.133
+SlotTagging: ep=22, precision=0.431, recall=0.401, fscore=0.416, accuracy_frame=0.743
+Intent Prediction: ep=22, precision=0.540, recall=0.469, fscore=0.502, accuracy_frame=0.416, threshold=0.446
+NLU Frame: ep=22, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=22.pred, ./model/joint_4770/dev_results/tag_ep=22.pred
+Saving Model: ./model/joint_4770/weights/ep=22_tagF1=0.416_intentF1=0.502th=0.446_NLUframeAcc=0.363_actF1=0.283frameAcc=0.028th=0.133.h5
+<Epoch 23>
+Epoch 1/1
+348s - loss: 0.0721 - slot_output_loss: 0.0018 - intent_output_loss: 0.0166 - act_output_loss: 0.0537
+Agent Act Prediction: ep=23, precision=0.219, recall=0.395, fscore=0.282, accuracy_frame=0.051, threshold=0.141
+SlotTagging: ep=23, precision=0.453, recall=0.393, fscore=0.421, accuracy_frame=0.746
+Intent Prediction: ep=23, precision=0.534, recall=0.480, fscore=0.505, accuracy_frame=0.419, threshold=0.411
+NLU Frame: ep=23, accuracy=0.370
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=23.pred, ./model/joint_4770/dev_results/tag_ep=23.pred
+Saving Model: ./model/joint_4770/weights/ep=23_tagF1=0.421_intentF1=0.505th=0.411_NLUframeAcc=0.370_actF1=0.282frameAcc=0.051th=0.141.h5
+<Epoch 24>
+Epoch 1/1
+348s - loss: 0.0704 - slot_output_loss: 0.0017 - intent_output_loss: 0.0157 - act_output_loss: 0.0530
+Agent Act Prediction: ep=24, precision=0.235, recall=0.375, fscore=0.289, accuracy_frame=0.092, threshold=0.148
+SlotTagging: ep=24, precision=0.438, recall=0.397, fscore=0.416, accuracy_frame=0.747
+Intent Prediction: ep=24, precision=0.552, recall=0.461, fscore=0.503, accuracy_frame=0.420, threshold=0.512
+NLU Frame: ep=24, accuracy=0.369
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=24.pred, ./model/joint_4770/dev_results/tag_ep=24.pred
+Saving Model: ./model/joint_4770/weights/ep=24_tagF1=0.416_intentF1=0.503th=0.512_NLUframeAcc=0.369_actF1=0.289frameAcc=0.092th=0.148.h5
+<Epoch 25>
+Epoch 1/1
+348s - loss: 0.0688 - slot_output_loss: 0.0016 - intent_output_loss: 0.0149 - act_output_loss: 0.0522
+Agent Act Prediction: ep=25, precision=0.219, recall=0.352, fscore=0.270, accuracy_frame=0.103, threshold=0.183
+SlotTagging: ep=25, precision=0.445, recall=0.385, fscore=0.413, accuracy_frame=0.745
+Intent Prediction: ep=25, precision=0.519, recall=0.475, fscore=0.496, accuracy_frame=0.413, threshold=0.412
+NLU Frame: ep=25, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=25.pred, ./model/joint_4770/dev_results/tag_ep=25.pred
+Saving Model: ./model/joint_4770/weights/ep=25_tagF1=0.413_intentF1=0.496th=0.412_NLUframeAcc=0.367_actF1=0.270frameAcc=0.103th=0.183.h5
+<Epoch 26>
+Epoch 1/1
+348s - loss: 0.0675 - slot_output_loss: 0.0016 - intent_output_loss: 0.0145 - act_output_loss: 0.0514
+Agent Act Prediction: ep=26, precision=0.228, recall=0.343, fscore=0.274, accuracy_frame=0.119, threshold=0.147
+SlotTagging: ep=26, precision=0.428, recall=0.394, fscore=0.410, accuracy_frame=0.743
+Intent Prediction: ep=26, precision=0.518, recall=0.467, fscore=0.491, accuracy_frame=0.410, threshold=0.425
+NLU Frame: ep=26, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=26.pred, ./model/joint_4770/dev_results/tag_ep=26.pred
+Saving Model: ./model/joint_4770/weights/ep=26_tagF1=0.410_intentF1=0.491th=0.425_NLUframeAcc=0.362_actF1=0.274frameAcc=0.119th=0.147.h5
+<Epoch 27>
+Epoch 1/1
+347s - loss: 0.0657 - slot_output_loss: 0.0015 - intent_output_loss: 0.0138 - act_output_loss: 0.0505
+Agent Act Prediction: ep=27, precision=0.187, recall=0.385, fscore=0.252, accuracy_frame=0.081, threshold=0.135
+SlotTagging: ep=27, precision=0.442, recall=0.389, fscore=0.413, accuracy_frame=0.747
+Intent Prediction: ep=27, precision=0.516, recall=0.479, fscore=0.497, accuracy_frame=0.416, threshold=0.426
+NLU Frame: ep=27, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=27.pred, ./model/joint_4770/dev_results/tag_ep=27.pred
+Saving Model: ./model/joint_4770/weights/ep=27_tagF1=0.413_intentF1=0.497th=0.426_NLUframeAcc=0.368_actF1=0.252frameAcc=0.081th=0.135.h5
+<Epoch 28>
+Epoch 1/1
+348s - loss: 0.0645 - slot_output_loss: 0.0014 - intent_output_loss: 0.0132 - act_output_loss: 0.0499
+Agent Act Prediction: ep=28, precision=0.195, recall=0.403, fscore=0.263, accuracy_frame=0.076, threshold=0.150
+SlotTagging: ep=28, precision=0.456, recall=0.383, fscore=0.416, accuracy_frame=0.753
+Intent Prediction: ep=28, precision=0.530, recall=0.476, fscore=0.502, accuracy_frame=0.415, threshold=0.469
+NLU Frame: ep=28, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=28.pred, ./model/joint_4770/dev_results/tag_ep=28.pred
+Saving Model: ./model/joint_4770/weights/ep=28_tagF1=0.416_intentF1=0.502th=0.469_NLUframeAcc=0.367_actF1=0.263frameAcc=0.076th=0.150.h5
+<Epoch 29>
+Epoch 1/1
+348s - loss: 0.0631 - slot_output_loss: 0.0014 - intent_output_loss: 0.0128 - act_output_loss: 0.0489
+Agent Act Prediction: ep=29, precision=0.206, recall=0.400, fscore=0.272, accuracy_frame=0.088, threshold=0.153
+SlotTagging: ep=29, precision=0.448, recall=0.382, fscore=0.413, accuracy_frame=0.750
+Intent Prediction: ep=29, precision=0.504, recall=0.472, fscore=0.488, accuracy_frame=0.405, threshold=0.403
+NLU Frame: ep=29, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=29.pred, ./model/joint_4770/dev_results/tag_ep=29.pred
+Saving Model: ./model/joint_4770/weights/ep=29_tagF1=0.413_intentF1=0.488th=0.403_NLUframeAcc=0.362_actF1=0.272frameAcc=0.088th=0.153.h5
+<Epoch 30>
+Epoch 1/1
+348s - loss: 0.0618 - slot_output_loss: 0.0013 - intent_output_loss: 0.0123 - act_output_loss: 0.0482
+Agent Act Prediction: ep=30, precision=0.217, recall=0.369, fscore=0.273, accuracy_frame=0.116, threshold=0.149
+SlotTagging: ep=30, precision=0.446, recall=0.384, fscore=0.413, accuracy_frame=0.749
+Intent Prediction: ep=30, precision=0.488, recall=0.495, fscore=0.491, accuracy_frame=0.408, threshold=0.312
+NLU Frame: ep=30, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=30.pred, ./model/joint_4770/dev_results/tag_ep=30.pred
+Saving Model: ./model/joint_4770/weights/ep=30_tagF1=0.413_intentF1=0.491th=0.312_NLUframeAcc=0.362_actF1=0.273frameAcc=0.116th=0.149.h5
+<Epoch 31>
+Epoch 1/1
+348s - loss: 0.0604 - slot_output_loss: 0.0013 - intent_output_loss: 0.0119 - act_output_loss: 0.0472
+Agent Act Prediction: ep=31, precision=0.179, recall=0.370, fscore=0.241, accuracy_frame=0.102, threshold=0.132
+SlotTagging: ep=31, precision=0.457, recall=0.385, fscore=0.418, accuracy_frame=0.749
+Intent Prediction: ep=31, precision=0.516, recall=0.460, fscore=0.487, accuracy_frame=0.409, threshold=0.486
+NLU Frame: ep=31, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=31.pred, ./model/joint_4770/dev_results/tag_ep=31.pred
+Saving Model: ./model/joint_4770/weights/ep=31_tagF1=0.418_intentF1=0.487th=0.486_NLUframeAcc=0.364_actF1=0.241frameAcc=0.102th=0.132.h5
+<Epoch 32>
+Epoch 1/1
+347s - loss: 0.0593 - slot_output_loss: 0.0012 - intent_output_loss: 0.0116 - act_output_loss: 0.0464
+Agent Act Prediction: ep=32, precision=0.196, recall=0.366, fscore=0.256, accuracy_frame=0.108, threshold=0.125
+SlotTagging: ep=32, precision=0.445, recall=0.386, fscore=0.413, accuracy_frame=0.747
+Intent Prediction: ep=32, precision=0.497, recall=0.482, fscore=0.489, accuracy_frame=0.404, threshold=0.373
+NLU Frame: ep=32, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=32.pred, ./model/joint_4770/dev_results/tag_ep=32.pred
+Saving Model: ./model/joint_4770/weights/ep=32_tagF1=0.413_intentF1=0.489th=0.373_NLUframeAcc=0.358_actF1=0.256frameAcc=0.108th=0.125.h5
+<Epoch 33>
+Epoch 1/1
+347s - loss: 0.0579 - slot_output_loss: 0.0011 - intent_output_loss: 0.0113 - act_output_loss: 0.0454
+Agent Act Prediction: ep=33, precision=0.204, recall=0.334, fscore=0.253, accuracy_frame=0.151, threshold=0.170
+SlotTagging: ep=33, precision=0.455, recall=0.376, fscore=0.412, accuracy_frame=0.751
+Intent Prediction: ep=33, precision=0.510, recall=0.483, fscore=0.496, accuracy_frame=0.414, threshold=0.387
+NLU Frame: ep=33, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=33.pred, ./model/joint_4770/dev_results/tag_ep=33.pred
+Saving Model: ./model/joint_4770/weights/ep=33_tagF1=0.412_intentF1=0.496th=0.387_NLUframeAcc=0.363_actF1=0.253frameAcc=0.151th=0.170.h5
+<Epoch 34>
+Epoch 1/1
+348s - loss: 0.0566 - slot_output_loss: 0.0011 - intent_output_loss: 0.0110 - act_output_loss: 0.0444
+Agent Act Prediction: ep=34, precision=0.188, recall=0.360, fscore=0.247, accuracy_frame=0.128, threshold=0.105
+SlotTagging: ep=34, precision=0.485, recall=0.378, fscore=0.425, accuracy_frame=0.757
+Intent Prediction: ep=34, precision=0.512, recall=0.466, fscore=0.488, accuracy_frame=0.412, threshold=0.453
+NLU Frame: ep=34, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=34.pred, ./model/joint_4770/dev_results/tag_ep=34.pred
+Saving Model: ./model/joint_4770/weights/ep=34_tagF1=0.425_intentF1=0.488th=0.453_NLUframeAcc=0.365_actF1=0.247frameAcc=0.128th=0.105.h5
+<Epoch 35>
+Epoch 1/1
+347s - loss: 0.0555 - slot_output_loss: 0.0011 - intent_output_loss: 0.0110 - act_output_loss: 0.0435
+Agent Act Prediction: ep=35, precision=0.189, recall=0.405, fscore=0.258, accuracy_frame=0.106, threshold=0.111
+SlotTagging: ep=35, precision=0.446, recall=0.390, fscore=0.416, accuracy_frame=0.749
+Intent Prediction: ep=35, precision=0.491, recall=0.492, fscore=0.491, accuracy_frame=0.405, threshold=0.336
+NLU Frame: ep=35, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=35.pred, ./model/joint_4770/dev_results/tag_ep=35.pred
+Saving Model: ./model/joint_4770/weights/ep=35_tagF1=0.416_intentF1=0.491th=0.336_NLUframeAcc=0.363_actF1=0.258frameAcc=0.106th=0.111.h5
+<Epoch 36>
+Epoch 1/1
+347s - loss: 0.0539 - slot_output_loss: 0.0011 - intent_output_loss: 0.0105 - act_output_loss: 0.0423
+Agent Act Prediction: ep=36, precision=0.182, recall=0.343, fscore=0.238, accuracy_frame=0.133, threshold=0.139
+SlotTagging: ep=36, precision=0.457, recall=0.383, fscore=0.417, accuracy_frame=0.752
+Intent Prediction: ep=36, precision=0.478, recall=0.502, fscore=0.490, accuracy_frame=0.407, threshold=0.321
+NLU Frame: ep=36, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=36.pred, ./model/joint_4770/dev_results/tag_ep=36.pred
+Saving Model: ./model/joint_4770/weights/ep=36_tagF1=0.417_intentF1=0.490th=0.321_NLUframeAcc=0.363_actF1=0.238frameAcc=0.133th=0.139.h5
+<Epoch 37>
+Epoch 1/1
+347s - loss: 0.0529 - slot_output_loss: 0.0011 - intent_output_loss: 0.0104 - act_output_loss: 0.0414
+Agent Act Prediction: ep=37, precision=0.187, recall=0.321, fscore=0.236, accuracy_frame=0.152, threshold=0.142
+SlotTagging: ep=37, precision=0.452, recall=0.373, fscore=0.409, accuracy_frame=0.748
+Intent Prediction: ep=37, precision=0.500, recall=0.474, fscore=0.486, accuracy_frame=0.407, threshold=0.414
+NLU Frame: ep=37, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=37.pred, ./model/joint_4770/dev_results/tag_ep=37.pred
+Saving Model: ./model/joint_4770/weights/ep=37_tagF1=0.409_intentF1=0.486th=0.414_NLUframeAcc=0.358_actF1=0.236frameAcc=0.152th=0.142.h5
+<Epoch 38>
+Epoch 1/1
+347s - loss: 0.0518 - slot_output_loss: 0.0010 - intent_output_loss: 0.0103 - act_output_loss: 0.0405
+Agent Act Prediction: ep=38, precision=0.196, recall=0.370, fscore=0.256, accuracy_frame=0.119, threshold=0.126
+SlotTagging: ep=38, precision=0.426, recall=0.384, fscore=0.404, accuracy_frame=0.749
+Intent Prediction: ep=38, precision=0.476, recall=0.513, fscore=0.494, accuracy_frame=0.406, threshold=0.247
+NLU Frame: ep=38, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=38.pred, ./model/joint_4770/dev_results/tag_ep=38.pred
+Saving Model: ./model/joint_4770/weights/ep=38_tagF1=0.404_intentF1=0.494th=0.247_NLUframeAcc=0.359_actF1=0.256frameAcc=0.119th=0.126.h5
+<Epoch 39>
+Epoch 1/1
+347s - loss: 0.0500 - slot_output_loss: 0.0010 - intent_output_loss: 0.0100 - act_output_loss: 0.0390
+Agent Act Prediction: ep=39, precision=0.172, recall=0.381, fscore=0.237, accuracy_frame=0.111, threshold=0.104
+SlotTagging: ep=39, precision=0.452, recall=0.381, fscore=0.413, accuracy_frame=0.751
+Intent Prediction: ep=39, precision=0.484, recall=0.492, fscore=0.488, accuracy_frame=0.407, threshold=0.307
+NLU Frame: ep=39, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=39.pred, ./model/joint_4770/dev_results/tag_ep=39.pred
+Saving Model: ./model/joint_4770/weights/ep=39_tagF1=0.413_intentF1=0.488th=0.307_NLUframeAcc=0.362_actF1=0.237frameAcc=0.111th=0.104.h5
+<Epoch 40>
+Epoch 1/1
+348s - loss: 0.0492 - slot_output_loss: 9.9001e-04 - intent_output_loss: 0.0100 - act_output_loss: 0.0382
+Agent Act Prediction: ep=40, precision=0.171, recall=0.374, fscore=0.234, accuracy_frame=0.118, threshold=0.088
+SlotTagging: ep=40, precision=0.434, recall=0.375, fscore=0.403, accuracy_frame=0.746
+Intent Prediction: ep=40, precision=0.480, recall=0.479, fscore=0.479, accuracy_frame=0.399, threshold=0.348
+NLU Frame: ep=40, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=40.pred, ./model/joint_4770/dev_results/tag_ep=40.pred
+Saving Model: ./model/joint_4770/weights/ep=40_tagF1=0.403_intentF1=0.479th=0.348_NLUframeAcc=0.356_actF1=0.234frameAcc=0.118th=0.088.h5
+<Epoch 41>
+Epoch 1/1
+348s - loss: 0.0476 - slot_output_loss: 9.2250e-04 - intent_output_loss: 0.0099 - act_output_loss: 0.0368
+Agent Act Prediction: ep=41, precision=0.164, recall=0.356, fscore=0.225, accuracy_frame=0.120, threshold=0.092
+SlotTagging: ep=41, precision=0.446, recall=0.378, fscore=0.409, accuracy_frame=0.747
+Intent Prediction: ep=41, precision=0.505, recall=0.467, fscore=0.485, accuracy_frame=0.409, threshold=0.476
+NLU Frame: ep=41, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=41.pred, ./model/joint_4770/dev_results/tag_ep=41.pred
+Saving Model: ./model/joint_4770/weights/ep=41_tagF1=0.409_intentF1=0.485th=0.476_NLUframeAcc=0.359_actF1=0.225frameAcc=0.120th=0.092.h5
+<Epoch 42>
+Epoch 1/1
+348s - loss: 0.0468 - slot_output_loss: 9.7725e-04 - intent_output_loss: 0.0098 - act_output_loss: 0.0360
+Agent Act Prediction: ep=42, precision=0.152, recall=0.371, fscore=0.216, accuracy_frame=0.111, threshold=0.088
+SlotTagging: ep=42, precision=0.443, recall=0.378, fscore=0.408, accuracy_frame=0.747
+Intent Prediction: ep=42, precision=0.483, recall=0.483, fscore=0.483, accuracy_frame=0.399, threshold=0.332
+NLU Frame: ep=42, accuracy=0.353
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=42.pred, ./model/joint_4770/dev_results/tag_ep=42.pred
+Saving Model: ./model/joint_4770/weights/ep=42_tagF1=0.408_intentF1=0.483th=0.332_NLUframeAcc=0.353_actF1=0.216frameAcc=0.111th=0.088.h5
+<Epoch 43>
+Epoch 1/1
+347s - loss: 0.0455 - slot_output_loss: 9.5917e-04 - intent_output_loss: 0.0097 - act_output_loss: 0.0348
+Agent Act Prediction: ep=43, precision=0.167, recall=0.337, fscore=0.224, accuracy_frame=0.122, threshold=0.117
+SlotTagging: ep=43, precision=0.430, recall=0.382, fscore=0.405, accuracy_frame=0.745
+Intent Prediction: ep=43, precision=0.460, recall=0.509, fscore=0.483, accuracy_frame=0.391, threshold=0.276
+NLU Frame: ep=43, accuracy=0.347
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=43.pred, ./model/joint_4770/dev_results/tag_ep=43.pred
+Saving Model: ./model/joint_4770/weights/ep=43_tagF1=0.405_intentF1=0.483th=0.276_NLUframeAcc=0.347_actF1=0.224frameAcc=0.122th=0.117.h5
+<Epoch 44>
+Epoch 1/1
+347s - loss: 0.0440 - slot_output_loss: 8.5594e-04 - intent_output_loss: 0.0096 - act_output_loss: 0.0336
+Agent Act Prediction: ep=44, precision=0.187, recall=0.326, fscore=0.237, accuracy_frame=0.154, threshold=0.116
+SlotTagging: ep=44, precision=0.459, recall=0.382, fscore=0.417, accuracy_frame=0.749
+Intent Prediction: ep=44, precision=0.504, recall=0.481, fscore=0.492, accuracy_frame=0.411, threshold=0.383
+NLU Frame: ep=44, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=44.pred, ./model/joint_4770/dev_results/tag_ep=44.pred
+Saving Model: ./model/joint_4770/weights/ep=44_tagF1=0.417_intentF1=0.492th=0.383_NLUframeAcc=0.365_actF1=0.237frameAcc=0.154th=0.116.h5
+<Epoch 45>
+Epoch 1/1
+347s - loss: 0.0424 - slot_output_loss: 8.5184e-04 - intent_output_loss: 0.0093 - act_output_loss: 0.0322
+Agent Act Prediction: ep=45, precision=0.155, recall=0.348, fscore=0.215, accuracy_frame=0.121, threshold=0.075
+SlotTagging: ep=45, precision=0.453, recall=0.367, fscore=0.405, accuracy_frame=0.755
+Intent Prediction: ep=45, precision=0.511, recall=0.475, fscore=0.493, accuracy_frame=0.414, threshold=0.468
+NLU Frame: ep=45, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=45.pred, ./model/joint_4770/dev_results/tag_ep=45.pred
+Saving Model: ./model/joint_4770/weights/ep=45_tagF1=0.405_intentF1=0.493th=0.468_NLUframeAcc=0.365_actF1=0.215frameAcc=0.121th=0.075.h5
+<Epoch 46>
+Epoch 1/1
+348s - loss: 0.0414 - slot_output_loss: 8.8049e-04 - intent_output_loss: 0.0093 - act_output_loss: 0.0312
+Agent Act Prediction: ep=46, precision=0.180, recall=0.285, fscore=0.221, accuracy_frame=0.156, threshold=0.141
+SlotTagging: ep=46, precision=0.446, recall=0.383, fscore=0.412, accuracy_frame=0.752
+Intent Prediction: ep=46, precision=0.504, recall=0.483, fscore=0.493, accuracy_frame=0.408, threshold=0.430
+NLU Frame: ep=46, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=46.pred, ./model/joint_4770/dev_results/tag_ep=46.pred
+Saving Model: ./model/joint_4770/weights/ep=46_tagF1=0.412_intentF1=0.493th=0.430_NLUframeAcc=0.360_actF1=0.221frameAcc=0.156th=0.141.h5
+<Epoch 47>
+Epoch 1/1
+348s - loss: 0.0402 - slot_output_loss: 9.0636e-04 - intent_output_loss: 0.0092 - act_output_loss: 0.0301
+Agent Act Prediction: ep=47, precision=0.154, recall=0.348, fscore=0.213, accuracy_frame=0.127, threshold=0.082
+SlotTagging: ep=47, precision=0.434, recall=0.375, fscore=0.402, accuracy_frame=0.747
+Intent Prediction: ep=47, precision=0.512, recall=0.467, fscore=0.488, accuracy_frame=0.406, threshold=0.451
+NLU Frame: ep=47, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=47.pred, ./model/joint_4770/dev_results/tag_ep=47.pred
+Saving Model: ./model/joint_4770/weights/ep=47_tagF1=0.402_intentF1=0.488th=0.451_NLUframeAcc=0.360_actF1=0.213frameAcc=0.127th=0.082.h5
+<Epoch 48>
+Epoch 1/1
+349s - loss: 0.0390 - slot_output_loss: 8.5400e-04 - intent_output_loss: 0.0092 - act_output_loss: 0.0290
+Agent Act Prediction: ep=48, precision=0.154, recall=0.341, fscore=0.212, accuracy_frame=0.124, threshold=0.072
+SlotTagging: ep=48, precision=0.451, recall=0.373, fscore=0.408, accuracy_frame=0.749
+Intent Prediction: ep=48, precision=0.484, recall=0.488, fscore=0.486, accuracy_frame=0.401, threshold=0.321
+NLU Frame: ep=48, accuracy=0.351
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=48.pred, ./model/joint_4770/dev_results/tag_ep=48.pred
+Saving Model: ./model/joint_4770/weights/ep=48_tagF1=0.408_intentF1=0.486th=0.321_NLUframeAcc=0.351_actF1=0.212frameAcc=0.124th=0.072.h5
+<Epoch 49>
+Epoch 1/1
+347s - loss: 0.0377 - slot_output_loss: 8.3203e-04 - intent_output_loss: 0.0091 - act_output_loss: 0.0277
+Agent Act Prediction: ep=49, precision=0.178, recall=0.301, fscore=0.224, accuracy_frame=0.161, threshold=0.104
+SlotTagging: ep=49, precision=0.444, recall=0.371, fscore=0.404, accuracy_frame=0.748
+Intent Prediction: ep=49, precision=0.499, recall=0.488, fscore=0.493, accuracy_frame=0.411, threshold=0.370
+NLU Frame: ep=49, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=49.pred, ./model/joint_4770/dev_results/tag_ep=49.pred
+Saving Model: ./model/joint_4770/weights/ep=49_tagF1=0.404_intentF1=0.493th=0.370_NLUframeAcc=0.358_actF1=0.224frameAcc=0.161th=0.104.h5
+<Epoch 50>
+Epoch 1/1
+348s - loss: 0.0364 - slot_output_loss: 7.8727e-04 - intent_output_loss: 0.0091 - act_output_loss: 0.0265
+Agent Act Prediction: ep=50, precision=0.153, recall=0.349, fscore=0.213, accuracy_frame=0.125, threshold=0.082
+SlotTagging: ep=50, precision=0.440, recall=0.382, fscore=0.409, accuracy_frame=0.747
+Intent Prediction: ep=50, precision=0.497, recall=0.485, fscore=0.491, accuracy_frame=0.410, threshold=0.373
+NLU Frame: ep=50, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=50.pred, ./model/joint_4770/dev_results/tag_ep=50.pred
+Saving Model: ./model/joint_4770/weights/ep=50_tagF1=0.409_intentF1=0.491th=0.373_NLUframeAcc=0.360_actF1=0.213frameAcc=0.125th=0.082.h5
+<Epoch 51>
+Epoch 1/1
+349s - loss: 0.0356 - slot_output_loss: 8.0245e-04 - intent_output_loss: 0.0090 - act_output_loss: 0.0258
+Agent Act Prediction: ep=51, precision=0.164, recall=0.316, fscore=0.216, accuracy_frame=0.145, threshold=0.078
+SlotTagging: ep=51, precision=0.453, recall=0.377, fscore=0.411, accuracy_frame=0.755
+Intent Prediction: ep=51, precision=0.485, recall=0.473, fscore=0.479, accuracy_frame=0.400, threshold=0.380
+NLU Frame: ep=51, accuracy=0.354
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=51.pred, ./model/joint_4770/dev_results/tag_ep=51.pred
+Saving Model: ./model/joint_4770/weights/ep=51_tagF1=0.411_intentF1=0.479th=0.380_NLUframeAcc=0.354_actF1=0.216frameAcc=0.145th=0.078.h5
+<Epoch 52>
+Epoch 1/1
+347s - loss: 0.0342 - slot_output_loss: 8.1109e-04 - intent_output_loss: 0.0089 - act_output_loss: 0.0245
+Agent Act Prediction: ep=52, precision=0.157, recall=0.291, fscore=0.204, accuracy_frame=0.156, threshold=0.067
+SlotTagging: ep=52, precision=0.461, recall=0.373, fscore=0.412, accuracy_frame=0.756
+Intent Prediction: ep=52, precision=0.509, recall=0.477, fscore=0.492, accuracy_frame=0.408, threshold=0.407
+NLU Frame: ep=52, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=52.pred, ./model/joint_4770/dev_results/tag_ep=52.pred
+Saving Model: ./model/joint_4770/weights/ep=52_tagF1=0.412_intentF1=0.492th=0.407_NLUframeAcc=0.357_actF1=0.204frameAcc=0.156th=0.067.h5
+<Epoch 53>
+Epoch 1/1
+348s - loss: 0.0332 - slot_output_loss: 8.1435e-04 - intent_output_loss: 0.0089 - act_output_loss: 0.0235
+Agent Act Prediction: ep=53, precision=0.142, recall=0.327, fscore=0.198, accuracy_frame=0.139, threshold=0.040
+SlotTagging: ep=53, precision=0.461, recall=0.375, fscore=0.414, accuracy_frame=0.751
+Intent Prediction: ep=53, precision=0.496, recall=0.492, fscore=0.494, accuracy_frame=0.418, threshold=0.346
+NLU Frame: ep=53, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=53.pred, ./model/joint_4770/dev_results/tag_ep=53.pred
+Saving Model: ./model/joint_4770/weights/ep=53_tagF1=0.414_intentF1=0.494th=0.346_NLUframeAcc=0.367_actF1=0.198frameAcc=0.139th=0.040.h5
+<Epoch 54>
+Epoch 1/1
+348s - loss: 0.0320 - slot_output_loss: 7.6681e-04 - intent_output_loss: 0.0089 - act_output_loss: 0.0223
+Agent Act Prediction: ep=54, precision=0.168, recall=0.348, fscore=0.227, accuracy_frame=0.149, threshold=0.057
+SlotTagging: ep=54, precision=0.475, recall=0.386, fscore=0.426, accuracy_frame=0.756
+Intent Prediction: ep=54, precision=0.507, recall=0.485, fscore=0.496, accuracy_frame=0.414, threshold=0.419
+NLU Frame: ep=54, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=54.pred, ./model/joint_4770/dev_results/tag_ep=54.pred
+Saving Model: ./model/joint_4770/weights/ep=54_tagF1=0.426_intentF1=0.496th=0.419_NLUframeAcc=0.363_actF1=0.227frameAcc=0.149th=0.057.h5
+<Epoch 55>
+Epoch 1/1
+349s - loss: 0.0308 - slot_output_loss: 7.6246e-04 - intent_output_loss: 0.0088 - act_output_loss: 0.0212
+Agent Act Prediction: ep=55, precision=0.138, recall=0.371, fscore=0.201, accuracy_frame=0.108, threshold=0.034
+SlotTagging: ep=55, precision=0.468, recall=0.377, fscore=0.417, accuracy_frame=0.756
+Intent Prediction: ep=55, precision=0.508, recall=0.483, fscore=0.495, accuracy_frame=0.414, threshold=0.365
+NLU Frame: ep=55, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=55.pred, ./model/joint_4770/dev_results/tag_ep=55.pred
+Saving Model: ./model/joint_4770/weights/ep=55_tagF1=0.417_intentF1=0.495th=0.365_NLUframeAcc=0.367_actF1=0.201frameAcc=0.108th=0.034.h5
+<Epoch 56>
+Epoch 1/1
+348s - loss: 0.0297 - slot_output_loss: 7.3501e-04 - intent_output_loss: 0.0088 - act_output_loss: 0.0202
+Agent Act Prediction: ep=56, precision=0.162, recall=0.308, fscore=0.212, accuracy_frame=0.147, threshold=0.045
+SlotTagging: ep=56, precision=0.468, recall=0.378, fscore=0.419, accuracy_frame=0.753
+Intent Prediction: ep=56, precision=0.508, recall=0.483, fscore=0.495, accuracy_frame=0.417, threshold=0.359
+NLU Frame: ep=56, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=56.pred, ./model/joint_4770/dev_results/tag_ep=56.pred
+Saving Model: ./model/joint_4770/weights/ep=56_tagF1=0.419_intentF1=0.495th=0.359_NLUframeAcc=0.365_actF1=0.212frameAcc=0.147th=0.045.h5
+<Epoch 57>
+Epoch 1/1
+348s - loss: 0.0289 - slot_output_loss: 6.9595e-04 - intent_output_loss: 0.0087 - act_output_loss: 0.0195
+Agent Act Prediction: ep=57, precision=0.151, recall=0.315, fscore=0.204, accuracy_frame=0.155, threshold=0.047
+SlotTagging: ep=57, precision=0.452, recall=0.390, fscore=0.418, accuracy_frame=0.749
+Intent Prediction: ep=57, precision=0.508, recall=0.487, fscore=0.497, accuracy_frame=0.419, threshold=0.371
+NLU Frame: ep=57, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=57.pred, ./model/joint_4770/dev_results/tag_ep=57.pred
+Saving Model: ./model/joint_4770/weights/ep=57_tagF1=0.418_intentF1=0.497th=0.371_NLUframeAcc=0.365_actF1=0.204frameAcc=0.155th=0.047.h5
+<Epoch 58>
+Epoch 1/1
+348s - loss: 0.0281 - slot_output_loss: 7.4415e-04 - intent_output_loss: 0.0086 - act_output_loss: 0.0187
+Agent Act Prediction: ep=58, precision=0.154, recall=0.284, fscore=0.200, accuracy_frame=0.162, threshold=0.065
+SlotTagging: ep=58, precision=0.463, recall=0.385, fscore=0.420, accuracy_frame=0.751
+Intent Prediction: ep=58, precision=0.483, recall=0.489, fscore=0.486, accuracy_frame=0.406, threshold=0.290
+NLU Frame: ep=58, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=58.pred, ./model/joint_4770/dev_results/tag_ep=58.pred
+Saving Model: ./model/joint_4770/weights/ep=58_tagF1=0.420_intentF1=0.486th=0.290_NLUframeAcc=0.360_actF1=0.200frameAcc=0.162th=0.065.h5
+<Epoch 59>
+Epoch 1/1
+348s - loss: 0.0269 - slot_output_loss: 6.6947e-04 - intent_output_loss: 0.0086 - act_output_loss: 0.0177
+Agent Act Prediction: ep=59, precision=0.196, recall=0.260, fscore=0.223, accuracy_frame=0.201, threshold=0.092
+SlotTagging: ep=59, precision=0.443, recall=0.380, fscore=0.409, accuracy_frame=0.749
+Intent Prediction: ep=59, precision=0.455, recall=0.531, fscore=0.490, accuracy_frame=0.362, threshold=0.177
+NLU Frame: ep=59, accuracy=0.316
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=59.pred, ./model/joint_4770/dev_results/tag_ep=59.pred
+Saving Model: ./model/joint_4770/weights/ep=59_tagF1=0.409_intentF1=0.490th=0.177_NLUframeAcc=0.316_actF1=0.223frameAcc=0.201th=0.092.h5
+<Epoch 60>
+Epoch 1/1
+348s - loss: 0.0264 - slot_output_loss: 7.1020e-04 - intent_output_loss: 0.0086 - act_output_loss: 0.0171
+Agent Act Prediction: ep=60, precision=0.178, recall=0.250, fscore=0.207, accuracy_frame=0.181, threshold=0.094
+SlotTagging: ep=60, precision=0.449, recall=0.380, fscore=0.411, accuracy_frame=0.751
+Intent Prediction: ep=60, precision=0.486, recall=0.481, fscore=0.483, accuracy_frame=0.408, threshold=0.320
+NLU Frame: ep=60, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=60.pred, ./model/joint_4770/dev_results/tag_ep=60.pred
+Saving Model: ./model/joint_4770/weights/ep=60_tagF1=0.411_intentF1=0.483th=0.320_NLUframeAcc=0.360_actF1=0.207frameAcc=0.181th=0.094.h5
+<Epoch 61>
+Epoch 1/1
+348s - loss: 0.0259 - slot_output_loss: 6.9620e-04 - intent_output_loss: 0.0085 - act_output_loss: 0.0167
+Agent Act Prediction: ep=61, precision=0.156, recall=0.346, fscore=0.215, accuracy_frame=0.114, threshold=0.050
+SlotTagging: ep=61, precision=0.464, recall=0.388, fscore=0.422, accuracy_frame=0.752
+Intent Prediction: ep=61, precision=0.492, recall=0.481, fscore=0.487, accuracy_frame=0.408, threshold=0.321
+NLU Frame: ep=61, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=61.pred, ./model/joint_4770/dev_results/tag_ep=61.pred
+Saving Model: ./model/joint_4770/weights/ep=61_tagF1=0.422_intentF1=0.487th=0.321_NLUframeAcc=0.358_actF1=0.215frameAcc=0.114th=0.050.h5
+<Epoch 62>
+Epoch 1/1
+347s - loss: 0.0245 - slot_output_loss: 6.7814e-04 - intent_output_loss: 0.0086 - act_output_loss: 0.0153
+Agent Act Prediction: ep=62, precision=0.167, recall=0.313, fscore=0.218, accuracy_frame=0.146, threshold=0.065
+SlotTagging: ep=62, precision=0.457, recall=0.383, fscore=0.417, accuracy_frame=0.748
+Intent Prediction: ep=62, precision=0.499, recall=0.467, fscore=0.482, accuracy_frame=0.405, threshold=0.383
+NLU Frame: ep=62, accuracy=0.354
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=62.pred, ./model/joint_4770/dev_results/tag_ep=62.pred
+Saving Model: ./model/joint_4770/weights/ep=62_tagF1=0.417_intentF1=0.482th=0.383_NLUframeAcc=0.354_actF1=0.218frameAcc=0.146th=0.065.h5
+<Epoch 63>
+Epoch 1/1
+348s - loss: 0.0238 - slot_output_loss: 6.9109e-04 - intent_output_loss: 0.0085 - act_output_loss: 0.0146
+Agent Act Prediction: ep=63, precision=0.161, recall=0.268, fscore=0.201, accuracy_frame=0.172, threshold=0.052
+SlotTagging: ep=63, precision=0.467, recall=0.382, fscore=0.420, accuracy_frame=0.756
+Intent Prediction: ep=63, precision=0.512, recall=0.476, fscore=0.493, accuracy_frame=0.418, threshold=0.413
+NLU Frame: ep=63, accuracy=0.370
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=63.pred, ./model/joint_4770/dev_results/tag_ep=63.pred
+Saving Model: ./model/joint_4770/weights/ep=63_tagF1=0.420_intentF1=0.493th=0.413_NLUframeAcc=0.370_actF1=0.201frameAcc=0.172th=0.052.h5
+<Epoch 64>
+Epoch 1/1
+348s - loss: 0.0229 - slot_output_loss: 6.8817e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0138
+Agent Act Prediction: ep=64, precision=0.162, recall=0.278, fscore=0.204, accuracy_frame=0.169, threshold=0.040
+SlotTagging: ep=64, precision=0.447, recall=0.382, fscore=0.412, accuracy_frame=0.755
+Intent Prediction: ep=64, precision=0.498, recall=0.472, fscore=0.485, accuracy_frame=0.404, threshold=0.402
+NLU Frame: ep=64, accuracy=0.352
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=64.pred, ./model/joint_4770/dev_results/tag_ep=64.pred
+Saving Model: ./model/joint_4770/weights/ep=64_tagF1=0.412_intentF1=0.485th=0.402_NLUframeAcc=0.352_actF1=0.204frameAcc=0.169th=0.040.h5
+<Epoch 65>
+Epoch 1/1
+348s - loss: 0.0221 - slot_output_loss: 5.8991e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0131
+Agent Act Prediction: ep=65, precision=0.144, recall=0.284, fscore=0.191, accuracy_frame=0.132, threshold=0.041
+SlotTagging: ep=65, precision=0.436, recall=0.377, fscore=0.404, accuracy_frame=0.747
+Intent Prediction: ep=65, precision=0.490, recall=0.467, fscore=0.479, accuracy_frame=0.405, threshold=0.415
+NLU Frame: ep=65, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=65.pred, ./model/joint_4770/dev_results/tag_ep=65.pred
+Saving Model: ./model/joint_4770/weights/ep=65_tagF1=0.404_intentF1=0.479th=0.415_NLUframeAcc=0.357_actF1=0.191frameAcc=0.132th=0.041.h5
+<Epoch 66>
+Epoch 1/1
+292s - loss: 0.0214 - slot_output_loss: 6.1917e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0124
+Agent Act Prediction: ep=66, precision=0.156, recall=0.297, fscore=0.205, accuracy_frame=0.143, threshold=0.042
+SlotTagging: ep=66, precision=0.455, recall=0.387, fscore=0.418, accuracy_frame=0.749
+Intent Prediction: ep=66, precision=0.487, recall=0.485, fscore=0.486, accuracy_frame=0.409, threshold=0.319
+NLU Frame: ep=66, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=66.pred, ./model/joint_4770/dev_results/tag_ep=66.pred
+Saving Model: ./model/joint_4770/weights/ep=66_tagF1=0.418_intentF1=0.486th=0.319_NLUframeAcc=0.360_actF1=0.205frameAcc=0.143th=0.042.h5
+<Epoch 67>
+Epoch 1/1
+238s - loss: 0.0212 - slot_output_loss: 6.4340e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0122
+Agent Act Prediction: ep=67, precision=0.138, recall=0.308, fscore=0.191, accuracy_frame=0.132, threshold=0.020
+SlotTagging: ep=67, precision=0.455, recall=0.368, fscore=0.407, accuracy_frame=0.748
+Intent Prediction: ep=67, precision=0.509, recall=0.485, fscore=0.497, accuracy_frame=0.419, threshold=0.351
+NLU Frame: ep=67, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=67.pred, ./model/joint_4770/dev_results/tag_ep=67.pred
+Saving Model: ./model/joint_4770/weights/ep=67_tagF1=0.407_intentF1=0.497th=0.351_NLUframeAcc=0.362_actF1=0.191frameAcc=0.132th=0.020.h5
+<Epoch 68>
+Epoch 1/1
+238s - loss: 0.0207 - slot_output_loss: 5.9505e-04 - intent_output_loss: 0.0085 - act_output_loss: 0.0116
+Agent Act Prediction: ep=68, precision=0.158, recall=0.302, fscore=0.207, accuracy_frame=0.143, threshold=0.044
+SlotTagging: ep=68, precision=0.467, recall=0.375, fscore=0.416, accuracy_frame=0.754
+Intent Prediction: ep=68, precision=0.512, recall=0.465, fscore=0.487, accuracy_frame=0.411, threshold=0.474
+NLU Frame: ep=68, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=68.pred, ./model/joint_4770/dev_results/tag_ep=68.pred
+Saving Model: ./model/joint_4770/weights/ep=68_tagF1=0.416_intentF1=0.487th=0.474_NLUframeAcc=0.358_actF1=0.207frameAcc=0.143th=0.044.h5
+<Epoch 69>
+Epoch 1/1
+238s - loss: 0.0204 - slot_output_loss: 6.1081e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0113
+Agent Act Prediction: ep=69, precision=0.169, recall=0.219, fscore=0.191, accuracy_frame=0.194, threshold=0.048
+SlotTagging: ep=69, precision=0.456, recall=0.370, fscore=0.408, accuracy_frame=0.752
+Intent Prediction: ep=69, precision=0.504, recall=0.475, fscore=0.489, accuracy_frame=0.409, threshold=0.445
+NLU Frame: ep=69, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=69.pred, ./model/joint_4770/dev_results/tag_ep=69.pred
+Saving Model: ./model/joint_4770/weights/ep=69_tagF1=0.408_intentF1=0.489th=0.445_NLUframeAcc=0.357_actF1=0.191frameAcc=0.194th=0.048.h5
+<Epoch 70>
+Epoch 1/1
+238s - loss: 0.0195 - slot_output_loss: 6.0915e-04 - intent_output_loss: 0.0083 - act_output_loss: 0.0105
+Agent Act Prediction: ep=70, precision=0.148, recall=0.302, fscore=0.198, accuracy_frame=0.130, threshold=0.022
+SlotTagging: ep=70, precision=0.448, recall=0.373, fscore=0.407, accuracy_frame=0.747
+Intent Prediction: ep=70, precision=0.516, recall=0.479, fscore=0.497, accuracy_frame=0.419, threshold=0.380
+NLU Frame: ep=70, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=70.pred, ./model/joint_4770/dev_results/tag_ep=70.pred
+Saving Model: ./model/joint_4770/weights/ep=70_tagF1=0.407_intentF1=0.497th=0.380_NLUframeAcc=0.364_actF1=0.198frameAcc=0.130th=0.022.h5
+<Epoch 71>
+Epoch 1/1
+238s - loss: 0.0190 - slot_output_loss: 6.3151e-04 - intent_output_loss: 0.0083 - act_output_loss: 0.0100
+Agent Act Prediction: ep=71, precision=0.153, recall=0.265, fscore=0.194, accuracy_frame=0.162, threshold=0.026
+SlotTagging: ep=71, precision=0.465, recall=0.364, fscore=0.408, accuracy_frame=0.750
+Intent Prediction: ep=71, precision=0.513, recall=0.470, fscore=0.491, accuracy_frame=0.411, threshold=0.467
+NLU Frame: ep=71, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=71.pred, ./model/joint_4770/dev_results/tag_ep=71.pred
+Saving Model: ./model/joint_4770/weights/ep=71_tagF1=0.408_intentF1=0.491th=0.467_NLUframeAcc=0.358_actF1=0.194frameAcc=0.162th=0.026.h5
+<Epoch 72>
+Epoch 1/1
+238s - loss: 0.0189 - slot_output_loss: 6.2354e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0099
+Agent Act Prediction: ep=72, precision=0.145, recall=0.270, fscore=0.188, accuracy_frame=0.159, threshold=0.019
+SlotTagging: ep=72, precision=0.467, recall=0.375, fscore=0.416, accuracy_frame=0.754
+Intent Prediction: ep=72, precision=0.495, recall=0.474, fscore=0.484, accuracy_frame=0.412, threshold=0.389
+NLU Frame: ep=72, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=72.pred, ./model/joint_4770/dev_results/tag_ep=72.pred
+Saving Model: ./model/joint_4770/weights/ep=72_tagF1=0.416_intentF1=0.484th=0.389_NLUframeAcc=0.365_actF1=0.188frameAcc=0.159th=0.019.h5
+<Epoch 73>
+Epoch 1/1
+238s - loss: 0.0185 - slot_output_loss: 6.2898e-04 - intent_output_loss: 0.0084 - act_output_loss: 0.0096
+Agent Act Prediction: ep=73, precision=0.163, recall=0.272, fscore=0.204, accuracy_frame=0.166, threshold=0.037
+SlotTagging: ep=73, precision=0.442, recall=0.385, fscore=0.411, accuracy_frame=0.749
+Intent Prediction: ep=73, precision=0.496, recall=0.475, fscore=0.485, accuracy_frame=0.407, threshold=0.340
+NLU Frame: ep=73, accuracy=0.354
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=73.pred, ./model/joint_4770/dev_results/tag_ep=73.pred
+Saving Model: ./model/joint_4770/weights/ep=73_tagF1=0.411_intentF1=0.485th=0.340_NLUframeAcc=0.354_actF1=0.204frameAcc=0.166th=0.037.h5
+<Epoch 74>
+Epoch 1/1
+238s - loss: 0.0180 - slot_output_loss: 5.9142e-04 - intent_output_loss: 0.0083 - act_output_loss: 0.0091
+Agent Act Prediction: ep=74, precision=0.165, recall=0.229, fscore=0.192, accuracy_frame=0.197, threshold=0.039
+SlotTagging: ep=74, precision=0.468, recall=0.371, fscore=0.414, accuracy_frame=0.752
+Intent Prediction: ep=74, precision=0.492, recall=0.476, fscore=0.484, accuracy_frame=0.404, threshold=0.370
+NLU Frame: ep=74, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=74.pred, ./model/joint_4770/dev_results/tag_ep=74.pred
+Saving Model: ./model/joint_4770/weights/ep=74_tagF1=0.414_intentF1=0.484th=0.370_NLUframeAcc=0.357_actF1=0.192frameAcc=0.197th=0.039.h5
+<Epoch 75>
+Epoch 1/1
+238s - loss: 0.0173 - slot_output_loss: 5.7818e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0085
+Agent Act Prediction: ep=75, precision=0.166, recall=0.277, fscore=0.208, accuracy_frame=0.158, threshold=0.032
+SlotTagging: ep=75, precision=0.459, recall=0.373, fscore=0.411, accuracy_frame=0.753
+Intent Prediction: ep=75, precision=0.482, recall=0.490, fscore=0.486, accuracy_frame=0.411, threshold=0.283
+NLU Frame: ep=75, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=75.pred, ./model/joint_4770/dev_results/tag_ep=75.pred
+Saving Model: ./model/joint_4770/weights/ep=75_tagF1=0.411_intentF1=0.486th=0.283_NLUframeAcc=0.360_actF1=0.208frameAcc=0.158th=0.032.h5
+<Epoch 76>
+Epoch 1/1
+238s - loss: 0.0169 - slot_output_loss: 5.5792e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0081
+Agent Act Prediction: ep=76, precision=0.137, recall=0.306, fscore=0.190, accuracy_frame=0.122, threshold=0.013
+SlotTagging: ep=76, precision=0.455, recall=0.380, fscore=0.414, accuracy_frame=0.748
+Intent Prediction: ep=76, precision=0.486, recall=0.484, fscore=0.485, accuracy_frame=0.413, threshold=0.308
+NLU Frame: ep=76, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=76.pred, ./model/joint_4770/dev_results/tag_ep=76.pred
+Saving Model: ./model/joint_4770/weights/ep=76_tagF1=0.414_intentF1=0.485th=0.308_NLUframeAcc=0.362_actF1=0.190frameAcc=0.122th=0.013.h5
+<Epoch 77>
+Epoch 1/1
+238s - loss: 0.0169 - slot_output_loss: 6.0072e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0081
+Agent Act Prediction: ep=77, precision=0.145, recall=0.286, fscore=0.193, accuracy_frame=0.133, threshold=0.023
+SlotTagging: ep=77, precision=0.463, recall=0.372, fscore=0.413, accuracy_frame=0.750
+Intent Prediction: ep=77, precision=0.508, recall=0.479, fscore=0.493, accuracy_frame=0.413, threshold=0.357
+NLU Frame: ep=77, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=77.pred, ./model/joint_4770/dev_results/tag_ep=77.pred
+Saving Model: ./model/joint_4770/weights/ep=77_tagF1=0.413_intentF1=0.493th=0.357_NLUframeAcc=0.364_actF1=0.193frameAcc=0.133th=0.023.h5
+<Epoch 78>
+Epoch 1/1
+238s - loss: 0.0165 - slot_output_loss: 5.6663e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0078
+Agent Act Prediction: ep=78, precision=0.164, recall=0.272, fscore=0.205, accuracy_frame=0.161, threshold=0.035
+SlotTagging: ep=78, precision=0.453, recall=0.383, fscore=0.415, accuracy_frame=0.748
+Intent Prediction: ep=78, precision=0.509, recall=0.475, fscore=0.491, accuracy_frame=0.414, threshold=0.400
+NLU Frame: ep=78, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=78.pred, ./model/joint_4770/dev_results/tag_ep=78.pred
+Saving Model: ./model/joint_4770/weights/ep=78_tagF1=0.415_intentF1=0.491th=0.400_NLUframeAcc=0.365_actF1=0.205frameAcc=0.161th=0.035.h5
+<Epoch 79>
+Epoch 1/1
+238s - loss: 0.0158 - slot_output_loss: 5.3742e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0071
+Agent Act Prediction: ep=79, precision=0.151, recall=0.273, fscore=0.194, accuracy_frame=0.143, threshold=0.021
+SlotTagging: ep=79, precision=0.459, recall=0.381, fscore=0.416, accuracy_frame=0.752
+Intent Prediction: ep=79, precision=0.490, recall=0.484, fscore=0.487, accuracy_frame=0.405, threshold=0.323
+NLU Frame: ep=79, accuracy=0.355
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=79.pred, ./model/joint_4770/dev_results/tag_ep=79.pred
+Saving Model: ./model/joint_4770/weights/ep=79_tagF1=0.416_intentF1=0.487th=0.323_NLUframeAcc=0.355_actF1=0.194frameAcc=0.143th=0.021.h5
+<Epoch 80>
+Epoch 1/1
+238s - loss: 0.0161 - slot_output_loss: 5.7587e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0074
+Agent Act Prediction: ep=80, precision=0.150, recall=0.267, fscore=0.192, accuracy_frame=0.149, threshold=0.016
+SlotTagging: ep=80, precision=0.470, recall=0.382, fscore=0.421, accuracy_frame=0.755
+Intent Prediction: ep=80, precision=0.492, recall=0.476, fscore=0.484, accuracy_frame=0.405, threshold=0.284
+NLU Frame: ep=80, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=80.pred, ./model/joint_4770/dev_results/tag_ep=80.pred
+Saving Model: ./model/joint_4770/weights/ep=80_tagF1=0.421_intentF1=0.484th=0.284_NLUframeAcc=0.356_actF1=0.192frameAcc=0.149th=0.016.h5
+<Epoch 81>
+Epoch 1/1
+238s - loss: 0.0158 - slot_output_loss: 5.7491e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0070
+Agent Act Prediction: ep=81, precision=0.149, recall=0.256, fscore=0.188, accuracy_frame=0.167, threshold=0.014
+SlotTagging: ep=81, precision=0.461, recall=0.376, fscore=0.414, accuracy_frame=0.757
+Intent Prediction: ep=81, precision=0.525, recall=0.459, fscore=0.490, accuracy_frame=0.412, threshold=0.543
+NLU Frame: ep=81, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=81.pred, ./model/joint_4770/dev_results/tag_ep=81.pred
+Saving Model: ./model/joint_4770/weights/ep=81_tagF1=0.414_intentF1=0.490th=0.543_NLUframeAcc=0.360_actF1=0.188frameAcc=0.167th=0.014.h5
+<Epoch 82>
+Epoch 1/1
+238s - loss: 0.0155 - slot_output_loss: 5.0431e-04 - intent_output_loss: 0.0083 - act_output_loss: 0.0067
+Agent Act Prediction: ep=82, precision=0.174, recall=0.242, fscore=0.202, accuracy_frame=0.176, threshold=0.035
+SlotTagging: ep=82, precision=0.437, recall=0.381, fscore=0.407, accuracy_frame=0.748
+Intent Prediction: ep=82, precision=0.490, recall=0.487, fscore=0.489, accuracy_frame=0.411, threshold=0.317
+NLU Frame: ep=82, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=82.pred, ./model/joint_4770/dev_results/tag_ep=82.pred
+Saving Model: ./model/joint_4770/weights/ep=82_tagF1=0.407_intentF1=0.489th=0.317_NLUframeAcc=0.362_actF1=0.202frameAcc=0.176th=0.035.h5
+<Epoch 83>
+Epoch 1/1
+238s - loss: 0.0151 - slot_output_loss: 5.1848e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0065
+Agent Act Prediction: ep=83, precision=0.148, recall=0.233, fscore=0.181, accuracy_frame=0.164, threshold=0.022
+SlotTagging: ep=83, precision=0.458, recall=0.374, fscore=0.412, accuracy_frame=0.750
+Intent Prediction: ep=83, precision=0.506, recall=0.475, fscore=0.490, accuracy_frame=0.406, threshold=0.402
+NLU Frame: ep=83, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=83.pred, ./model/joint_4770/dev_results/tag_ep=83.pred
+Saving Model: ./model/joint_4770/weights/ep=83_tagF1=0.412_intentF1=0.490th=0.402_NLUframeAcc=0.358_actF1=0.181frameAcc=0.164th=0.022.h5
+<Epoch 84>
+Epoch 1/1
+238s - loss: 0.0150 - slot_output_loss: 4.9571e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0064
+Agent Act Prediction: ep=84, precision=0.119, recall=0.321, fscore=0.174, accuracy_frame=0.106, threshold=0.004
+SlotTagging: ep=84, precision=0.448, recall=0.383, fscore=0.413, accuracy_frame=0.752
+Intent Prediction: ep=84, precision=0.493, recall=0.487, fscore=0.490, accuracy_frame=0.406, threshold=0.337
+NLU Frame: ep=84, accuracy=0.355
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=84.pred, ./model/joint_4770/dev_results/tag_ep=84.pred
+Saving Model: ./model/joint_4770/weights/ep=84_tagF1=0.413_intentF1=0.490th=0.337_NLUframeAcc=0.355_actF1=0.174frameAcc=0.106th=0.004.h5
+<Epoch 85>
+Epoch 1/1
+238s - loss: 0.0149 - slot_output_loss: 5.3037e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0062
+Agent Act Prediction: ep=85, precision=0.166, recall=0.261, fscore=0.203, accuracy_frame=0.174, threshold=0.024
+SlotTagging: ep=85, precision=0.459, recall=0.376, fscore=0.414, accuracy_frame=0.754
+Intent Prediction: ep=85, precision=0.504, recall=0.467, fscore=0.485, accuracy_frame=0.406, threshold=0.445
+NLU Frame: ep=85, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=85.pred, ./model/joint_4770/dev_results/tag_ep=85.pred
+Saving Model: ./model/joint_4770/weights/ep=85_tagF1=0.414_intentF1=0.485th=0.445_NLUframeAcc=0.358_actF1=0.203frameAcc=0.174th=0.024.h5
+<Epoch 86>
+Epoch 1/1
+238s - loss: 0.0148 - slot_output_loss: 5.2722e-04 - intent_output_loss: 0.0082 - act_output_loss: 0.0061
+Agent Act Prediction: ep=86, precision=0.150, recall=0.220, fscore=0.178, accuracy_frame=0.171, threshold=0.018
+SlotTagging: ep=86, precision=0.457, recall=0.382, fscore=0.416, accuracy_frame=0.751
+Intent Prediction: ep=86, precision=0.519, recall=0.467, fscore=0.492, accuracy_frame=0.412, threshold=0.490
+NLU Frame: ep=86, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=86.pred, ./model/joint_4770/dev_results/tag_ep=86.pred
+Saving Model: ./model/joint_4770/weights/ep=86_tagF1=0.416_intentF1=0.492th=0.490_NLUframeAcc=0.360_actF1=0.178frameAcc=0.171th=0.018.h5
+<Epoch 87>
+Epoch 1/1
+238s - loss: 0.0145 - slot_output_loss: 5.2490e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0059
+Agent Act Prediction: ep=87, precision=0.159, recall=0.253, fscore=0.195, accuracy_frame=0.153, threshold=0.019
+SlotTagging: ep=87, precision=0.466, recall=0.382, fscore=0.420, accuracy_frame=0.752
+Intent Prediction: ep=87, precision=0.499, recall=0.467, fscore=0.483, accuracy_frame=0.408, threshold=0.394
+NLU Frame: ep=87, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=87.pred, ./model/joint_4770/dev_results/tag_ep=87.pred
+Saving Model: ./model/joint_4770/weights/ep=87_tagF1=0.420_intentF1=0.483th=0.394_NLUframeAcc=0.359_actF1=0.195frameAcc=0.153th=0.019.h5
+<Epoch 88>
+Epoch 1/1
+238s - loss: 0.0141 - slot_output_loss: 4.7981e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0056
+Agent Act Prediction: ep=88, precision=0.161, recall=0.247, fscore=0.195, accuracy_frame=0.175, threshold=0.014
+SlotTagging: ep=88, precision=0.463, recall=0.379, fscore=0.417, accuracy_frame=0.753
+Intent Prediction: ep=88, precision=0.494, recall=0.481, fscore=0.487, accuracy_frame=0.406, threshold=0.346
+NLU Frame: ep=88, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=88.pred, ./model/joint_4770/dev_results/tag_ep=88.pred
+Saving Model: ./model/joint_4770/weights/ep=88_tagF1=0.417_intentF1=0.487th=0.346_NLUframeAcc=0.356_actF1=0.195frameAcc=0.175th=0.014.h5
+<Epoch 89>
+Epoch 1/1
+238s - loss: 0.0140 - slot_output_loss: 5.2932e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0054
+Agent Act Prediction: ep=89, precision=0.150, recall=0.256, fscore=0.189, accuracy_frame=0.161, threshold=0.009
+SlotTagging: ep=89, precision=0.465, recall=0.374, fscore=0.414, accuracy_frame=0.749
+Intent Prediction: ep=89, precision=0.515, recall=0.465, fscore=0.489, accuracy_frame=0.412, threshold=0.455
+NLU Frame: ep=89, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=89.pred, ./model/joint_4770/dev_results/tag_ep=89.pred
+Saving Model: ./model/joint_4770/weights/ep=89_tagF1=0.414_intentF1=0.489th=0.455_NLUframeAcc=0.359_actF1=0.189frameAcc=0.161th=0.009.h5
+<Epoch 90>
+Epoch 1/1
+238s - loss: 0.0139 - slot_output_loss: 4.7969e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0053
+Agent Act Prediction: ep=90, precision=0.167, recall=0.267, fscore=0.206, accuracy_frame=0.158, threshold=0.022
+SlotTagging: ep=90, precision=0.455, recall=0.382, fscore=0.415, accuracy_frame=0.750
+Intent Prediction: ep=90, precision=0.495, recall=0.473, fscore=0.484, accuracy_frame=0.409, threshold=0.383
+NLU Frame: ep=90, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=90.pred, ./model/joint_4770/dev_results/tag_ep=90.pred
+Saving Model: ./model/joint_4770/weights/ep=90_tagF1=0.415_intentF1=0.484th=0.383_NLUframeAcc=0.358_actF1=0.206frameAcc=0.158th=0.022.h5
+<Epoch 91>
+Epoch 1/1
+238s - loss: 0.0140 - slot_output_loss: 4.8528e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0054
+Agent Act Prediction: ep=91, precision=0.171, recall=0.239, fscore=0.199, accuracy_frame=0.177, threshold=0.026
+SlotTagging: ep=91, precision=0.460, recall=0.382, fscore=0.417, accuracy_frame=0.753
+Intent Prediction: ep=91, precision=0.512, recall=0.475, fscore=0.493, accuracy_frame=0.417, threshold=0.372
+NLU Frame: ep=91, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=91.pred, ./model/joint_4770/dev_results/tag_ep=91.pred
+Saving Model: ./model/joint_4770/weights/ep=91_tagF1=0.417_intentF1=0.493th=0.372_NLUframeAcc=0.366_actF1=0.199frameAcc=0.177th=0.026.h5
+<Epoch 92>
+Epoch 1/1
+238s - loss: 0.0139 - slot_output_loss: 5.0482e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0053
+Agent Act Prediction: ep=92, precision=0.151, recall=0.275, fscore=0.195, accuracy_frame=0.145, threshold=0.008
+SlotTagging: ep=92, precision=0.477, recall=0.382, fscore=0.425, accuracy_frame=0.759
+Intent Prediction: ep=92, precision=0.514, recall=0.476, fscore=0.494, accuracy_frame=0.415, threshold=0.391
+NLU Frame: ep=92, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=92.pred, ./model/joint_4770/dev_results/tag_ep=92.pred
+Saving Model: ./model/joint_4770/weights/ep=92_tagF1=0.425_intentF1=0.494th=0.391_NLUframeAcc=0.364_actF1=0.195frameAcc=0.145th=0.008.h5
+<Epoch 93>
+Epoch 1/1
+238s - loss: 0.0139 - slot_output_loss: 5.1612e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0053
+Agent Act Prediction: ep=93, precision=0.182, recall=0.212, fscore=0.196, accuracy_frame=0.210, threshold=0.032
+SlotTagging: ep=93, precision=0.482, recall=0.386, fscore=0.429, accuracy_frame=0.762
+Intent Prediction: ep=93, precision=0.494, recall=0.475, fscore=0.484, accuracy_frame=0.406, threshold=0.376
+NLU Frame: ep=93, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=93.pred, ./model/joint_4770/dev_results/tag_ep=93.pred
+Saving Model: ./model/joint_4770/weights/ep=93_tagF1=0.429_intentF1=0.484th=0.376_NLUframeAcc=0.356_actF1=0.196frameAcc=0.210th=0.032.h5
+<Epoch 94>
+Epoch 1/1
+238s - loss: 0.0138 - slot_output_loss: 5.4416e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0051
+Agent Act Prediction: ep=94, precision=0.176, recall=0.263, fscore=0.211, accuracy_frame=0.169, threshold=0.024
+SlotTagging: ep=94, precision=0.467, recall=0.385, fscore=0.422, accuracy_frame=0.756
+Intent Prediction: ep=94, precision=0.495, recall=0.475, fscore=0.485, accuracy_frame=0.403, threshold=0.369
+NLU Frame: ep=94, accuracy=0.353
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=94.pred, ./model/joint_4770/dev_results/tag_ep=94.pred
+Saving Model: ./model/joint_4770/weights/ep=94_tagF1=0.422_intentF1=0.485th=0.369_NLUframeAcc=0.353_actF1=0.211frameAcc=0.169th=0.024.h5
+<Epoch 95>
+Epoch 1/1
+238s - loss: 0.0135 - slot_output_loss: 5.2248e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0050
+Agent Act Prediction: ep=95, precision=0.142, recall=0.257, fscore=0.183, accuracy_frame=0.139, threshold=0.010
+SlotTagging: ep=95, precision=0.461, recall=0.387, fscore=0.421, accuracy_frame=0.753
+Intent Prediction: ep=95, precision=0.517, recall=0.476, fscore=0.496, accuracy_frame=0.419, threshold=0.437
+NLU Frame: ep=95, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=95.pred, ./model/joint_4770/dev_results/tag_ep=95.pred
+Saving Model: ./model/joint_4770/weights/ep=95_tagF1=0.421_intentF1=0.496th=0.437_NLUframeAcc=0.363_actF1=0.183frameAcc=0.139th=0.010.h5
+<Epoch 96>
+Epoch 1/1
+238s - loss: 0.0134 - slot_output_loss: 4.9565e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0049
+Agent Act Prediction: ep=96, precision=0.158, recall=0.270, fscore=0.199, accuracy_frame=0.147, threshold=0.011
+SlotTagging: ep=96, precision=0.461, recall=0.382, fscore=0.418, accuracy_frame=0.757
+Intent Prediction: ep=96, precision=0.499, recall=0.475, fscore=0.487, accuracy_frame=0.412, threshold=0.406
+NLU Frame: ep=96, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=96.pred, ./model/joint_4770/dev_results/tag_ep=96.pred
+Saving Model: ./model/joint_4770/weights/ep=96_tagF1=0.418_intentF1=0.487th=0.406_NLUframeAcc=0.362_actF1=0.199frameAcc=0.147th=0.011.h5
+<Epoch 97>
+Epoch 1/1
+238s - loss: 0.0132 - slot_output_loss: 4.7429e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0047
+Agent Act Prediction: ep=97, precision=0.162, recall=0.244, fscore=0.195, accuracy_frame=0.168, threshold=0.019
+SlotTagging: ep=97, precision=0.480, recall=0.375, fscore=0.421, accuracy_frame=0.759
+Intent Prediction: ep=97, precision=0.508, recall=0.471, fscore=0.488, accuracy_frame=0.420, threshold=0.414
+NLU Frame: ep=97, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=97.pred, ./model/joint_4770/dev_results/tag_ep=97.pred
+Saving Model: ./model/joint_4770/weights/ep=97_tagF1=0.421_intentF1=0.488th=0.414_NLUframeAcc=0.365_actF1=0.195frameAcc=0.168th=0.019.h5
+<Epoch 98>
+Epoch 1/1
+238s - loss: 0.0133 - slot_output_loss: 4.8400e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0048
+Agent Act Prediction: ep=98, precision=0.144, recall=0.267, fscore=0.187, accuracy_frame=0.147, threshold=0.005
+SlotTagging: ep=98, precision=0.469, recall=0.378, fscore=0.419, accuracy_frame=0.757
+Intent Prediction: ep=98, precision=0.489, recall=0.497, fscore=0.493, accuracy_frame=0.410, threshold=0.257
+NLU Frame: ep=98, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=98.pred, ./model/joint_4770/dev_results/tag_ep=98.pred
+Saving Model: ./model/joint_4770/weights/ep=98_tagF1=0.419_intentF1=0.493th=0.257_NLUframeAcc=0.358_actF1=0.187frameAcc=0.147th=0.005.h5
+<Epoch 99>
+Epoch 1/1
+238s - loss: 0.0131 - slot_output_loss: 4.6097e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0046
+Agent Act Prediction: ep=99, precision=0.146, recall=0.251, fscore=0.185, accuracy_frame=0.161, threshold=0.006
+SlotTagging: ep=99, precision=0.481, recall=0.383, fscore=0.427, accuracy_frame=0.755
+Intent Prediction: ep=99, precision=0.510, recall=0.479, fscore=0.494, accuracy_frame=0.423, threshold=0.378
+NLU Frame: ep=99, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=99.pred, ./model/joint_4770/dev_results/tag_ep=99.pred
+Saving Model: ./model/joint_4770/weights/ep=99_tagF1=0.427_intentF1=0.494th=0.378_NLUframeAcc=0.368_actF1=0.185frameAcc=0.161th=0.006.h5
+<Epoch 100>
+Epoch 1/1
+238s - loss: 0.0132 - slot_output_loss: 4.3280e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0047
+Agent Act Prediction: ep=100, precision=0.137, recall=0.306, fscore=0.190, accuracy_frame=0.115, threshold=0.005
+SlotTagging: ep=100, precision=0.447, recall=0.380, fscore=0.411, accuracy_frame=0.747
+Intent Prediction: ep=100, precision=0.506, recall=0.486, fscore=0.496, accuracy_frame=0.424, threshold=0.337
+NLU Frame: ep=100, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=100.pred, ./model/joint_4770/dev_results/tag_ep=100.pred
+Saving Model: ./model/joint_4770/weights/ep=100_tagF1=0.411_intentF1=0.496th=0.337_NLUframeAcc=0.365_actF1=0.190frameAcc=0.115th=0.005.h5
+<Epoch 101>
+Epoch 1/1
+238s - loss: 0.0130 - slot_output_loss: 4.5937e-04 - intent_output_loss: 0.0081 - act_output_loss: 0.0045
+Agent Act Prediction: ep=101, precision=0.146, recall=0.248, fscore=0.184, accuracy_frame=0.157, threshold=0.007
+SlotTagging: ep=101, precision=0.478, recall=0.375, fscore=0.420, accuracy_frame=0.760
+Intent Prediction: ep=101, precision=0.502, recall=0.483, fscore=0.493, accuracy_frame=0.416, threshold=0.343
+NLU Frame: ep=101, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=101.pred, ./model/joint_4770/dev_results/tag_ep=101.pred
+Saving Model: ./model/joint_4770/weights/ep=101_tagF1=0.420_intentF1=0.493th=0.343_NLUframeAcc=0.364_actF1=0.184frameAcc=0.157th=0.007.h5
+<Epoch 102>
+Epoch 1/1
+238s - loss: 0.0126 - slot_output_loss: 4.8729e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0042
+Agent Act Prediction: ep=102, precision=0.162, recall=0.231, fscore=0.190, accuracy_frame=0.170, threshold=0.016
+SlotTagging: ep=102, precision=0.476, recall=0.378, fscore=0.422, accuracy_frame=0.757
+Intent Prediction: ep=102, precision=0.500, recall=0.487, fscore=0.494, accuracy_frame=0.415, threshold=0.337
+NLU Frame: ep=102, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=102.pred, ./model/joint_4770/dev_results/tag_ep=102.pred
+Saving Model: ./model/joint_4770/weights/ep=102_tagF1=0.422_intentF1=0.494th=0.337_NLUframeAcc=0.362_actF1=0.190frameAcc=0.170th=0.016.h5
+<Epoch 103>
+Epoch 1/1
+238s - loss: 0.0126 - slot_output_loss: 4.5299e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0042
+Agent Act Prediction: ep=103, precision=0.146, recall=0.273, fscore=0.190, accuracy_frame=0.146, threshold=0.005
+SlotTagging: ep=103, precision=0.472, recall=0.373, fscore=0.417, accuracy_frame=0.757
+Intent Prediction: ep=103, precision=0.514, recall=0.479, fscore=0.496, accuracy_frame=0.416, threshold=0.403
+NLU Frame: ep=103, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=103.pred, ./model/joint_4770/dev_results/tag_ep=103.pred
+Saving Model: ./model/joint_4770/weights/ep=103_tagF1=0.417_intentF1=0.496th=0.403_NLUframeAcc=0.367_actF1=0.190frameAcc=0.146th=0.005.h5
+<Epoch 104>
+Epoch 1/1
+238s - loss: 0.0127 - slot_output_loss: 4.7608e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0042
+Agent Act Prediction: ep=104, precision=0.163, recall=0.245, fscore=0.196, accuracy_frame=0.185, threshold=0.010
+SlotTagging: ep=104, precision=0.468, recall=0.369, fscore=0.413, accuracy_frame=0.756
+Intent Prediction: ep=104, precision=0.513, recall=0.475, fscore=0.493, accuracy_frame=0.416, threshold=0.439
+NLU Frame: ep=104, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=104.pred, ./model/joint_4770/dev_results/tag_ep=104.pred
+Saving Model: ./model/joint_4770/weights/ep=104_tagF1=0.413_intentF1=0.493th=0.439_NLUframeAcc=0.368_actF1=0.196frameAcc=0.185th=0.010.h5
+<Epoch 105>
+Epoch 1/1
+238s - loss: 0.0125 - slot_output_loss: 4.6478e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0040
+Agent Act Prediction: ep=105, precision=0.158, recall=0.265, fscore=0.198, accuracy_frame=0.159, threshold=0.007
+SlotTagging: ep=105, precision=0.456, recall=0.371, fscore=0.409, accuracy_frame=0.755
+Intent Prediction: ep=105, precision=0.500, recall=0.480, fscore=0.490, accuracy_frame=0.406, threshold=0.367
+NLU Frame: ep=105, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=105.pred, ./model/joint_4770/dev_results/tag_ep=105.pred
+Saving Model: ./model/joint_4770/weights/ep=105_tagF1=0.409_intentF1=0.490th=0.367_NLUframeAcc=0.360_actF1=0.198frameAcc=0.159th=0.007.h5
+<Epoch 106>
+Epoch 1/1
+238s - loss: 0.0122 - slot_output_loss: 4.2692e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0039
+Agent Act Prediction: ep=106, precision=0.168, recall=0.259, fscore=0.204, accuracy_frame=0.171, threshold=0.012
+SlotTagging: ep=106, precision=0.450, recall=0.371, fscore=0.407, accuracy_frame=0.753
+Intent Prediction: ep=106, precision=0.491, recall=0.484, fscore=0.488, accuracy_frame=0.408, threshold=0.341
+NLU Frame: ep=106, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=106.pred, ./model/joint_4770/dev_results/tag_ep=106.pred
+Saving Model: ./model/joint_4770/weights/ep=106_tagF1=0.407_intentF1=0.488th=0.341_NLUframeAcc=0.359_actF1=0.204frameAcc=0.171th=0.012.h5
+<Epoch 107>
+Epoch 1/1
+238s - loss: 0.0121 - slot_output_loss: 4.3352e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0037
+Agent Act Prediction: ep=107, precision=0.156, recall=0.278, fscore=0.200, accuracy_frame=0.160, threshold=0.007
+SlotTagging: ep=107, precision=0.457, recall=0.375, fscore=0.412, accuracy_frame=0.755
+Intent Prediction: ep=107, precision=0.486, recall=0.497, fscore=0.492, accuracy_frame=0.412, threshold=0.260
+NLU Frame: ep=107, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=107.pred, ./model/joint_4770/dev_results/tag_ep=107.pred
+Saving Model: ./model/joint_4770/weights/ep=107_tagF1=0.412_intentF1=0.492th=0.260_NLUframeAcc=0.363_actF1=0.200frameAcc=0.160th=0.007.h5
+<Epoch 108>
+Epoch 1/1
+238s - loss: 0.0121 - slot_output_loss: 4.6591e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0038
+Agent Act Prediction: ep=108, precision=0.161, recall=0.234, fscore=0.191, accuracy_frame=0.164, threshold=0.010
+SlotTagging: ep=108, precision=0.458, recall=0.374, fscore=0.412, accuracy_frame=0.754
+Intent Prediction: ep=108, precision=0.504, recall=0.476, fscore=0.490, accuracy_frame=0.417, threshold=0.370
+NLU Frame: ep=108, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=108.pred, ./model/joint_4770/dev_results/tag_ep=108.pred
+Saving Model: ./model/joint_4770/weights/ep=108_tagF1=0.412_intentF1=0.490th=0.370_NLUframeAcc=0.365_actF1=0.191frameAcc=0.164th=0.010.h5
+<Epoch 109>
+Epoch 1/1
+238s - loss: 0.0123 - slot_output_loss: 4.6952e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0039
+Agent Act Prediction: ep=109, precision=0.169, recall=0.244, fscore=0.200, accuracy_frame=0.169, threshold=0.010
+SlotTagging: ep=109, precision=0.480, recall=0.371, fscore=0.418, accuracy_frame=0.762
+Intent Prediction: ep=109, precision=0.504, recall=0.477, fscore=0.490, accuracy_frame=0.415, threshold=0.368
+NLU Frame: ep=109, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=109.pred, ./model/joint_4770/dev_results/tag_ep=109.pred
+Saving Model: ./model/joint_4770/weights/ep=109_tagF1=0.418_intentF1=0.490th=0.368_NLUframeAcc=0.367_actF1=0.200frameAcc=0.169th=0.010.h5
+<Epoch 110>
+Epoch 1/1
+238s - loss: 0.0122 - slot_output_loss: 4.2438e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0038
+Agent Act Prediction: ep=110, precision=0.171, recall=0.268, fscore=0.209, accuracy_frame=0.159, threshold=0.013
+SlotTagging: ep=110, precision=0.459, recall=0.370, fscore=0.409, accuracy_frame=0.753
+Intent Prediction: ep=110, precision=0.484, recall=0.480, fscore=0.482, accuracy_frame=0.402, threshold=0.296
+NLU Frame: ep=110, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=110.pred, ./model/joint_4770/dev_results/tag_ep=110.pred
+Saving Model: ./model/joint_4770/weights/ep=110_tagF1=0.409_intentF1=0.482th=0.296_NLUframeAcc=0.357_actF1=0.209frameAcc=0.159th=0.013.h5
+<Epoch 111>
+Epoch 1/1
+238s - loss: 0.0121 - slot_output_loss: 4.1512e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0037
+Agent Act Prediction: ep=111, precision=0.164, recall=0.253, fscore=0.199, accuracy_frame=0.173, threshold=0.006
+SlotTagging: ep=111, precision=0.466, recall=0.379, fscore=0.418, accuracy_frame=0.755
+Intent Prediction: ep=111, precision=0.510, recall=0.477, fscore=0.493, accuracy_frame=0.411, threshold=0.363
+NLU Frame: ep=111, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=111.pred, ./model/joint_4770/dev_results/tag_ep=111.pred
+Saving Model: ./model/joint_4770/weights/ep=111_tagF1=0.418_intentF1=0.493th=0.363_NLUframeAcc=0.360_actF1=0.199frameAcc=0.173th=0.006.h5
+<Epoch 112>
+Epoch 1/1
+238s - loss: 0.0118 - slot_output_loss: 3.8378e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0035
+Agent Act Prediction: ep=112, precision=0.174, recall=0.225, fscore=0.196, accuracy_frame=0.186, threshold=0.021
+SlotTagging: ep=112, precision=0.465, recall=0.373, fscore=0.414, accuracy_frame=0.757
+Intent Prediction: ep=112, precision=0.504, recall=0.484, fscore=0.494, accuracy_frame=0.418, threshold=0.336
+NLU Frame: ep=112, accuracy=0.370
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=112.pred, ./model/joint_4770/dev_results/tag_ep=112.pred
+Saving Model: ./model/joint_4770/weights/ep=112_tagF1=0.414_intentF1=0.494th=0.336_NLUframeAcc=0.370_actF1=0.196frameAcc=0.186th=0.021.h5
+<Epoch 113>
+Epoch 1/1
+238s - loss: 0.0120 - slot_output_loss: 4.1413e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0036
+Agent Act Prediction: ep=113, precision=0.136, recall=0.287, fscore=0.185, accuracy_frame=0.120, threshold=0.002
+SlotTagging: ep=113, precision=0.471, recall=0.373, fscore=0.416, accuracy_frame=0.758
+Intent Prediction: ep=113, precision=0.504, recall=0.482, fscore=0.493, accuracy_frame=0.413, threshold=0.378
+NLU Frame: ep=113, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=113.pred, ./model/joint_4770/dev_results/tag_ep=113.pred
+Saving Model: ./model/joint_4770/weights/ep=113_tagF1=0.416_intentF1=0.493th=0.378_NLUframeAcc=0.362_actF1=0.185frameAcc=0.120th=0.002.h5
+<Epoch 114>
+Epoch 1/1
+238s - loss: 0.0117 - slot_output_loss: 3.9618e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0034
+Agent Act Prediction: ep=114, precision=0.156, recall=0.261, fscore=0.195, accuracy_frame=0.151, threshold=0.006
+SlotTagging: ep=114, precision=0.480, recall=0.372, fscore=0.419, accuracy_frame=0.760
+Intent Prediction: ep=114, precision=0.494, recall=0.492, fscore=0.493, accuracy_frame=0.411, threshold=0.265
+NLU Frame: ep=114, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=114.pred, ./model/joint_4770/dev_results/tag_ep=114.pred
+Saving Model: ./model/joint_4770/weights/ep=114_tagF1=0.419_intentF1=0.493th=0.265_NLUframeAcc=0.358_actF1=0.195frameAcc=0.151th=0.006.h5
+<Epoch 115>
+Epoch 1/1
+238s - loss: 0.0120 - slot_output_loss: 4.2980e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0035
+Agent Act Prediction: ep=115, precision=0.147, recall=0.282, fscore=0.193, accuracy_frame=0.142, threshold=0.003
+SlotTagging: ep=115, precision=0.472, recall=0.393, fscore=0.429, accuracy_frame=0.755
+Intent Prediction: ep=115, precision=0.502, recall=0.486, fscore=0.494, accuracy_frame=0.413, threshold=0.324
+NLU Frame: ep=115, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=115.pred, ./model/joint_4770/dev_results/tag_ep=115.pred
+Saving Model: ./model/joint_4770/weights/ep=115_tagF1=0.429_intentF1=0.494th=0.324_NLUframeAcc=0.362_actF1=0.193frameAcc=0.142th=0.003.h5
+<Epoch 116>
+Epoch 1/1
+238s - loss: 0.0118 - slot_output_loss: 4.2368e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0035
+Agent Act Prediction: ep=116, precision=0.143, recall=0.293, fscore=0.192, accuracy_frame=0.122, threshold=0.003
+SlotTagging: ep=116, precision=0.480, recall=0.390, fscore=0.430, accuracy_frame=0.758
+Intent Prediction: ep=116, precision=0.489, recall=0.494, fscore=0.492, accuracy_frame=0.410, threshold=0.298
+NLU Frame: ep=116, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=116.pred, ./model/joint_4770/dev_results/tag_ep=116.pred
+Saving Model: ./model/joint_4770/weights/ep=116_tagF1=0.430_intentF1=0.492th=0.298_NLUframeAcc=0.360_actF1=0.192frameAcc=0.122th=0.003.h5
+<Epoch 117>
+Epoch 1/1
+238s - loss: 0.0116 - slot_output_loss: 4.1969e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0033
+Agent Act Prediction: ep=117, precision=0.138, recall=0.268, fscore=0.182, accuracy_frame=0.150, threshold=0.002
+SlotTagging: ep=117, precision=0.477, recall=0.386, fscore=0.427, accuracy_frame=0.757
+Intent Prediction: ep=117, precision=0.501, recall=0.475, fscore=0.488, accuracy_frame=0.408, threshold=0.394
+NLU Frame: ep=117, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=117.pred, ./model/joint_4770/dev_results/tag_ep=117.pred
+Saving Model: ./model/joint_4770/weights/ep=117_tagF1=0.427_intentF1=0.488th=0.394_NLUframeAcc=0.357_actF1=0.182frameAcc=0.150th=0.002.h5
+<Epoch 118>
+Epoch 1/1
+238s - loss: 0.0115 - slot_output_loss: 3.9310e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0031
+Agent Act Prediction: ep=118, precision=0.147, recall=0.265, fscore=0.189, accuracy_frame=0.163, threshold=0.003
+SlotTagging: ep=118, precision=0.477, recall=0.388, fscore=0.428, accuracy_frame=0.758
+Intent Prediction: ep=118, precision=0.503, recall=0.459, fscore=0.480, accuracy_frame=0.407, threshold=0.417
+NLU Frame: ep=118, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=118.pred, ./model/joint_4770/dev_results/tag_ep=118.pred
+Saving Model: ./model/joint_4770/weights/ep=118_tagF1=0.428_intentF1=0.480th=0.417_NLUframeAcc=0.358_actF1=0.189frameAcc=0.163th=0.003.h5
+<Epoch 119>
+Epoch 1/1
+238s - loss: 0.0117 - slot_output_loss: 4.4227e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0034
+Agent Act Prediction: ep=119, precision=0.154, recall=0.244, fscore=0.188, accuracy_frame=0.171, threshold=0.004
+SlotTagging: ep=119, precision=0.458, recall=0.389, fscore=0.421, accuracy_frame=0.757
+Intent Prediction: ep=119, precision=0.507, recall=0.475, fscore=0.490, accuracy_frame=0.414, threshold=0.378
+NLU Frame: ep=119, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=119.pred, ./model/joint_4770/dev_results/tag_ep=119.pred
+Saving Model: ./model/joint_4770/weights/ep=119_tagF1=0.421_intentF1=0.490th=0.378_NLUframeAcc=0.359_actF1=0.188frameAcc=0.171th=0.004.h5
+<Epoch 120>
+Epoch 1/1
+238s - loss: 0.0116 - slot_output_loss: 4.3412e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0032
+Agent Act Prediction: ep=120, precision=0.174, recall=0.235, fscore=0.200, accuracy_frame=0.183, threshold=0.015
+SlotTagging: ep=120, precision=0.466, recall=0.383, fscore=0.421, accuracy_frame=0.753
+Intent Prediction: ep=120, precision=0.509, recall=0.474, fscore=0.491, accuracy_frame=0.417, threshold=0.459
+NLU Frame: ep=120, accuracy=0.361
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=120.pred, ./model/joint_4770/dev_results/tag_ep=120.pred
+Saving Model: ./model/joint_4770/weights/ep=120_tagF1=0.421_intentF1=0.491th=0.459_NLUframeAcc=0.361_actF1=0.200frameAcc=0.183th=0.015.h5
+<Epoch 121>
+Epoch 1/1
+238s - loss: 0.0116 - slot_output_loss: 3.9190e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0032
+Agent Act Prediction: ep=121, precision=0.157, recall=0.241, fscore=0.190, accuracy_frame=0.158, threshold=0.010
+SlotTagging: ep=121, precision=0.463, recall=0.379, fscore=0.417, accuracy_frame=0.753
+Intent Prediction: ep=121, precision=0.508, recall=0.471, fscore=0.489, accuracy_frame=0.416, threshold=0.413
+NLU Frame: ep=121, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=121.pred, ./model/joint_4770/dev_results/tag_ep=121.pred
+Saving Model: ./model/joint_4770/weights/ep=121_tagF1=0.417_intentF1=0.489th=0.413_NLUframeAcc=0.360_actF1=0.190frameAcc=0.158th=0.010.h5
+<Epoch 122>
+Epoch 1/1
+238s - loss: 0.0117 - slot_output_loss: 4.3287e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0034
+Agent Act Prediction: ep=122, precision=0.148, recall=0.270, fscore=0.191, accuracy_frame=0.135, threshold=0.003
+SlotTagging: ep=122, precision=0.456, recall=0.386, fscore=0.418, accuracy_frame=0.751
+Intent Prediction: ep=122, precision=0.500, recall=0.479, fscore=0.489, accuracy_frame=0.415, threshold=0.339
+NLU Frame: ep=122, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=122.pred, ./model/joint_4770/dev_results/tag_ep=122.pred
+Saving Model: ./model/joint_4770/weights/ep=122_tagF1=0.418_intentF1=0.489th=0.339_NLUframeAcc=0.362_actF1=0.191frameAcc=0.135th=0.003.h5
+<Epoch 123>
+Epoch 1/1
+238s - loss: 0.0117 - slot_output_loss: 3.9669e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0034
+Agent Act Prediction: ep=123, precision=0.181, recall=0.267, fscore=0.216, accuracy_frame=0.179, threshold=0.009
+SlotTagging: ep=123, precision=0.456, recall=0.378, fscore=0.413, accuracy_frame=0.755
+Intent Prediction: ep=123, precision=0.456, recall=0.516, fscore=0.484, accuracy_frame=0.363, threshold=0.181
+NLU Frame: ep=123, accuracy=0.313
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=123.pred, ./model/joint_4770/dev_results/tag_ep=123.pred
+Saving Model: ./model/joint_4770/weights/ep=123_tagF1=0.413_intentF1=0.484th=0.181_NLUframeAcc=0.313_actF1=0.216frameAcc=0.179th=0.009.h5
+<Epoch 124>
+Epoch 1/1
+238s - loss: 0.0120 - slot_output_loss: 4.4667e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0036
+Agent Act Prediction: ep=124, precision=0.143, recall=0.249, fscore=0.181, accuracy_frame=0.150, threshold=0.005
+SlotTagging: ep=124, precision=0.478, recall=0.386, fscore=0.427, accuracy_frame=0.761
+Intent Prediction: ep=124, precision=0.509, recall=0.474, fscore=0.491, accuracy_frame=0.416, threshold=0.342
+NLU Frame: ep=124, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=124.pred, ./model/joint_4770/dev_results/tag_ep=124.pred
+Saving Model: ./model/joint_4770/weights/ep=124_tagF1=0.427_intentF1=0.491th=0.342_NLUframeAcc=0.359_actF1=0.181frameAcc=0.150th=0.005.h5
+<Epoch 125>
+Epoch 1/1
+238s - loss: 0.0114 - slot_output_loss: 3.9046e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0032
+Agent Act Prediction: ep=125, precision=0.175, recall=0.248, fscore=0.205, accuracy_frame=0.187, threshold=0.010
+SlotTagging: ep=125, precision=0.480, recall=0.380, fscore=0.424, accuracy_frame=0.759
+Intent Prediction: ep=125, precision=0.514, recall=0.469, fscore=0.491, accuracy_frame=0.412, threshold=0.424
+NLU Frame: ep=125, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=125.pred, ./model/joint_4770/dev_results/tag_ep=125.pred
+Saving Model: ./model/joint_4770/weights/ep=125_tagF1=0.424_intentF1=0.491th=0.424_NLUframeAcc=0.358_actF1=0.205frameAcc=0.187th=0.010.h5
+<Epoch 126>
+Epoch 1/1
+238s - loss: 0.0118 - slot_output_loss: 4.0545e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0035
+Agent Act Prediction: ep=126, precision=0.159, recall=0.253, fscore=0.196, accuracy_frame=0.176, threshold=0.006
+SlotTagging: ep=126, precision=0.473, recall=0.382, fscore=0.422, accuracy_frame=0.759
+Intent Prediction: ep=126, precision=0.510, recall=0.473, fscore=0.491, accuracy_frame=0.414, threshold=0.428
+NLU Frame: ep=126, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=126.pred, ./model/joint_4770/dev_results/tag_ep=126.pred
+Saving Model: ./model/joint_4770/weights/ep=126_tagF1=0.422_intentF1=0.491th=0.428_NLUframeAcc=0.360_actF1=0.196frameAcc=0.176th=0.006.h5
+<Epoch 127>
+Epoch 1/1
+238s - loss: 0.0116 - slot_output_loss: 4.0268e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0033
+Agent Act Prediction: ep=127, precision=0.173, recall=0.262, fscore=0.209, accuracy_frame=0.163, threshold=0.010
+SlotTagging: ep=127, precision=0.459, recall=0.388, fscore=0.421, accuracy_frame=0.758
+Intent Prediction: ep=127, precision=0.517, recall=0.467, fscore=0.490, accuracy_frame=0.418, threshold=0.469
+NLU Frame: ep=127, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=127.pred, ./model/joint_4770/dev_results/tag_ep=127.pred
+Saving Model: ./model/joint_4770/weights/ep=127_tagF1=0.421_intentF1=0.490th=0.469_NLUframeAcc=0.365_actF1=0.209frameAcc=0.163th=0.010.h5
+<Epoch 128>
+Epoch 1/1
+238s - loss: 0.0116 - slot_output_loss: 4.2867e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0032
+Agent Act Prediction: ep=128, precision=0.176, recall=0.236, fscore=0.201, accuracy_frame=0.199, threshold=0.007
+SlotTagging: ep=128, precision=0.474, recall=0.388, fscore=0.427, accuracy_frame=0.759
+Intent Prediction: ep=128, precision=0.500, recall=0.480, fscore=0.490, accuracy_frame=0.403, threshold=0.362
+NLU Frame: ep=128, accuracy=0.351
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=128.pred, ./model/joint_4770/dev_results/tag_ep=128.pred
+Saving Model: ./model/joint_4770/weights/ep=128_tagF1=0.427_intentF1=0.490th=0.362_NLUframeAcc=0.351_actF1=0.201frameAcc=0.199th=0.007.h5
+<Epoch 129>
+Epoch 1/1
+238s - loss: 0.0115 - slot_output_loss: 4.3714e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0032
+Agent Act Prediction: ep=129, precision=0.147, recall=0.301, fscore=0.197, accuracy_frame=0.138, threshold=0.002
+SlotTagging: ep=129, precision=0.465, recall=0.385, fscore=0.421, accuracy_frame=0.755
+Intent Prediction: ep=129, precision=0.495, recall=0.484, fscore=0.490, accuracy_frame=0.410, threshold=0.341
+NLU Frame: ep=129, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=129.pred, ./model/joint_4770/dev_results/tag_ep=129.pred
+Saving Model: ./model/joint_4770/weights/ep=129_tagF1=0.421_intentF1=0.490th=0.341_NLUframeAcc=0.357_actF1=0.197frameAcc=0.138th=0.002.h5
+<Epoch 130>
+Epoch 1/1
+238s - loss: 0.0111 - slot_output_loss: 3.9866e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0029
+Agent Act Prediction: ep=130, precision=0.161, recall=0.275, fscore=0.203, accuracy_frame=0.153, threshold=0.004
+SlotTagging: ep=130, precision=0.476, recall=0.386, fscore=0.426, accuracy_frame=0.756
+Intent Prediction: ep=130, precision=0.505, recall=0.483, fscore=0.494, accuracy_frame=0.416, threshold=0.349
+NLU Frame: ep=130, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=130.pred, ./model/joint_4770/dev_results/tag_ep=130.pred
+Saving Model: ./model/joint_4770/weights/ep=130_tagF1=0.426_intentF1=0.494th=0.349_NLUframeAcc=0.364_actF1=0.203frameAcc=0.153th=0.004.h5
+<Epoch 131>
+Epoch 1/1
+238s - loss: 0.0114 - slot_output_loss: 3.9267e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0031
+Agent Act Prediction: ep=131, precision=0.157, recall=0.256, fscore=0.194, accuracy_frame=0.157, threshold=0.006
+SlotTagging: ep=131, precision=0.468, recall=0.375, fscore=0.417, accuracy_frame=0.757
+Intent Prediction: ep=131, precision=0.504, recall=0.476, fscore=0.490, accuracy_frame=0.410, threshold=0.395
+NLU Frame: ep=131, accuracy=0.361
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=131.pred, ./model/joint_4770/dev_results/tag_ep=131.pred
+Saving Model: ./model/joint_4770/weights/ep=131_tagF1=0.417_intentF1=0.490th=0.395_NLUframeAcc=0.361_actF1=0.194frameAcc=0.157th=0.006.h5
+<Epoch 132>
+Epoch 1/1
+238s - loss: 0.0113 - slot_output_loss: 3.6286e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0030
+Agent Act Prediction: ep=132, precision=0.138, recall=0.288, fscore=0.187, accuracy_frame=0.139, threshold=0.002
+SlotTagging: ep=132, precision=0.473, recall=0.382, fscore=0.422, accuracy_frame=0.759
+Intent Prediction: ep=132, precision=0.511, recall=0.473, fscore=0.491, accuracy_frame=0.415, threshold=0.421
+NLU Frame: ep=132, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=132.pred, ./model/joint_4770/dev_results/tag_ep=132.pred
+Saving Model: ./model/joint_4770/weights/ep=132_tagF1=0.422_intentF1=0.491th=0.421_NLUframeAcc=0.364_actF1=0.187frameAcc=0.139th=0.002.h5
+<Epoch 133>
+Epoch 1/1
+238s - loss: 0.0113 - slot_output_loss: 4.1360e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0030
+Agent Act Prediction: ep=133, precision=0.155, recall=0.273, fscore=0.198, accuracy_frame=0.138, threshold=0.003
+SlotTagging: ep=133, precision=0.468, recall=0.374, fscore=0.416, accuracy_frame=0.762
+Intent Prediction: ep=133, precision=0.509, recall=0.478, fscore=0.493, accuracy_frame=0.415, threshold=0.342
+NLU Frame: ep=133, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=133.pred, ./model/joint_4770/dev_results/tag_ep=133.pred
+Saving Model: ./model/joint_4770/weights/ep=133_tagF1=0.416_intentF1=0.493th=0.342_NLUframeAcc=0.364_actF1=0.198frameAcc=0.138th=0.003.h5
+<Epoch 134>
+Epoch 1/1
+238s - loss: 0.0113 - slot_output_loss: 4.1558e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0031
+Agent Act Prediction: ep=134, precision=0.167, recall=0.236, fscore=0.196, accuracy_frame=0.179, threshold=0.007
+SlotTagging: ep=134, precision=0.476, recall=0.369, fscore=0.416, accuracy_frame=0.761
+Intent Prediction: ep=134, precision=0.500, recall=0.472, fscore=0.486, accuracy_frame=0.418, threshold=0.373
+NLU Frame: ep=134, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=134.pred, ./model/joint_4770/dev_results/tag_ep=134.pred
+Saving Model: ./model/joint_4770/weights/ep=134_tagF1=0.416_intentF1=0.486th=0.373_NLUframeAcc=0.360_actF1=0.196frameAcc=0.179th=0.007.h5
+<Epoch 135>
+Epoch 1/1
+238s - loss: 0.0113 - slot_output_loss: 4.0985e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0030
+Agent Act Prediction: ep=135, precision=0.164, recall=0.266, fscore=0.203, accuracy_frame=0.149, threshold=0.006
+SlotTagging: ep=135, precision=0.443, recall=0.378, fscore=0.408, accuracy_frame=0.749
+Intent Prediction: ep=135, precision=0.509, recall=0.471, fscore=0.489, accuracy_frame=0.417, threshold=0.387
+NLU Frame: ep=135, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=135.pred, ./model/joint_4770/dev_results/tag_ep=135.pred
+Saving Model: ./model/joint_4770/weights/ep=135_tagF1=0.408_intentF1=0.489th=0.387_NLUframeAcc=0.360_actF1=0.203frameAcc=0.149th=0.006.h5
+<Epoch 136>
+Epoch 1/1
+238s - loss: 0.0111 - slot_output_loss: 4.2712e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0029
+Agent Act Prediction: ep=136, precision=0.163, recall=0.271, fscore=0.204, accuracy_frame=0.147, threshold=0.004
+SlotTagging: ep=136, precision=0.460, recall=0.378, fscore=0.415, accuracy_frame=0.753
+Intent Prediction: ep=136, precision=0.496, recall=0.484, fscore=0.490, accuracy_frame=0.412, threshold=0.306
+NLU Frame: ep=136, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=136.pred, ./model/joint_4770/dev_results/tag_ep=136.pred
+Saving Model: ./model/joint_4770/weights/ep=136_tagF1=0.415_intentF1=0.490th=0.306_NLUframeAcc=0.358_actF1=0.204frameAcc=0.147th=0.004.h5
+<Epoch 137>
+Epoch 1/1
+238s - loss: 0.0110 - slot_output_loss: 4.4235e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0027
+Agent Act Prediction: ep=137, precision=0.172, recall=0.256, fscore=0.205, accuracy_frame=0.171, threshold=0.006
+SlotTagging: ep=137, precision=0.478, recall=0.381, fscore=0.424, accuracy_frame=0.762
+Intent Prediction: ep=137, precision=0.495, recall=0.499, fscore=0.497, accuracy_frame=0.421, threshold=0.255
+NLU Frame: ep=137, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=137.pred, ./model/joint_4770/dev_results/tag_ep=137.pred
+Saving Model: ./model/joint_4770/weights/ep=137_tagF1=0.424_intentF1=0.497th=0.255_NLUframeAcc=0.366_actF1=0.205frameAcc=0.171th=0.006.h5
+<Epoch 138>
+Epoch 1/1
+238s - loss: 0.0112 - slot_output_loss: 3.9606e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0030
+Agent Act Prediction: ep=138, precision=0.170, recall=0.223, fscore=0.193, accuracy_frame=0.183, threshold=0.014
+SlotTagging: ep=138, precision=0.469, recall=0.377, fscore=0.418, accuracy_frame=0.757
+Intent Prediction: ep=138, precision=0.486, recall=0.486, fscore=0.486, accuracy_frame=0.401, threshold=0.260
+NLU Frame: ep=138, accuracy=0.352
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=138.pred, ./model/joint_4770/dev_results/tag_ep=138.pred
+Saving Model: ./model/joint_4770/weights/ep=138_tagF1=0.418_intentF1=0.486th=0.260_NLUframeAcc=0.352_actF1=0.193frameAcc=0.183th=0.014.h5
+<Epoch 139>
+Epoch 1/1
+238s - loss: 0.0106 - slot_output_loss: 3.6380e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0024
+Agent Act Prediction: ep=139, precision=0.176, recall=0.250, fscore=0.207, accuracy_frame=0.186, threshold=0.007
+SlotTagging: ep=139, precision=0.487, recall=0.379, fscore=0.427, accuracy_frame=0.759
+Intent Prediction: ep=139, precision=0.513, recall=0.477, fscore=0.494, accuracy_frame=0.415, threshold=0.425
+NLU Frame: ep=139, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=139.pred, ./model/joint_4770/dev_results/tag_ep=139.pred
+Saving Model: ./model/joint_4770/weights/ep=139_tagF1=0.427_intentF1=0.494th=0.425_NLUframeAcc=0.362_actF1=0.207frameAcc=0.186th=0.007.h5
+<Epoch 140>
+Epoch 1/1
+238s - loss: 0.0107 - slot_output_loss: 3.6089e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=140, precision=0.174, recall=0.257, fscore=0.207, accuracy_frame=0.179, threshold=0.006
+SlotTagging: ep=140, precision=0.477, recall=0.376, fscore=0.421, accuracy_frame=0.757
+Intent Prediction: ep=140, precision=0.516, recall=0.475, fscore=0.495, accuracy_frame=0.416, threshold=0.413
+NLU Frame: ep=140, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=140.pred, ./model/joint_4770/dev_results/tag_ep=140.pred
+Saving Model: ./model/joint_4770/weights/ep=140_tagF1=0.421_intentF1=0.495th=0.413_NLUframeAcc=0.362_actF1=0.207frameAcc=0.179th=0.006.h5
+<Epoch 141>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 3.3983e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0026
+Agent Act Prediction: ep=141, precision=0.177, recall=0.251, fscore=0.208, accuracy_frame=0.185, threshold=0.010
+SlotTagging: ep=141, precision=0.472, recall=0.373, fscore=0.417, accuracy_frame=0.759
+Intent Prediction: ep=141, precision=0.506, recall=0.469, fscore=0.487, accuracy_frame=0.417, threshold=0.396
+NLU Frame: ep=141, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=141.pred, ./model/joint_4770/dev_results/tag_ep=141.pred
+Saving Model: ./model/joint_4770/weights/ep=141_tagF1=0.417_intentF1=0.487th=0.396_NLUframeAcc=0.365_actF1=0.208frameAcc=0.185th=0.010.h5
+<Epoch 142>
+Epoch 1/1
+238s - loss: 0.0106 - slot_output_loss: 3.3133e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=142, precision=0.163, recall=0.273, fscore=0.204, accuracy_frame=0.153, threshold=0.003
+SlotTagging: ep=142, precision=0.468, recall=0.381, fscore=0.420, accuracy_frame=0.755
+Intent Prediction: ep=142, precision=0.513, recall=0.478, fscore=0.495, accuracy_frame=0.413, threshold=0.332
+NLU Frame: ep=142, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=142.pred, ./model/joint_4770/dev_results/tag_ep=142.pred
+Saving Model: ./model/joint_4770/weights/ep=142_tagF1=0.420_intentF1=0.495th=0.332_NLUframeAcc=0.362_actF1=0.204frameAcc=0.153th=0.003.h5
+<Epoch 143>
+Epoch 1/1
+238s - loss: 0.0107 - slot_output_loss: 3.7284e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=143, precision=0.179, recall=0.284, fscore=0.220, accuracy_frame=0.176, threshold=0.004
+SlotTagging: ep=143, precision=0.490, recall=0.383, fscore=0.430, accuracy_frame=0.759
+Intent Prediction: ep=143, precision=0.509, recall=0.471, fscore=0.489, accuracy_frame=0.419, threshold=0.428
+NLU Frame: ep=143, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=143.pred, ./model/joint_4770/dev_results/tag_ep=143.pred
+Saving Model: ./model/joint_4770/weights/ep=143_tagF1=0.430_intentF1=0.489th=0.428_NLUframeAcc=0.366_actF1=0.220frameAcc=0.176th=0.004.h5
+<Epoch 144>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 3.6516e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0026
+Agent Act Prediction: ep=144, precision=0.176, recall=0.232, fscore=0.200, accuracy_frame=0.188, threshold=0.006
+SlotTagging: ep=144, precision=0.470, recall=0.383, fscore=0.422, accuracy_frame=0.758
+Intent Prediction: ep=144, precision=0.508, recall=0.475, fscore=0.491, accuracy_frame=0.417, threshold=0.358
+NLU Frame: ep=144, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=144.pred, ./model/joint_4770/dev_results/tag_ep=144.pred
+Saving Model: ./model/joint_4770/weights/ep=144_tagF1=0.422_intentF1=0.491th=0.358_NLUframeAcc=0.363_actF1=0.200frameAcc=0.188th=0.006.h5
+<Epoch 145>
+Epoch 1/1
+238s - loss: 0.0109 - slot_output_loss: 3.9435e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0027
+Agent Act Prediction: ep=145, precision=0.168, recall=0.279, fscore=0.210, accuracy_frame=0.169, threshold=0.002
+SlotTagging: ep=145, precision=0.481, recall=0.373, fscore=0.420, accuracy_frame=0.758
+Intent Prediction: ep=145, precision=0.502, recall=0.482, fscore=0.492, accuracy_frame=0.418, threshold=0.339
+NLU Frame: ep=145, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=145.pred, ./model/joint_4770/dev_results/tag_ep=145.pred
+Saving Model: ./model/joint_4770/weights/ep=145_tagF1=0.420_intentF1=0.492th=0.339_NLUframeAcc=0.366_actF1=0.210frameAcc=0.169th=0.002.h5
+<Epoch 146>
+Epoch 1/1
+238s - loss: 0.0107 - slot_output_loss: 3.6043e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=146, precision=0.148, recall=0.273, fscore=0.192, accuracy_frame=0.147, threshold=0.002
+SlotTagging: ep=146, precision=0.477, recall=0.384, fscore=0.426, accuracy_frame=0.757
+Intent Prediction: ep=146, precision=0.517, recall=0.464, fscore=0.489, accuracy_frame=0.418, threshold=0.419
+NLU Frame: ep=146, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=146.pred, ./model/joint_4770/dev_results/tag_ep=146.pred
+Saving Model: ./model/joint_4770/weights/ep=146_tagF1=0.426_intentF1=0.489th=0.419_NLUframeAcc=0.366_actF1=0.192frameAcc=0.147th=0.002.h5
+<Epoch 147>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 3.4867e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0025
+Agent Act Prediction: ep=147, precision=0.155, recall=0.300, fscore=0.204, accuracy_frame=0.143, threshold=0.002
+SlotTagging: ep=147, precision=0.477, recall=0.383, fscore=0.425, accuracy_frame=0.757
+Intent Prediction: ep=147, precision=0.503, recall=0.485, fscore=0.494, accuracy_frame=0.415, threshold=0.382
+NLU Frame: ep=147, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=147.pred, ./model/joint_4770/dev_results/tag_ep=147.pred
+Saving Model: ./model/joint_4770/weights/ep=147_tagF1=0.425_intentF1=0.494th=0.382_NLUframeAcc=0.358_actF1=0.204frameAcc=0.143th=0.002.h5
+<Epoch 148>
+Epoch 1/1
+238s - loss: 0.0112 - slot_output_loss: 4.0061e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0029
+Agent Act Prediction: ep=148, precision=0.145, recall=0.292, fscore=0.194, accuracy_frame=0.146, threshold=0.001
+SlotTagging: ep=148, precision=0.463, recall=0.391, fscore=0.424, accuracy_frame=0.752
+Intent Prediction: ep=148, precision=0.504, recall=0.479, fscore=0.491, accuracy_frame=0.414, threshold=0.367
+NLU Frame: ep=148, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=148.pred, ./model/joint_4770/dev_results/tag_ep=148.pred
+Saving Model: ./model/joint_4770/weights/ep=148_tagF1=0.424_intentF1=0.491th=0.367_NLUframeAcc=0.360_actF1=0.194frameAcc=0.146th=0.001.h5
+<Epoch 149>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 3.7301e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0026
+Agent Act Prediction: ep=149, precision=0.157, recall=0.246, fscore=0.192, accuracy_frame=0.168, threshold=0.003
+SlotTagging: ep=149, precision=0.464, recall=0.382, fscore=0.419, accuracy_frame=0.756
+Intent Prediction: ep=149, precision=0.502, recall=0.487, fscore=0.494, accuracy_frame=0.412, threshold=0.291
+NLU Frame: ep=149, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=149.pred, ./model/joint_4770/dev_results/tag_ep=149.pred
+Saving Model: ./model/joint_4770/weights/ep=149_tagF1=0.419_intentF1=0.494th=0.291_NLUframeAcc=0.356_actF1=0.192frameAcc=0.168th=0.003.h5
+<Epoch 150>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 4.1049e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0026
+Agent Act Prediction: ep=150, precision=0.159, recall=0.256, fscore=0.196, accuracy_frame=0.168, threshold=0.004
+SlotTagging: ep=150, precision=0.472, recall=0.381, fscore=0.422, accuracy_frame=0.758
+Intent Prediction: ep=150, precision=0.498, recall=0.470, fscore=0.483, accuracy_frame=0.411, threshold=0.380
+NLU Frame: ep=150, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=150.pred, ./model/joint_4770/dev_results/tag_ep=150.pred
+Saving Model: ./model/joint_4770/weights/ep=150_tagF1=0.422_intentF1=0.483th=0.380_NLUframeAcc=0.362_actF1=0.196frameAcc=0.168th=0.004.h5
+<Epoch 151>
+Epoch 1/1
+238s - loss: 0.0110 - slot_output_loss: 3.6947e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0029
+Agent Act Prediction: ep=151, precision=0.159, recall=0.227, fscore=0.187, accuracy_frame=0.173, threshold=0.009
+SlotTagging: ep=151, precision=0.476, recall=0.388, fscore=0.428, accuracy_frame=0.759
+Intent Prediction: ep=151, precision=0.469, recall=0.502, fscore=0.485, accuracy_frame=0.378, threshold=0.238
+NLU Frame: ep=151, accuracy=0.331
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=151.pred, ./model/joint_4770/dev_results/tag_ep=151.pred
+Saving Model: ./model/joint_4770/weights/ep=151_tagF1=0.428_intentF1=0.485th=0.238_NLUframeAcc=0.331_actF1=0.187frameAcc=0.173th=0.009.h5
+<Epoch 152>
+Epoch 1/1
+238s - loss: 0.0108 - slot_output_loss: 4.2855e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=152, precision=0.152, recall=0.257, fscore=0.191, accuracy_frame=0.160, threshold=0.003
+SlotTagging: ep=152, precision=0.464, recall=0.378, fscore=0.417, accuracy_frame=0.758
+Intent Prediction: ep=152, precision=0.505, recall=0.467, fscore=0.485, accuracy_frame=0.412, threshold=0.353
+NLU Frame: ep=152, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=152.pred, ./model/joint_4770/dev_results/tag_ep=152.pred
+Saving Model: ./model/joint_4770/weights/ep=152_tagF1=0.417_intentF1=0.485th=0.353_NLUframeAcc=0.359_actF1=0.191frameAcc=0.160th=0.003.h5
+<Epoch 153>
+Epoch 1/1
+243s - loss: 0.0115 - slot_output_loss: 4.6447e-04 - intent_output_loss: 0.0080 - act_output_loss: 0.0031
+Agent Act Prediction: ep=153, precision=0.180, recall=0.239, fscore=0.205, accuracy_frame=0.199, threshold=0.008
+SlotTagging: ep=153, precision=0.446, recall=0.373, fscore=0.406, accuracy_frame=0.753
+Intent Prediction: ep=153, precision=0.497, recall=0.477, fscore=0.487, accuracy_frame=0.409, threshold=0.354
+NLU Frame: ep=153, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=153.pred, ./model/joint_4770/dev_results/tag_ep=153.pred
+Saving Model: ./model/joint_4770/weights/ep=153_tagF1=0.406_intentF1=0.487th=0.354_NLUframeAcc=0.359_actF1=0.205frameAcc=0.199th=0.008.h5
+<Epoch 154>
+Epoch 1/1
+240s - loss: 0.0107 - slot_output_loss: 4.1683e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=154, precision=0.154, recall=0.267, fscore=0.195, accuracy_frame=0.159, threshold=0.003
+SlotTagging: ep=154, precision=0.469, recall=0.373, fscore=0.415, accuracy_frame=0.759
+Intent Prediction: ep=154, precision=0.498, recall=0.466, fscore=0.481, accuracy_frame=0.403, threshold=0.390
+NLU Frame: ep=154, accuracy=0.351
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=154.pred, ./model/joint_4770/dev_results/tag_ep=154.pred
+Saving Model: ./model/joint_4770/weights/ep=154_tagF1=0.415_intentF1=0.481th=0.390_NLUframeAcc=0.351_actF1=0.195frameAcc=0.159th=0.003.h5
+<Epoch 155>
+Epoch 1/1
+240s - loss: 0.0107 - slot_output_loss: 3.9419e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0024
+Agent Act Prediction: ep=155, precision=0.160, recall=0.271, fscore=0.201, accuracy_frame=0.165, threshold=0.002
+SlotTagging: ep=155, precision=0.461, recall=0.378, fscore=0.415, accuracy_frame=0.754
+Intent Prediction: ep=155, precision=0.509, recall=0.464, fscore=0.485, accuracy_frame=0.414, threshold=0.460
+NLU Frame: ep=155, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=155.pred, ./model/joint_4770/dev_results/tag_ep=155.pred
+Saving Model: ./model/joint_4770/weights/ep=155_tagF1=0.415_intentF1=0.485th=0.460_NLUframeAcc=0.357_actF1=0.201frameAcc=0.165th=0.002.h5
+<Epoch 156>
+Epoch 1/1
+239s - loss: 0.0109 - slot_output_loss: 3.5534e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0027
+Agent Act Prediction: ep=156, precision=0.152, recall=0.301, fscore=0.202, accuracy_frame=0.140, threshold=0.001
+SlotTagging: ep=156, precision=0.473, recall=0.385, fscore=0.424, accuracy_frame=0.757
+Intent Prediction: ep=156, precision=0.505, recall=0.468, fscore=0.486, accuracy_frame=0.413, threshold=0.407
+NLU Frame: ep=156, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=156.pred, ./model/joint_4770/dev_results/tag_ep=156.pred
+Saving Model: ./model/joint_4770/weights/ep=156_tagF1=0.424_intentF1=0.486th=0.407_NLUframeAcc=0.359_actF1=0.202frameAcc=0.140th=0.001.h5
+<Epoch 157>
+Epoch 1/1
+240s - loss: 0.0110 - slot_output_loss: 3.7750e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0027
+Agent Act Prediction: ep=157, precision=0.162, recall=0.249, fscore=0.196, accuracy_frame=0.161, threshold=0.005
+SlotTagging: ep=157, precision=0.470, recall=0.388, fscore=0.425, accuracy_frame=0.757
+Intent Prediction: ep=157, precision=0.504, recall=0.472, fscore=0.488, accuracy_frame=0.419, threshold=0.407
+NLU Frame: ep=157, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=157.pred, ./model/joint_4770/dev_results/tag_ep=157.pred
+Saving Model: ./model/joint_4770/weights/ep=157_tagF1=0.425_intentF1=0.488th=0.407_NLUframeAcc=0.364_actF1=0.196frameAcc=0.161th=0.005.h5
+<Epoch 158>
+Epoch 1/1
+240s - loss: 0.0106 - slot_output_loss: 3.6233e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0024
+Agent Act Prediction: ep=158, precision=0.144, recall=0.317, fscore=0.198, accuracy_frame=0.133, threshold=0.001
+SlotTagging: ep=158, precision=0.460, recall=0.370, fscore=0.410, accuracy_frame=0.758
+Intent Prediction: ep=158, precision=0.496, recall=0.477, fscore=0.486, accuracy_frame=0.409, threshold=0.305
+NLU Frame: ep=158, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=158.pred, ./model/joint_4770/dev_results/tag_ep=158.pred
+Saving Model: ./model/joint_4770/weights/ep=158_tagF1=0.410_intentF1=0.486th=0.305_NLUframeAcc=0.356_actF1=0.198frameAcc=0.133th=0.001.h5
+<Epoch 159>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.6358e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=159, precision=0.142, recall=0.278, fscore=0.188, accuracy_frame=0.142, threshold=0.001
+SlotTagging: ep=159, precision=0.466, recall=0.380, fscore=0.418, accuracy_frame=0.758
+Intent Prediction: ep=159, precision=0.504, recall=0.469, fscore=0.486, accuracy_frame=0.415, threshold=0.387
+NLU Frame: ep=159, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=159.pred, ./model/joint_4770/dev_results/tag_ep=159.pred
+Saving Model: ./model/joint_4770/weights/ep=159_tagF1=0.418_intentF1=0.486th=0.387_NLUframeAcc=0.365_actF1=0.188frameAcc=0.142th=0.001.h5
+<Epoch 160>
+Epoch 1/1
+240s - loss: 0.0101 - slot_output_loss: 3.3502e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=160, precision=0.157, recall=0.220, fscore=0.183, accuracy_frame=0.185, threshold=0.004
+SlotTagging: ep=160, precision=0.485, recall=0.386, fscore=0.430, accuracy_frame=0.760
+Intent Prediction: ep=160, precision=0.511, recall=0.467, fscore=0.488, accuracy_frame=0.416, threshold=0.441
+NLU Frame: ep=160, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=160.pred, ./model/joint_4770/dev_results/tag_ep=160.pred
+Saving Model: ./model/joint_4770/weights/ep=160_tagF1=0.430_intentF1=0.488th=0.441_NLUframeAcc=0.366_actF1=0.183frameAcc=0.185th=0.004.h5
+<Epoch 161>
+Epoch 1/1
+240s - loss: 0.0108 - slot_output_loss: 3.9331e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0026
+Agent Act Prediction: ep=161, precision=0.157, recall=0.280, fscore=0.201, accuracy_frame=0.153, threshold=0.002
+SlotTagging: ep=161, precision=0.474, recall=0.380, fscore=0.422, accuracy_frame=0.757
+Intent Prediction: ep=161, precision=0.492, recall=0.487, fscore=0.490, accuracy_frame=0.412, threshold=0.258
+NLU Frame: ep=161, accuracy=0.358
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=161.pred, ./model/joint_4770/dev_results/tag_ep=161.pred
+Saving Model: ./model/joint_4770/weights/ep=161_tagF1=0.422_intentF1=0.490th=0.258_NLUframeAcc=0.358_actF1=0.201frameAcc=0.153th=0.002.h5
+<Epoch 162>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.2997e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=162, precision=0.158, recall=0.278, fscore=0.202, accuracy_frame=0.150, threshold=0.002
+SlotTagging: ep=162, precision=0.469, recall=0.378, fscore=0.419, accuracy_frame=0.759
+Intent Prediction: ep=162, precision=0.502, recall=0.483, fscore=0.493, accuracy_frame=0.422, threshold=0.370
+NLU Frame: ep=162, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=162.pred, ./model/joint_4770/dev_results/tag_ep=162.pred
+Saving Model: ./model/joint_4770/weights/ep=162_tagF1=0.419_intentF1=0.493th=0.370_NLUframeAcc=0.363_actF1=0.202frameAcc=0.150th=0.002.h5
+<Epoch 163>
+Epoch 1/1
+239s - loss: 0.0105 - slot_output_loss: 3.5465e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=163, precision=0.157, recall=0.272, fscore=0.199, accuracy_frame=0.150, threshold=0.002
+SlotTagging: ep=163, precision=0.455, recall=0.368, fscore=0.407, accuracy_frame=0.759
+Intent Prediction: ep=163, precision=0.501, recall=0.488, fscore=0.495, accuracy_frame=0.412, threshold=0.343
+NLU Frame: ep=163, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=163.pred, ./model/joint_4770/dev_results/tag_ep=163.pred
+Saving Model: ./model/joint_4770/weights/ep=163_tagF1=0.407_intentF1=0.495th=0.343_NLUframeAcc=0.362_actF1=0.199frameAcc=0.150th=0.002.h5
+<Epoch 164>
+Epoch 1/1
+240s - loss: 0.0106 - slot_output_loss: 3.6728e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0025
+Agent Act Prediction: ep=164, precision=0.156, recall=0.238, fscore=0.188, accuracy_frame=0.181, threshold=0.002
+SlotTagging: ep=164, precision=0.467, recall=0.372, fscore=0.414, accuracy_frame=0.759
+Intent Prediction: ep=164, precision=0.513, recall=0.477, fscore=0.494, accuracy_frame=0.421, threshold=0.402
+NLU Frame: ep=164, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=164.pred, ./model/joint_4770/dev_results/tag_ep=164.pred
+Saving Model: ./model/joint_4770/weights/ep=164_tagF1=0.414_intentF1=0.494th=0.402_NLUframeAcc=0.367_actF1=0.188frameAcc=0.181th=0.002.h5
+<Epoch 165>
+Epoch 1/1
+239s - loss: 0.0104 - slot_output_loss: 3.4523e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=165, precision=0.163, recall=0.258, fscore=0.200, accuracy_frame=0.163, threshold=0.004
+SlotTagging: ep=165, precision=0.462, recall=0.385, fscore=0.420, accuracy_frame=0.757
+Intent Prediction: ep=165, precision=0.502, recall=0.478, fscore=0.490, accuracy_frame=0.414, threshold=0.388
+NLU Frame: ep=165, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=165.pred, ./model/joint_4770/dev_results/tag_ep=165.pred
+Saving Model: ./model/joint_4770/weights/ep=165_tagF1=0.420_intentF1=0.490th=0.388_NLUframeAcc=0.360_actF1=0.200frameAcc=0.163th=0.004.h5
+<Epoch 166>
+Epoch 1/1
+240s - loss: 0.0109 - slot_output_loss: 4.1180e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0026
+Agent Act Prediction: ep=166, precision=0.163, recall=0.269, fscore=0.203, accuracy_frame=0.156, threshold=0.003
+SlotTagging: ep=166, precision=0.479, recall=0.386, fscore=0.427, accuracy_frame=0.761
+Intent Prediction: ep=166, precision=0.509, recall=0.485, fscore=0.497, accuracy_frame=0.414, threshold=0.358
+NLU Frame: ep=166, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=166.pred, ./model/joint_4770/dev_results/tag_ep=166.pred
+Saving Model: ./model/joint_4770/weights/ep=166_tagF1=0.427_intentF1=0.497th=0.358_NLUframeAcc=0.362_actF1=0.203frameAcc=0.156th=0.003.h5
+<Epoch 167>
+Epoch 1/1
+239s - loss: 0.0108 - slot_output_loss: 3.7593e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0025
+Agent Act Prediction: ep=167, precision=0.166, recall=0.255, fscore=0.201, accuracy_frame=0.170, threshold=0.002
+SlotTagging: ep=167, precision=0.477, recall=0.375, fscore=0.420, accuracy_frame=0.762
+Intent Prediction: ep=167, precision=0.520, recall=0.470, fscore=0.494, accuracy_frame=0.416, threshold=0.485
+NLU Frame: ep=167, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=167.pred, ./model/joint_4770/dev_results/tag_ep=167.pred
+Saving Model: ./model/joint_4770/weights/ep=167_tagF1=0.420_intentF1=0.494th=0.485_NLUframeAcc=0.363_actF1=0.201frameAcc=0.170th=0.002.h5
+<Epoch 168>
+Epoch 1/1
+240s - loss: 0.0107 - slot_output_loss: 3.9330e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0024
+Agent Act Prediction: ep=168, precision=0.156, recall=0.289, fscore=0.203, accuracy_frame=0.146, threshold=0.002
+SlotTagging: ep=168, precision=0.459, recall=0.372, fscore=0.411, accuracy_frame=0.758
+Intent Prediction: ep=168, precision=0.508, recall=0.476, fscore=0.491, accuracy_frame=0.415, threshold=0.416
+NLU Frame: ep=168, accuracy=0.361
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=168.pred, ./model/joint_4770/dev_results/tag_ep=168.pred
+Saving Model: ./model/joint_4770/weights/ep=168_tagF1=0.411_intentF1=0.491th=0.416_NLUframeAcc=0.361_actF1=0.203frameAcc=0.146th=0.002.h5
+<Epoch 169>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.7011e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=169, precision=0.160, recall=0.259, fscore=0.198, accuracy_frame=0.163, threshold=0.002
+SlotTagging: ep=169, precision=0.455, recall=0.367, fscore=0.406, accuracy_frame=0.755
+Intent Prediction: ep=169, precision=0.505, recall=0.473, fscore=0.488, accuracy_frame=0.410, threshold=0.403
+NLU Frame: ep=169, accuracy=0.356
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=169.pred, ./model/joint_4770/dev_results/tag_ep=169.pred
+Saving Model: ./model/joint_4770/weights/ep=169_tagF1=0.406_intentF1=0.488th=0.403_NLUframeAcc=0.356_actF1=0.198frameAcc=0.163th=0.002.h5
+<Epoch 170>
+Epoch 1/1
+240s - loss: 0.0106 - slot_output_loss: 3.7958e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0024
+Agent Act Prediction: ep=170, precision=0.150, recall=0.274, fscore=0.194, accuracy_frame=0.156, threshold=0.001
+SlotTagging: ep=170, precision=0.469, recall=0.380, fscore=0.420, accuracy_frame=0.759
+Intent Prediction: ep=170, precision=0.506, recall=0.487, fscore=0.496, accuracy_frame=0.418, threshold=0.376
+NLU Frame: ep=170, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=170.pred, ./model/joint_4770/dev_results/tag_ep=170.pred
+Saving Model: ./model/joint_4770/weights/ep=170_tagF1=0.420_intentF1=0.496th=0.376_NLUframeAcc=0.365_actF1=0.194frameAcc=0.156th=0.001.h5
+<Epoch 171>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.5871e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=171, precision=0.167, recall=0.256, fscore=0.202, accuracy_frame=0.169, threshold=0.002
+SlotTagging: ep=171, precision=0.476, recall=0.387, fscore=0.427, accuracy_frame=0.764
+Intent Prediction: ep=171, precision=0.498, recall=0.483, fscore=0.490, accuracy_frame=0.413, threshold=0.324
+NLU Frame: ep=171, accuracy=0.359
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=171.pred, ./model/joint_4770/dev_results/tag_ep=171.pred
+Saving Model: ./model/joint_4770/weights/ep=171_tagF1=0.427_intentF1=0.490th=0.324_NLUframeAcc=0.359_actF1=0.202frameAcc=0.169th=0.002.h5
+<Epoch 172>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.4482e-04 - intent_output_loss: 0.0077 - act_output_loss: 0.0023
+Agent Act Prediction: ep=172, precision=0.176, recall=0.204, fscore=0.189, accuracy_frame=0.212, threshold=0.009
+SlotTagging: ep=172, precision=0.478, recall=0.372, fscore=0.418, accuracy_frame=0.763
+Intent Prediction: ep=172, precision=0.506, recall=0.479, fscore=0.492, accuracy_frame=0.411, threshold=0.387
+NLU Frame: ep=172, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=172.pred, ./model/joint_4770/dev_results/tag_ep=172.pred
+Saving Model: ./model/joint_4770/weights/ep=172_tagF1=0.418_intentF1=0.492th=0.387_NLUframeAcc=0.360_actF1=0.189frameAcc=0.212th=0.009.h5
+<Epoch 173>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.2164e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=173, precision=0.160, recall=0.227, fscore=0.187, accuracy_frame=0.174, threshold=0.004
+SlotTagging: ep=173, precision=0.481, recall=0.389, fscore=0.430, accuracy_frame=0.759
+Intent Prediction: ep=173, precision=0.515, recall=0.474, fscore=0.494, accuracy_frame=0.420, threshold=0.418
+NLU Frame: ep=173, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=173.pred, ./model/joint_4770/dev_results/tag_ep=173.pred
+Saving Model: ./model/joint_4770/weights/ep=173_tagF1=0.430_intentF1=0.494th=0.418_NLUframeAcc=0.366_actF1=0.187frameAcc=0.174th=0.004.h5
+<Epoch 174>
+Epoch 1/1
+239s - loss: 0.0103 - slot_output_loss: 3.1662e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=174, precision=0.166, recall=0.227, fscore=0.192, accuracy_frame=0.183, threshold=0.009
+SlotTagging: ep=174, precision=0.483, recall=0.384, fscore=0.428, accuracy_frame=0.761
+Intent Prediction: ep=174, precision=0.506, recall=0.476, fscore=0.491, accuracy_frame=0.418, threshold=0.408
+NLU Frame: ep=174, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=174.pred, ./model/joint_4770/dev_results/tag_ep=174.pred
+Saving Model: ./model/joint_4770/weights/ep=174_tagF1=0.428_intentF1=0.491th=0.408_NLUframeAcc=0.362_actF1=0.192frameAcc=0.183th=0.009.h5
+<Epoch 175>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.1916e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=175, precision=0.152, recall=0.255, fscore=0.190, accuracy_frame=0.153, threshold=0.001
+SlotTagging: ep=175, precision=0.477, recall=0.384, fscore=0.425, accuracy_frame=0.759
+Intent Prediction: ep=175, precision=0.508, recall=0.474, fscore=0.490, accuracy_frame=0.415, threshold=0.373
+NLU Frame: ep=175, accuracy=0.360
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=175.pred, ./model/joint_4770/dev_results/tag_ep=175.pred
+Saving Model: ./model/joint_4770/weights/ep=175_tagF1=0.425_intentF1=0.490th=0.373_NLUframeAcc=0.360_actF1=0.190frameAcc=0.153th=0.001.h5
+<Epoch 176>
+Epoch 1/1
+240s - loss: 0.0102 - slot_output_loss: 3.6979e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=176, precision=0.170, recall=0.235, fscore=0.197, accuracy_frame=0.185, threshold=0.005
+SlotTagging: ep=176, precision=0.484, recall=0.372, fscore=0.421, accuracy_frame=0.759
+Intent Prediction: ep=176, precision=0.515, recall=0.469, fscore=0.491, accuracy_frame=0.419, threshold=0.467
+NLU Frame: ep=176, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=176.pred, ./model/joint_4770/dev_results/tag_ep=176.pred
+Saving Model: ./model/joint_4770/weights/ep=176_tagF1=0.421_intentF1=0.491th=0.467_NLUframeAcc=0.367_actF1=0.197frameAcc=0.185th=0.005.h5
+<Epoch 177>
+Epoch 1/1
+240s - loss: 0.0106 - slot_output_loss: 3.8558e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0024
+Agent Act Prediction: ep=177, precision=0.152, recall=0.253, fscore=0.190, accuracy_frame=0.167, threshold=0.002
+SlotTagging: ep=177, precision=0.459, recall=0.374, fscore=0.412, accuracy_frame=0.752
+Intent Prediction: ep=177, precision=0.486, recall=0.500, fscore=0.493, accuracy_frame=0.382, threshold=0.288
+NLU Frame: ep=177, accuracy=0.326
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=177.pred, ./model/joint_4770/dev_results/tag_ep=177.pred
+Saving Model: ./model/joint_4770/weights/ep=177_tagF1=0.412_intentF1=0.493th=0.288_NLUframeAcc=0.326_actF1=0.190frameAcc=0.167th=0.002.h5
+<Epoch 178>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.7839e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0021
+Agent Act Prediction: ep=178, precision=0.169, recall=0.223, fscore=0.192, accuracy_frame=0.198, threshold=0.005
+SlotTagging: ep=178, precision=0.476, recall=0.377, fscore=0.420, accuracy_frame=0.755
+Intent Prediction: ep=178, precision=0.520, recall=0.477, fscore=0.498, accuracy_frame=0.419, threshold=0.427
+NLU Frame: ep=178, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=178.pred, ./model/joint_4770/dev_results/tag_ep=178.pred
+Saving Model: ./model/joint_4770/weights/ep=178_tagF1=0.420_intentF1=0.498th=0.427_NLUframeAcc=0.363_actF1=0.192frameAcc=0.198th=0.005.h5
+<Epoch 179>
+Epoch 1/1
+240s - loss: 0.0105 - slot_output_loss: 3.4926e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=179, precision=0.165, recall=0.257, fscore=0.201, accuracy_frame=0.177, threshold=0.002
+SlotTagging: ep=179, precision=0.462, recall=0.376, fscore=0.415, accuracy_frame=0.754
+Intent Prediction: ep=179, precision=0.511, recall=0.474, fscore=0.492, accuracy_frame=0.413, threshold=0.377
+NLU Frame: ep=179, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=179.pred, ./model/joint_4770/dev_results/tag_ep=179.pred
+Saving Model: ./model/joint_4770/weights/ep=179_tagF1=0.415_intentF1=0.492th=0.377_NLUframeAcc=0.362_actF1=0.201frameAcc=0.177th=0.002.h5
+<Epoch 180>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.5363e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=180, precision=0.152, recall=0.242, fscore=0.187, accuracy_frame=0.162, threshold=0.002
+SlotTagging: ep=180, precision=0.461, recall=0.378, fscore=0.415, accuracy_frame=0.754
+Intent Prediction: ep=180, precision=0.500, recall=0.491, fscore=0.495, accuracy_frame=0.412, threshold=0.332
+NLU Frame: ep=180, accuracy=0.357
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=180.pred, ./model/joint_4770/dev_results/tag_ep=180.pred
+Saving Model: ./model/joint_4770/weights/ep=180_tagF1=0.415_intentF1=0.495th=0.332_NLUframeAcc=0.357_actF1=0.187frameAcc=0.162th=0.002.h5
+<Epoch 181>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.4185e-04 - intent_output_loss: 0.0077 - act_output_loss: 0.0022
+Agent Act Prediction: ep=181, precision=0.155, recall=0.238, fscore=0.188, accuracy_frame=0.161, threshold=0.002
+SlotTagging: ep=181, precision=0.471, recall=0.372, fscore=0.416, accuracy_frame=0.760
+Intent Prediction: ep=181, precision=0.513, recall=0.476, fscore=0.494, accuracy_frame=0.428, threshold=0.374
+NLU Frame: ep=181, accuracy=0.373
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=181.pred, ./model/joint_4770/dev_results/tag_ep=181.pred
+Saving Model: ./model/joint_4770/weights/ep=181_tagF1=0.416_intentF1=0.494th=0.374_NLUframeAcc=0.373_actF1=0.188frameAcc=0.161th=0.002.h5
+<Epoch 182>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 3.6073e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0021
+Agent Act Prediction: ep=182, precision=0.150, recall=0.282, fscore=0.196, accuracy_frame=0.149, threshold=0.001
+SlotTagging: ep=182, precision=0.468, recall=0.372, fscore=0.414, accuracy_frame=0.759
+Intent Prediction: ep=182, precision=0.506, recall=0.475, fscore=0.490, accuracy_frame=0.423, threshold=0.334
+NLU Frame: ep=182, accuracy=0.371
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=182.pred, ./model/joint_4770/dev_results/tag_ep=182.pred
+Saving Model: ./model/joint_4770/weights/ep=182_tagF1=0.414_intentF1=0.490th=0.334_NLUframeAcc=0.371_actF1=0.196frameAcc=0.149th=0.001.h5
+<Epoch 183>
+Epoch 1/1
+240s - loss: 0.0102 - slot_output_loss: 3.4251e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0021
+Agent Act Prediction: ep=183, precision=0.170, recall=0.252, fscore=0.203, accuracy_frame=0.174, threshold=0.003
+SlotTagging: ep=183, precision=0.468, recall=0.372, fscore=0.414, accuracy_frame=0.756
+Intent Prediction: ep=183, precision=0.509, recall=0.479, fscore=0.493, accuracy_frame=0.418, threshold=0.404
+NLU Frame: ep=183, accuracy=0.367
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=183.pred, ./model/joint_4770/dev_results/tag_ep=183.pred
+Saving Model: ./model/joint_4770/weights/ep=183_tagF1=0.414_intentF1=0.493th=0.404_NLUframeAcc=0.367_actF1=0.203frameAcc=0.174th=0.003.h5
+<Epoch 184>
+Epoch 1/1
+240s - loss: 0.0105 - slot_output_loss: 3.3967e-04 - intent_output_loss: 0.0079 - act_output_loss: 0.0023
+Agent Act Prediction: ep=184, precision=0.159, recall=0.264, fscore=0.199, accuracy_frame=0.159, threshold=0.001
+SlotTagging: ep=184, precision=0.462, recall=0.377, fscore=0.415, accuracy_frame=0.756
+Intent Prediction: ep=184, precision=0.505, recall=0.474, fscore=0.489, accuracy_frame=0.411, threshold=0.379
+NLU Frame: ep=184, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=184.pred, ./model/joint_4770/dev_results/tag_ep=184.pred
+Saving Model: ./model/joint_4770/weights/ep=184_tagF1=0.415_intentF1=0.489th=0.379_NLUframeAcc=0.366_actF1=0.199frameAcc=0.159th=0.001.h5
+<Epoch 185>
+Epoch 1/1
+239s - loss: 0.0105 - slot_output_loss: 4.1321e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=185, precision=0.191, recall=0.228, fscore=0.208, accuracy_frame=0.204, threshold=0.010
+SlotTagging: ep=185, precision=0.476, recall=0.381, fscore=0.423, accuracy_frame=0.756
+Intent Prediction: ep=185, precision=0.507, recall=0.486, fscore=0.496, accuracy_frame=0.418, threshold=0.356
+NLU Frame: ep=185, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=185.pred, ./model/joint_4770/dev_results/tag_ep=185.pred
+Saving Model: ./model/joint_4770/weights/ep=185_tagF1=0.423_intentF1=0.496th=0.356_NLUframeAcc=0.365_actF1=0.208frameAcc=0.204th=0.010.h5
+<Epoch 186>
+Epoch 1/1
+240s - loss: 0.0103 - slot_output_loss: 4.0088e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0021
+Agent Act Prediction: ep=186, precision=0.149, recall=0.289, fscore=0.197, accuracy_frame=0.130, threshold=0.001
+SlotTagging: ep=186, precision=0.461, recall=0.381, fscore=0.417, accuracy_frame=0.757
+Intent Prediction: ep=186, precision=0.515, recall=0.475, fscore=0.494, accuracy_frame=0.419, threshold=0.400
+NLU Frame: ep=186, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=186.pred, ./model/joint_4770/dev_results/tag_ep=186.pred
+Saving Model: ./model/joint_4770/weights/ep=186_tagF1=0.417_intentF1=0.494th=0.400_NLUframeAcc=0.368_actF1=0.197frameAcc=0.130th=0.001.h5
+<Epoch 187>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.3915e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0022
+Agent Act Prediction: ep=187, precision=0.152, recall=0.277, fscore=0.196, accuracy_frame=0.158, threshold=0.001
+SlotTagging: ep=187, precision=0.469, recall=0.374, fscore=0.416, accuracy_frame=0.756
+Intent Prediction: ep=187, precision=0.506, recall=0.475, fscore=0.490, accuracy_frame=0.412, threshold=0.459
+NLU Frame: ep=187, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=187.pred, ./model/joint_4770/dev_results/tag_ep=187.pred
+Saving Model: ./model/joint_4770/weights/ep=187_tagF1=0.416_intentF1=0.490th=0.459_NLUframeAcc=0.363_actF1=0.196frameAcc=0.158th=0.001.h5
+<Epoch 188>
+Epoch 1/1
+240s - loss: 0.0102 - slot_output_loss: 3.8481e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=188, precision=0.162, recall=0.246, fscore=0.196, accuracy_frame=0.181, threshold=0.002
+SlotTagging: ep=188, precision=0.456, recall=0.375, fscore=0.411, accuracy_frame=0.753
+Intent Prediction: ep=188, precision=0.503, recall=0.477, fscore=0.490, accuracy_frame=0.412, threshold=0.364
+NLU Frame: ep=188, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=188.pred, ./model/joint_4770/dev_results/tag_ep=188.pred
+Saving Model: ./model/joint_4770/weights/ep=188_tagF1=0.411_intentF1=0.490th=0.364_NLUframeAcc=0.365_actF1=0.196frameAcc=0.181th=0.002.h5
+<Epoch 189>
+Epoch 1/1
+240s - loss: 0.0104 - slot_output_loss: 3.4293e-04 - intent_output_loss: 0.0077 - act_output_loss: 0.0023
+Agent Act Prediction: ep=189, precision=0.157, recall=0.245, fscore=0.191, accuracy_frame=0.172, threshold=0.002
+SlotTagging: ep=189, precision=0.462, recall=0.374, fscore=0.413, accuracy_frame=0.753
+Intent Prediction: ep=189, precision=0.498, recall=0.482, fscore=0.490, accuracy_frame=0.417, threshold=0.315
+NLU Frame: ep=189, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=189.pred, ./model/joint_4770/dev_results/tag_ep=189.pred
+Saving Model: ./model/joint_4770/weights/ep=189_tagF1=0.413_intentF1=0.490th=0.315_NLUframeAcc=0.364_actF1=0.191frameAcc=0.172th=0.002.h5
+<Epoch 190>
+Epoch 1/1
+239s - loss: 0.0102 - slot_output_loss: 3.3864e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0021
+Agent Act Prediction: ep=190, precision=0.159, recall=0.251, fscore=0.195, accuracy_frame=0.171, threshold=0.002
+SlotTagging: ep=190, precision=0.477, recall=0.376, fscore=0.421, accuracy_frame=0.760
+Intent Prediction: ep=190, precision=0.514, recall=0.475, fscore=0.494, accuracy_frame=0.419, threshold=0.404
+NLU Frame: ep=190, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=190.pred, ./model/joint_4770/dev_results/tag_ep=190.pred
+Saving Model: ./model/joint_4770/weights/ep=190_tagF1=0.421_intentF1=0.494th=0.404_NLUframeAcc=0.368_actF1=0.195frameAcc=0.171th=0.002.h5
+<Epoch 191>
+Epoch 1/1
+240s - loss: 0.0102 - slot_output_loss: 3.2865e-04 - intent_output_loss: 0.0077 - act_output_loss: 0.0021
+Agent Act Prediction: ep=191, precision=0.139, recall=0.288, fscore=0.187, accuracy_frame=0.130, threshold=0.001
+SlotTagging: ep=191, precision=0.476, recall=0.372, fscore=0.418, accuracy_frame=0.756
+Intent Prediction: ep=191, precision=0.513, recall=0.480, fscore=0.496, accuracy_frame=0.421, threshold=0.391
+NLU Frame: ep=191, accuracy=0.368
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=191.pred, ./model/joint_4770/dev_results/tag_ep=191.pred
+Saving Model: ./model/joint_4770/weights/ep=191_tagF1=0.418_intentF1=0.496th=0.391_NLUframeAcc=0.368_actF1=0.187frameAcc=0.130th=0.001.h5
+<Epoch 192>
+Epoch 1/1
+239s - loss: 0.0104 - slot_output_loss: 3.9225e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=192, precision=0.174, recall=0.228, fscore=0.197, accuracy_frame=0.195, threshold=0.006
+SlotTagging: ep=192, precision=0.467, recall=0.376, fscore=0.417, accuracy_frame=0.758
+Intent Prediction: ep=192, precision=0.495, recall=0.482, fscore=0.488, accuracy_frame=0.412, threshold=0.329
+NLU Frame: ep=192, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=192.pred, ./model/joint_4770/dev_results/tag_ep=192.pred
+Saving Model: ./model/joint_4770/weights/ep=192_tagF1=0.417_intentF1=0.488th=0.329_NLUframeAcc=0.363_actF1=0.197frameAcc=0.195th=0.006.h5
+<Epoch 193>
+Epoch 1/1
+240s - loss: 0.0102 - slot_output_loss: 3.6905e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=193, precision=0.165, recall=0.224, fscore=0.190, accuracy_frame=0.210, threshold=0.003
+SlotTagging: ep=193, precision=0.473, recall=0.381, fscore=0.422, accuracy_frame=0.758
+Intent Prediction: ep=193, precision=0.512, recall=0.464, fscore=0.487, accuracy_frame=0.415, threshold=0.419
+NLU Frame: ep=193, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=193.pred, ./model/joint_4770/dev_results/tag_ep=193.pred
+Saving Model: ./model/joint_4770/weights/ep=193_tagF1=0.422_intentF1=0.487th=0.419_NLUframeAcc=0.365_actF1=0.190frameAcc=0.210th=0.003.h5
+<Epoch 194>
+Epoch 1/1
+240s - loss: 0.0100 - slot_output_loss: 3.4006e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0018
+Agent Act Prediction: ep=194, precision=0.161, recall=0.267, fscore=0.201, accuracy_frame=0.162, threshold=0.001
+SlotTagging: ep=194, precision=0.467, recall=0.378, fscore=0.418, accuracy_frame=0.760
+Intent Prediction: ep=194, precision=0.502, recall=0.470, fscore=0.486, accuracy_frame=0.410, threshold=0.368
+NLU Frame: ep=194, accuracy=0.362
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=194.pred, ./model/joint_4770/dev_results/tag_ep=194.pred
+Saving Model: ./model/joint_4770/weights/ep=194_tagF1=0.418_intentF1=0.486th=0.368_NLUframeAcc=0.362_actF1=0.201frameAcc=0.162th=0.001.h5
+<Epoch 195>
+Epoch 1/1
+240s - loss: 0.0101 - slot_output_loss: 3.2320e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=195, precision=0.168, recall=0.225, fscore=0.192, accuracy_frame=0.201, threshold=0.003
+SlotTagging: ep=195, precision=0.468, recall=0.379, fscore=0.419, accuracy_frame=0.761
+Intent Prediction: ep=195, precision=0.501, recall=0.480, fscore=0.490, accuracy_frame=0.409, threshold=0.377
+NLU Frame: ep=195, accuracy=0.363
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=195.pred, ./model/joint_4770/dev_results/tag_ep=195.pred
+Saving Model: ./model/joint_4770/weights/ep=195_tagF1=0.419_intentF1=0.490th=0.377_NLUframeAcc=0.363_actF1=0.192frameAcc=0.201th=0.003.h5
+<Epoch 196>
+Epoch 1/1
+240s - loss: 0.0101 - slot_output_loss: 3.0696e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0019
+Agent Act Prediction: ep=196, precision=0.149, recall=0.223, fscore=0.179, accuracy_frame=0.172, threshold=0.003
+SlotTagging: ep=196, precision=0.463, recall=0.376, fscore=0.415, accuracy_frame=0.755
+Intent Prediction: ep=196, precision=0.504, recall=0.476, fscore=0.489, accuracy_frame=0.419, threshold=0.367
+NLU Frame: ep=196, accuracy=0.364
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=196.pred, ./model/joint_4770/dev_results/tag_ep=196.pred
+Saving Model: ./model/joint_4770/weights/ep=196_tagF1=0.415_intentF1=0.489th=0.367_NLUframeAcc=0.364_actF1=0.179frameAcc=0.172th=0.003.h5
+<Epoch 197>
+Epoch 1/1
+240s - loss: 0.0105 - slot_output_loss: 3.9694e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0023
+Agent Act Prediction: ep=197, precision=0.167, recall=0.219, fscore=0.189, accuracy_frame=0.191, threshold=0.005
+SlotTagging: ep=197, precision=0.465, recall=0.376, fscore=0.416, accuracy_frame=0.756
+Intent Prediction: ep=197, precision=0.504, recall=0.481, fscore=0.492, accuracy_frame=0.420, threshold=0.397
+NLU Frame: ep=197, accuracy=0.371
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=197.pred, ./model/joint_4770/dev_results/tag_ep=197.pred
+Saving Model: ./model/joint_4770/weights/ep=197_tagF1=0.416_intentF1=0.492th=0.397_NLUframeAcc=0.371_actF1=0.189frameAcc=0.191th=0.005.h5
+<Epoch 198>
+Epoch 1/1
+240s - loss: 0.0101 - slot_output_loss: 3.3413e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0020
+Agent Act Prediction: ep=198, precision=0.156, recall=0.246, fscore=0.191, accuracy_frame=0.179, threshold=0.001
+SlotTagging: ep=198, precision=0.471, recall=0.378, fscore=0.420, accuracy_frame=0.756
+Intent Prediction: ep=198, precision=0.512, recall=0.469, fscore=0.490, accuracy_frame=0.416, threshold=0.436
+NLU Frame: ep=198, accuracy=0.366
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=198.pred, ./model/joint_4770/dev_results/tag_ep=198.pred
+Saving Model: ./model/joint_4770/weights/ep=198_tagF1=0.420_intentF1=0.490th=0.436_NLUframeAcc=0.366_actF1=0.191frameAcc=0.179th=0.001.h5
+<Epoch 199>
+Epoch 1/1
+239s - loss: 0.0101 - slot_output_loss: 3.5424e-04 - intent_output_loss: 0.0078 - act_output_loss: 0.0019
+Agent Act Prediction: ep=199, precision=0.148, recall=0.234, fscore=0.182, accuracy_frame=0.165, threshold=0.002
+SlotTagging: ep=199, precision=0.464, recall=0.378, fscore=0.417, accuracy_frame=0.756
+Intent Prediction: ep=199, precision=0.505, recall=0.475, fscore=0.490, accuracy_frame=0.413, threshold=0.373
+NLU Frame: ep=199, accuracy=0.365
+Write dev results: ./model/joint_4770/dev_results/utter.txt, ./model/joint_4770/dev_results/act_ep=199.pred, ./model/joint_4770/dev_results/tag_ep=199.pred
+Saving Model: ./model/joint_4770/weights/ep=199_tagF1=0.417_intentF1=0.490th=0.373_NLUframeAcc=0.365_actF1=0.182frameAcc=0.165th=0.002.h5

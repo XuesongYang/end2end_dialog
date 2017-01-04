@@ -1,0 +1,9 @@
+Using Theano backend.
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5105)
+Loading model ...
+Predicting ...
+	test_utter=./model/slot_4768/test_result/utter.txt
+	tag_probs=./model/slot_4768/test_result/tagProb_ep=14.npz
+	tag_pred=./model/slot_4768/test_result/tag_ep=14.pred
+	tag_target=./model/slot_4768/test_result/tag_test.target
+SlotTagging: precision=0.5463, recall=0.3996, fscore=0.4615, accuracy_frame=0.7684

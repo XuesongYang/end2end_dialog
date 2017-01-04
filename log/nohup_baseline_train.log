@@ -1,0 +1,26 @@
+nohup: ignoring input
+Using Theano backend.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '4769' (I am process '4771')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.12-64/lock_dir
+Using gpu device 0: Tesla K40c (CNMeM is disabled, cuDNN 4007)
+/home/xyang45/miniconda2/lib/python2.7/site-packages/sklearn/multiclass.py:70: UserWarning: Label not 0 is present in all training examples.
+  str(classes[c]))
+<Slot Tagging Model>
+	training ...
+	train_data=./model/baseline_4771/userUtterTag_train.txt
+	model_fname=./model/baseline_4771/slotTagging.model
+	saving model ...
+<Intent Prediction Model>
+	training ...
+	eval_dev: precision=0.527, recall=0.490, fscore=0.508, accuracy_frame=0.389, threshold=0.225
+	dev_pred=./model/baseline_4771/pipeline_intent-dev.pred
+	dev_target=./model/baseline_4771/pipeline_intent-dev.target
+	dev_utter=./model/baseline_4771/utter_dev.txt
+	saving model: ./model/baseline_4771/pipeline_intent-model_F1=0.508_FrameAcc=0.389_th=0.225.npz
+<System Action Prediction Model>
+	training ...
+	eval_dev: precision=0.272, recall=0.285, fscore=0.279, accuracy_frame=0.062, threshold=0.162
+	dev_pred=./model/baseline_4771/oracle_act-dev.pred
+	dev_target=./model/baseline_4771/oracle_act-dev.target
+	dev_utter=./model/baseline_4771/utter_dev.txt
+	saving model: ./model/baseline_4771/oracle_act-model_F1=0.279_FrameAcc=0.062_th=0.162.npz

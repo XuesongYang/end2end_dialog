@@ -1,0 +1,43 @@
+nohup: ignoring input
+Using Theano backend.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30851' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30854' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30850' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30852' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30855' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30856' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5103)
+INFO (theano.gof.compilelock): Waiting for existing lock by process '30853' (I am process '30857')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+	act_threshold=None
+	act_weights=./model/agentAct_4769/weights/ep=139_f1=0.228_frameAcc=0.202_th=0.154.h5
+	intent_threshold=0.391
+	intent_weights=./model/slot_4768/weights/ep=196_tagF1=0.448frameAcc=0.759_intentF1=0.496frameAcc=0.419th=0.391.h5
+	npz_file=./data/npz/dstc4.all.w-intent.agentActPred.npz
+	tag_weights=./model/slot_4768/weights/ep=14_tagF1=0.468frameAcc=0.757_intentF1=0.399frameAcc=0.329th=0.203.h5
+	tune_threshold=True
+	dev_result_folder=./model/pipe_30857/dev
+Loading model ...
+Predicting ...
+	test_utter=./model/pipe_30857/dev/test_result/utter.txt
+	tag_probs=./model/pipe_30857/dev/test_result/tagProb_ep=14.npz
+	tag_pred=./model/pipe_30857/dev/test_result/tag_ep=14.pred
+	tag_target=./model/pipe_30857/dev/test_result/tag_test.target
+SlotTagging: precision=0.5317, recall=0.4181, fscore=0.4681, accuracy_frame=0.7571
+Loading model ...
+Predicting ...
+	test_utter=./model/pipe_30857/dev/test_result/utter.txt
+	intent_probs=./model/pipe_30857/dev/test_result/intentProb_ep=196.npz
+	intent_pred=./model/pipe_30857/dev/test_result/intent_ep=196.pred
+	intent_target=./model/pipe_30857/dev/test_result/intent_test.target
+IntentPred: precision=0.5406, recall=0.4585, fscore=0.4962, accuracy_frame=0.4188
+Loading model ...
+Tuning threshold on Dev ...
+AgentActPred on Dev: precision=0.1440, recall=0.2923, fscore=0.1930, accuracy_frame=0.1274, threshold=0.0638
+Write dev results: ./model/pipe_30857/dev/act_dev.pred

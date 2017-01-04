@@ -1,0 +1,17 @@
+Using Theano backend.
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7194' (I am process '7198')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7196' (I am process '7198')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7199' (I am process '7198')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+INFO (theano.gof.compilelock): Waiting for existing lock by process '7197' (I am process '7198')
+INFO (theano.gof.compilelock): To manually release the lock, delete /home/xyang45/.theano/compiledir_Linux-3.16--generic-x86_64-with-debian-jessie-sid-x86_64-2.7.11-64/lock_dir
+Using gpu device 0: GeForce GTX TITAN X (CNMeM is disabled, cuDNN 5105)
+Loading model ...
+Predicting ...
+	test_utter=./model/joint_4770/test_result/utter.txt
+	intent_probs=./model/joint_4770/test_result/intentProb_ep=13.npz
+	intent_pred=./model/joint_4770/test_result/intent_ep=13.pred
+	intent_target=./model/joint_4770/test_result/intent_test.target
+IntentPred: precision=0.5222, recall=0.4735, fscore=0.4967, accuracy_frame=0.4220
