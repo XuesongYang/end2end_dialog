@@ -1,14 +1,16 @@
 # END-TO-END JOINT LEARNING OF NATURAL LANGUAGE UNDERSTANDING AND DIALOGUE MANAGER
 
-This repository releases the source code for our paper [END-TO-END JOINT LEARNING OF NATURAL LANGUAGE UNDERSTANDING AND DIALOGUE MANAGER](https://arxiv.org/abs/1612.00913). Please cite the following paper if you use this code as part of any published research. 
+This repository releases the source code for our paper [END-TO-END JOINT LEARNING OF NATURAL LANGUAGE UNDERSTANDING AND DIALOGUE MANAGER](http://ieeexplore.ieee.org/document/7953246/). Please cite the following paper if you use this code as part of any published research. 
 
-    [1] X. Yang, Y. Chen, D. Hakkani-Tur, P. Crook, X. Li, J. Gao and L. Deng, "END-TO-END JOINT LEARNING OF NATURAL LANGUAGE UNDERSTANDING AND DIALOGUE MANAGER", in Proceedings of The 42nd IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017.
+[1] Xuesong Yang, Yun-Nung Chen, Dilek Hakkani-Tür, Paul Crook, Xiujun Li, Jianfeng Gao, and Li Deng. "End-to-end joint learning of natural language understanding and dialogue manager." In Acoustics, Speech and Signal Processing (ICASSP), 2017 IEEE International Conference on, pp. 5690-5694. IEEE, 2017.
 
-    @inproceedings{yang2016endtoend,
-        title={END-TO-END JOINT LEARNING OF NATURAL LANGUAGE UNDERSTANDING AND DIALOGUE MANAGER},
-        author={Yang, Xuesong and Chen, Yun-Nung and Hakkani-T\"ur, Dilek and Crook, Paul and Li, Xiujun and Gao, Jianfeng and Deng, Li},
-        booktitle={Proceedings of The 42nd IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).},
-        year={2017},
+    @inproceedings{yang2017end,
+      title={End-to-end joint learning of natural language understanding and dialogue manager},
+      author={Yang, Xuesong and Chen, Yun-Nung and Hakkani-T{\"u}r, Dilek and Crook, Paul and Li, Xiujun and Gao, Jianfeng and Deng, Li},
+      booktitle={Acoustics, Speech and Signal Processing (ICASSP), 2017 IEEE International Conference on},
+      pages={5690--5694},
+      year={2017},
+      organization={IEEE}
     }
 
 ## License
